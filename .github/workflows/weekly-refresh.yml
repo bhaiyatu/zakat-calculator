@@ -1,9 +1,9 @@
-name: Weekly Data Refresh
+name: Daily Data Refresh
 
 on:
   schedule:
-    # Every Monday at 06:17 UTC.
-    - cron: "17 6 * * 1"
+    # Every day at 06:17 UTC.
+    - cron: "17 6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -35,7 +35,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json isa.html pension.html
           git diff --cached --quiet && echo "No changes to commit" && exit 0
-          git commit -m "Weekly data refresh"
+          git commit -m "Daily data refresh"
           git push
 
       - name: Sync gh-pages branch
