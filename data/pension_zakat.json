@@ -5,7 +5,8 @@
   "fund_cash_pct": 0.58,
   "fund_zakaatable_pct": 4.9173,
   "fund_zakaatable_pct_broad": 7.0612,
-  "computed_at": "2026-02-17T15:26:11.953043Z",
+  "fund_zakaatable_pct_assets_only": 11.6727,
+  "computed_at": "2026-02-17T17:49:21.774469Z",
   "holdings": [
     {
       "name": "BHP",
@@ -14,6 +15,7 @@
       "weight": 0.43,
       "zakaatable_pct": 7.1472,
       "zakaatable_pct_broad": 9.7003,
+      "zakaatable_pct_assets_only": 14.3835,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -42,7 +44,8 @@
         "total": 8874000000.0
       },
       "net_zakaatable": 13543000000.0,
-      "net_zakaatable_broad": 18381000000.0
+      "net_zakaatable_broad": 18381000000.0,
+      "net_zakaatable_assets_only": 27255000000.0
     },
     {
       "name": "BHP Billiton",
@@ -51,6 +54,7 @@
       "weight": 0.03,
       "zakaatable_pct": 7.1472,
       "zakaatable_pct_broad": 9.7003,
+      "zakaatable_pct_assets_only": 14.3835,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -79,7 +83,8 @@
         "total": 8874000000.0
       },
       "net_zakaatable": 13543000000.0,
-      "net_zakaatable_broad": 18381000000.0
+      "net_zakaatable_broad": 18381000000.0,
+      "net_zakaatable_assets_only": 27255000000.0
     },
     {
       "name": "CSL",
@@ -88,6 +93,7 @@
       "weight": 0.31,
       "zakaatable_pct": 10.8683,
       "zakaatable_pct_broad": 12.879,
+      "zakaatable_pct_assets_only": 23.6724,
       "fallback": false,
       "error": null,
       "bs_date": "2024-12-31",
@@ -116,7 +122,8 @@
         "total": 5615000000.0
       },
       "net_zakaatable": 5654000000.0,
-      "net_zakaatable_broad": 6700000000.0
+      "net_zakaatable_broad": 6700000000.0,
+      "net_zakaatable_assets_only": 12315000000.0
     },
     {
       "name": "Wesfarmers",
@@ -125,6 +132,7 @@
       "weight": 0.19,
       "zakaatable_pct": 4.4755,
       "zakaatable_pct_broad": 6.2019,
+      "zakaatable_pct_assets_only": 11.5287,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -153,7 +161,8 @@
         "total": 5381000000.0
       },
       "net_zakaatable": 4521000000.0,
-      "net_zakaatable_broad": 6265000000.0
+      "net_zakaatable_broad": 6265000000.0,
+      "net_zakaatable_assets_only": 11646000000.0
     },
     {
       "name": "Woodside Energy Group",
@@ -162,6 +171,7 @@
       "weight": 0.11,
       "zakaatable_pct": 17.9118,
       "zakaatable_pct_broad": 28.9473,
+      "zakaatable_pct_assets_only": 34.5888,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -190,7 +200,8 @@
         "total": 1960000000.0
       },
       "net_zakaatable": 6223000000.0,
-      "net_zakaatable_broad": 10057000000.0
+      "net_zakaatable_broad": 10057000000.0,
+      "net_zakaatable_assets_only": 12017000000.0
     },
     {
       "name": "Alibaba Holding",
@@ -199,6 +210,7 @@
       "weight": 0.36,
       "zakaatable_pct": 8.9358,
       "zakaatable_pct_broad": 32.6072,
+      "zakaatable_pct_assets_only": 46.8619,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -227,7 +239,8 @@
         "total": 372645000000.0
       },
       "net_zakaatable": 233600000000.0,
-      "net_zakaatable_broad": 852415000000.0
+      "net_zakaatable_broad": 852415000000.0,
+      "net_zakaatable_assets_only": 1225060000000.0
     },
     {
       "name": "JD.com",
@@ -236,6 +249,7 @@
       "weight": 0.13,
       "zakaatable_pct": 32.1752,
       "zakaatable_pct_broad": 75.5958,
+      "zakaatable_pct_assets_only": 100,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -264,7 +278,8 @@
         "total": 264880000000.0
       },
       "net_zakaatable": 93047000000.0,
-      "net_zakaatable_broad": 218614000000.0
+      "net_zakaatable_broad": 218614000000.0,
+      "net_zakaatable_assets_only": 483494000000.0
     },
     {
       "name": "Meituan",
@@ -273,6 +288,7 @@
       "weight": 0.4,
       "zakaatable_pct": 29.3199,
       "zakaatable_pct_broad": 35.1986,
+      "zakaatable_pct_assets_only": 45.8924,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -301,7 +317,8 @@
         "total": 47410494000.0
       },
       "net_zakaatable": 129988280000.0,
-      "net_zakaatable_broad": 156050975000.0
+      "net_zakaatable_broad": 156050975000.0,
+      "net_zakaatable_assets_only": 203461469000.0
     },
     {
       "name": "Novo Nordisk",
@@ -310,6 +327,7 @@
       "weight": 0.74,
       "zakaatable_pct": 0,
       "zakaatable_pct_broad": 1.8647,
+      "zakaatable_pct_assets_only": 14.4157,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -338,7 +356,8 @@
         "total": 172204000000.0
       },
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 25585000000.0
+      "net_zakaatable_broad": 25585000000.0,
+      "net_zakaatable_assets_only": 197789000000.0
     },
     {
       "name": "Air Liquide",
@@ -347,6 +366,7 @@
       "weight": 0.28,
       "zakaatable_pct": 1.5391,
       "zakaatable_pct_broad": 2.6329,
+      "zakaatable_pct_assets_only": 9.1289,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -375,7 +395,8 @@
         "total": 6389100000.0
       },
       "net_zakaatable": 1513800000.0,
-      "net_zakaatable_broad": 2589600000.0
+      "net_zakaatable_broad": 2589600000.0,
+      "net_zakaatable_assets_only": 8978700000.0
     },
     {
       "name": "EssilorLuxottica",
@@ -384,6 +405,7 @@
       "weight": 0.21,
       "zakaatable_pct": 2.0008,
       "zakaatable_pct_broad": 2.9743,
+      "zakaatable_pct_assets_only": 10.2037,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -412,7 +434,8 @@
         "total": 8184000000.0
       },
       "net_zakaatable": 2265000000.0,
-      "net_zakaatable_broad": 3367000000.0
+      "net_zakaatable_broad": 3367000000.0,
+      "net_zakaatable_assets_only": 11551000000.0
     },
     {
       "name": "Hermes International",
@@ -421,6 +444,7 @@
       "weight": 0.24,
       "zakaatable_pct": 6.5917,
       "zakaatable_pct_broad": 7.5603,
+      "zakaatable_pct_assets_only": 8.1313,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -449,7 +473,8 @@
         "total": 1244000000.0
       },
       "net_zakaatable": 14360000000.0,
-      "net_zakaatable_broad": 16470000000.0
+      "net_zakaatable_broad": 16470000000.0,
+      "net_zakaatable_assets_only": 17714000000.0
     },
     {
       "name": "L'Oreal",
@@ -458,6 +483,7 @@
       "weight": 0.25,
       "zakaatable_pct": 6.1879,
       "zakaatable_pct_broad": 12.8008,
+      "zakaatable_pct_assets_only": 17.1192,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -486,7 +512,8 @@
         "total": 9031400000.0
       },
       "net_zakaatable": 12941100000.0,
-      "net_zakaatable_broad": 26771100000.0
+      "net_zakaatable_broad": 26771100000.0,
+      "net_zakaatable_assets_only": 35802500000.0
     },
     {
       "name": "Safran",
@@ -495,6 +522,7 @@
       "weight": 0.22,
       "zakaatable_pct": 10.9037,
       "zakaatable_pct_broad": 11.5925,
+      "zakaatable_pct_assets_only": 21.3413,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -523,7 +551,8 @@
         "total": 13700000000.0
       },
       "net_zakaatable": 15323000000.0,
-      "net_zakaatable_broad": 16291000000.0
+      "net_zakaatable_broad": 16291000000.0,
+      "net_zakaatable_assets_only": 29991000000.0
     },
     {
       "name": "Sanofi",
@@ -532,6 +561,7 @@
       "weight": 0.32,
       "zakaatable_pct": 2.2041,
       "zakaatable_pct_broad": 2.7868,
+      "zakaatable_pct_assets_only": 36.3726,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -560,7 +590,8 @@
         "total": 31816000000.0
       },
       "net_zakaatable": 2088000000.0,
-      "net_zakaatable_broad": 2640000000.0
+      "net_zakaatable_broad": 2640000000.0,
+      "net_zakaatable_assets_only": 34456000000.0
     },
     {
       "name": "Schneider Electric",
@@ -569,6 +600,7 @@
       "weight": 0.41,
       "zakaatable_pct": 1.7719,
       "zakaatable_pct_broad": 4.2082,
+      "zakaatable_pct_assets_only": 15.8118,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -597,7 +629,8 @@
         "total": 16365000000.0
       },
       "net_zakaatable": 2499000000.0,
-      "net_zakaatable_broad": 5935000000.0
+      "net_zakaatable_broad": 5935000000.0,
+      "net_zakaatable_assets_only": 22300000000.0
     },
     {
       "name": "SAP",
@@ -606,6 +639,7 @@
       "weight": 0.77,
       "zakaatable_pct": 6.5121,
       "zakaatable_pct_broad": 11.4269,
+      "zakaatable_pct_assets_only": 14.4838,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -634,7 +668,8 @@
         "total": 6040000000.0
       },
       "net_zakaatable": 12867000000.0,
-      "net_zakaatable_broad": 22578000000.0
+      "net_zakaatable_broad": 22578000000.0,
+      "net_zakaatable_assets_only": 28618000000.0
     },
     {
       "name": "Reliance Industries GDR",
@@ -643,6 +678,7 @@
       "weight": 0.0,
       "zakaatable_pct": 25.0,
       "zakaatable_pct_broad": 25.0,
+      "zakaatable_pct_assets_only": 25.0,
       "fallback": true,
       "error": "Balance sheet data all empty/NaN",
       "bs_date": "N/A",
@@ -653,7 +689,8 @@
       "assets_broad": {},
       "liabilities": {},
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 0
+      "net_zakaatable_broad": 0,
+      "net_zakaatable_assets_only": 0
     },
     {
       "name": "Reliance Industries",
@@ -662,6 +699,7 @@
       "weight": 0.36,
       "zakaatable_pct": 25.0,
       "zakaatable_pct_broad": 25.0,
+      "zakaatable_pct_assets_only": 25.0,
       "fallback": true,
       "error": "Balance sheet data all empty/NaN",
       "bs_date": "N/A",
@@ -672,7 +710,8 @@
       "assets_broad": {},
       "liabilities": {},
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 0
+      "net_zakaatable_broad": 0,
+      "net_zakaatable_assets_only": 0
     },
     {
       "name": "Accenture",
@@ -681,6 +720,7 @@
       "weight": 0.74,
       "zakaatable_pct": 10.576,
       "zakaatable_pct_broad": 14.0155,
+      "zakaatable_pct_assets_only": 24.0613,
       "fallback": false,
       "error": null,
       "bs_date": "2025-11-30",
@@ -709,7 +749,8 @@
         "total": 13672545000.0
       },
       "net_zakaatable": 14394149000.0,
-      "net_zakaatable_broad": 19075335000.0
+      "net_zakaatable_broad": 19075335000.0,
+      "net_zakaatable_assets_only": 32747880000.0
     },
     {
       "name": "Eaton",
@@ -718,6 +759,7 @@
       "weight": 0.43,
       "zakaatable_pct": 4.224,
       "zakaatable_pct_broad": 4.5984,
+      "zakaatable_pct_assets_only": 8.3708,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -746,7 +788,8 @@
         "total": 5723000000.0
       },
       "net_zakaatable": 6408000000.0,
-      "net_zakaatable_broad": 6976000000.0
+      "net_zakaatable_broad": 6976000000.0,
+      "net_zakaatable_assets_only": 12699000000.0
     },
     {
       "name": "Linde",
@@ -755,6 +798,7 @@
       "weight": 0.66,
       "zakaatable_pct": 1.4826,
       "zakaatable_pct_broad": 1.4826,
+      "zakaatable_pct_assets_only": 5.8964,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -783,7 +827,8 @@
         "total": 9979000000.0
       },
       "net_zakaatable": 3352000000.0,
-      "net_zakaatable_broad": 3352000000.0
+      "net_zakaatable_broad": 3352000000.0,
+      "net_zakaatable_assets_only": 13331000000.0
     },
     {
       "name": "Medtronic",
@@ -792,6 +837,7 @@
       "weight": 0.34,
       "zakaatable_pct": 13.0591,
       "zakaatable_pct_broad": 16.1698,
+      "zakaatable_pct_assets_only": 22.4638,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -820,7 +866,8 @@
         "total": 7804000000.0
       },
       "net_zakaatable": 16192000000.0,
-      "net_zakaatable_broad": 20049000000.0
+      "net_zakaatable_broad": 20049000000.0,
+      "net_zakaatable_assets_only": 27853000000.0
     },
     {
       "name": "Daiichi Sankyo",
@@ -829,6 +876,7 @@
       "weight": 0.2,
       "zakaatable_pct": 21.061,
       "zakaatable_pct_broad": 29.9633,
+      "zakaatable_pct_assets_only": 43.2649,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -857,7 +905,8 @@
         "total": 726473000000.0
       },
       "net_zakaatable": 1150257000000.0,
-      "net_zakaatable_broad": 1636460000000.0
+      "net_zakaatable_broad": 1636460000000.0,
+      "net_zakaatable_assets_only": 2362933000000.0
     },
     {
       "name": "Daikin Industries",
@@ -866,6 +915,7 @@
       "weight": 0.13,
       "zakaatable_pct": 35.1531,
       "zakaatable_pct_broad": 39.0406,
+      "zakaatable_pct_assets_only": 52.8949,
       "fallback": false,
       "error": null,
       "bs_date": "2025-03-31",
@@ -894,7 +944,8 @@
         "total": 806724000000.0
       },
       "net_zakaatable": 2046930000000.0,
-      "net_zakaatable_broad": 2273293000000.0
+      "net_zakaatable_broad": 2273293000000.0,
+      "net_zakaatable_assets_only": 3080017000000.0
     },
     {
       "name": "Fast Retailing",
@@ -903,6 +954,7 @@
       "weight": 0.26,
       "zakaatable_pct": 9.4847,
       "zakaatable_pct_broad": 11.1929,
+      "zakaatable_pct_assets_only": 13.4325,
       "fallback": false,
       "error": null,
       "bs_date": "2025-08-31",
@@ -931,7 +983,8 @@
         "total": 463221000000.0
       },
       "net_zakaatable": 1961749000000.0,
-      "net_zakaatable_broad": 2315076000000.0
+      "net_zakaatable_broad": 2315076000000.0,
+      "net_zakaatable_assets_only": 2778297000000.0
     },
     {
       "name": "Hitachi",
@@ -940,6 +993,7 @@
       "weight": 0.43,
       "zakaatable_pct": 23.6121,
       "zakaatable_pct_broad": 25.286,
+      "zakaatable_pct_assets_only": 34.1557,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -968,7 +1022,8 @@
         "total": 1959167000000.0
       },
       "net_zakaatable": 5215511000000.0,
-      "net_zakaatable_broad": 5585236000000.0
+      "net_zakaatable_broad": 5585236000000.0,
+      "net_zakaatable_assets_only": 7544403000000.0
     },
     {
       "name": "Hoya",
@@ -977,6 +1032,7 @@
       "weight": 0.16,
       "zakaatable_pct": 8.2953,
       "zakaatable_pct_broad": 8.9913,
+      "zakaatable_pct_assets_only": 10.1391,
       "fallback": false,
       "error": null,
       "bs_date": "2025-03-31",
@@ -1005,7 +1061,8 @@
         "total": 106400000000.0
       },
       "net_zakaatable": 768983000000.0,
-      "net_zakaatable_broad": 833508000000.0
+      "net_zakaatable_broad": 833508000000.0,
+      "net_zakaatable_assets_only": 939908000000.0
     },
     {
       "name": "Keyence",
@@ -1014,6 +1071,7 @@
       "weight": 0.31,
       "zakaatable_pct": 10.6015,
       "zakaatable_pct_broad": 20.6474,
+      "zakaatable_pct_assets_only": 21.3211,
       "fallback": false,
       "error": null,
       "bs_date": "2024-09-30",
@@ -1042,7 +1100,8 @@
         "total": 95080000000.0
       },
       "net_zakaatable": 1496145000000.0,
-      "net_zakaatable_broad": 2913871000000.0
+      "net_zakaatable_broad": 2913871000000.0,
+      "net_zakaatable_assets_only": 3008951000000.0
     },
     {
       "name": "Murata Manufacturing",
@@ -1051,6 +1110,7 @@
       "weight": 0.12,
       "zakaatable_pct": 21.6263,
       "zakaatable_pct_broad": 23.2192,
+      "zakaatable_pct_assets_only": 25.0182,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1079,7 +1139,8 @@
         "total": 114908000000.0
       },
       "net_zakaatable": 1381363000000.0,
-      "net_zakaatable_broad": 1483108000000.0
+      "net_zakaatable_broad": 1483108000000.0,
+      "net_zakaatable_assets_only": 1598016000000.0
     },
     {
       "name": "Recruit",
@@ -1088,6 +1149,7 @@
       "weight": 0.44,
       "zakaatable_pct": 12.1649,
       "zakaatable_pct_broad": 16.6129,
+      "zakaatable_pct_assets_only": 21.6537,
       "fallback": false,
       "error": null,
       "bs_date": "2025-03-31",
@@ -1116,7 +1178,8 @@
         "total": 430778000000.0
       },
       "net_zakaatable": 1039600000000.0,
-      "net_zakaatable_broad": 1419722000000.0
+      "net_zakaatable_broad": 1419722000000.0,
+      "net_zakaatable_assets_only": 1850500000000.0
     },
     {
       "name": "Shin-Etsu Chemical",
@@ -1125,6 +1188,7 @@
       "weight": 0.25,
       "zakaatable_pct": 26.2375,
       "zakaatable_pct_broad": 26.2375,
+      "zakaatable_pct_assets_only": 28.7632,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1153,7 +1217,8 @@
         "total": 256682000000.0
       },
       "net_zakaatable": 2666414000000.0,
-      "net_zakaatable_broad": 2666414000000.0
+      "net_zakaatable_broad": 2666414000000.0,
+      "net_zakaatable_assets_only": 2923096000000.0
     },
     {
       "name": "Tokyo Electron",
@@ -1162,6 +1227,7 @@
       "weight": 0.27,
       "zakaatable_pct": 7.7757,
       "zakaatable_pct_broad": 7.7757,
+      "zakaatable_pct_assets_only": 8.6564,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1190,7 +1256,8 @@
         "total": 170164000000.0
       },
       "net_zakaatable": 1502399000000.0,
-      "net_zakaatable_broad": 1502399000000.0
+      "net_zakaatable_broad": 1502399000000.0,
+      "net_zakaatable_assets_only": 1672563000000.0
     },
     {
       "name": "ASML",
@@ -1199,6 +1266,7 @@
       "weight": 0.85,
       "zakaatable_pct": 6.6925,
       "zakaatable_pct_broad": 7.5397,
+      "zakaatable_pct_assets_only": 7.5397,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1227,7 +1295,8 @@
         "total": 0.0
       },
       "net_zakaatable": 30616100000.0,
-      "net_zakaatable_broad": 34492100000.0
+      "net_zakaatable_broad": 34492100000.0,
+      "net_zakaatable_assets_only": 34492100000.0
     },
     {
       "name": "Samsung Electronics GDR",
@@ -1236,6 +1305,7 @@
       "weight": 0.23,
       "zakaatable_pct": 16.4187,
       "zakaatable_pct_broad": 19.4245,
+      "zakaatable_pct_assets_only": 22.5331,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1264,7 +1334,8 @@
         "total": 37660604000000.0
       },
       "net_zakaatable": 198915509000000.0,
-      "net_zakaatable_broad": 235331574000000.0
+      "net_zakaatable_broad": 235331574000000.0,
+      "net_zakaatable_assets_only": 272992178000000.0
     },
     {
       "name": "Samsung Electronics",
@@ -1273,6 +1344,7 @@
       "weight": 0.43,
       "zakaatable_pct": 16.4187,
       "zakaatable_pct_broad": 19.4245,
+      "zakaatable_pct_assets_only": 22.5331,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1301,7 +1373,8 @@
         "total": 37660604000000.0
       },
       "net_zakaatable": 198915509000000.0,
-      "net_zakaatable_broad": 235331574000000.0
+      "net_zakaatable_broad": 235331574000000.0,
+      "net_zakaatable_assets_only": 272992178000000.0
     },
     {
       "name": "SK Hynix",
@@ -1310,6 +1383,7 @@
       "weight": 0.24,
       "zakaatable_pct": 6.4603,
       "zakaatable_pct_broad": 8.6288,
+      "zakaatable_pct_assets_only": 11.3021,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1338,7 +1412,8 @@
         "total": 16242562000000.0
       },
       "net_zakaatable": 39252798000000.0,
-      "net_zakaatable_broad": 52428781000000.0
+      "net_zakaatable_broad": 52428781000000.0,
+      "net_zakaatable_assets_only": 68671343000000.0
     },
     {
       "name": "Industria de Diseno Textil",
@@ -1347,6 +1422,7 @@
       "weight": 0.17,
       "zakaatable_pct": 3.1852,
       "zakaatable_pct_broad": 3.4707,
+      "zakaatable_pct_assets_only": 10.1312,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -1375,7 +1451,8 @@
         "total": 11827000000.0
       },
       "net_zakaatable": 5656000000.0,
-      "net_zakaatable_broad": 6163000000.0
+      "net_zakaatable_broad": 6163000000.0,
+      "net_zakaatable_assets_only": 17990000000.0
     },
     {
       "name": "Atlas Copco Series A",
@@ -1384,6 +1461,7 @@
       "weight": 0.12,
       "zakaatable_pct": 3.5256,
       "zakaatable_pct_broad": 4.0413,
+      "zakaatable_pct_assets_only": 9.7432,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1412,7 +1490,8 @@
         "total": 53654000000.0
       },
       "net_zakaatable": 33176000000.0,
-      "net_zakaatable_broad": 38029000000.0
+      "net_zakaatable_broad": 38029000000.0,
+      "net_zakaatable_assets_only": 91683000000.0
     },
     {
       "name": "Atlas Copco Series B",
@@ -1421,6 +1500,7 @@
       "weight": 0.06,
       "zakaatable_pct": 4.0849,
       "zakaatable_pct_broad": 4.6824,
+      "zakaatable_pct_assets_only": 11.2886,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1449,7 +1529,8 @@
         "total": 53654000000.0
       },
       "net_zakaatable": 33176000000.0,
-      "net_zakaatable_broad": 38029000000.0
+      "net_zakaatable_broad": 38029000000.0,
+      "net_zakaatable_assets_only": 91683000000.0
     },
     {
       "name": "ABB",
@@ -1458,6 +1539,7 @@
       "weight": 0.26,
       "zakaatable_pct": 9.1273,
       "zakaatable_pct_broad": 9.8887,
+      "zakaatable_pct_assets_only": 13.3572,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1486,7 +1568,8 @@
         "total": 5685000000.0
       },
       "net_zakaatable": 14960000000.0,
-      "net_zakaatable_broad": 16208000000.0
+      "net_zakaatable_broad": 16208000000.0,
+      "net_zakaatable_assets_only": 21893000000.0
     },
     {
       "name": "Cie Financiere Richemont",
@@ -1495,6 +1578,7 @@
       "weight": 0.25,
       "zakaatable_pct": 18.7962,
       "zakaatable_pct_broad": 20.1206,
+      "zakaatable_pct_assets_only": 29.0705,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1523,7 +1607,8 @@
         "total": 9096000000.0
       },
       "net_zakaatable": 19103000000.0,
-      "net_zakaatable_broad": 20449000000.0
+      "net_zakaatable_broad": 20449000000.0,
+      "net_zakaatable_assets_only": 29545000000.0
     },
     {
       "name": "Lonza",
@@ -1532,6 +1617,7 @@
       "weight": 0.13,
       "zakaatable_pct": 9.8905,
       "zakaatable_pct_broad": 10.146,
+      "zakaatable_pct_assets_only": 11.3887,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1560,7 +1646,8 @@
         "total": 462000000.0
       },
       "net_zakaatable": 3677000000.0,
-      "net_zakaatable_broad": 3772000000.0
+      "net_zakaatable_broad": 3772000000.0,
+      "net_zakaatable_assets_only": 4234000000.0
     },
     {
       "name": "Nestle",
@@ -1569,6 +1656,7 @@
       "weight": 0.65,
       "zakaatable_pct": 0,
       "zakaatable_pct_broad": 0,
+      "zakaatable_pct_assets_only": 17.5899,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -1597,7 +1685,8 @@
         "total": 40121000000.0
       },
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 0
+      "net_zakaatable_broad": 0,
+      "net_zakaatable_assets_only": 36004000000.0
     },
     {
       "name": "Novartis",
@@ -1606,6 +1695,7 @@
       "weight": 0.58,
       "zakaatable_pct": 4.4456,
       "zakaatable_pct_broad": 6.9117,
+      "zakaatable_pct_assets_only": 11.6156,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1634,7 +1724,8 @@
         "total": 15038000000.0
       },
       "net_zakaatable": 14212000000.0,
-      "net_zakaatable_broad": 22096000000.0
+      "net_zakaatable_broad": 22096000000.0,
+      "net_zakaatable_assets_only": 37134000000.0
     },
     {
       "name": "Roche",
@@ -1643,6 +1734,7 @@
       "weight": 0.02,
       "zakaatable_pct": 8.18,
       "zakaatable_pct_broad": 11.2446,
+      "zakaatable_pct_assets_only": 15.2845,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1671,7 +1763,8 @@
         "total": 11809000000.0
       },
       "net_zakaatable": 23911000000.0,
-      "net_zakaatable_broad": 32869000000.0
+      "net_zakaatable_broad": 32869000000.0,
+      "net_zakaatable_assets_only": 44678000000.0
     },
     {
       "name": "Roche NPV",
@@ -1680,6 +1773,7 @@
       "weight": 0.6,
       "zakaatable_pct": 8.18,
       "zakaatable_pct_broad": 11.2446,
+      "zakaatable_pct_assets_only": 15.2845,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1708,7 +1802,8 @@
         "total": 11809000000.0
       },
       "net_zakaatable": 23911000000.0,
-      "net_zakaatable_broad": 32869000000.0
+      "net_zakaatable_broad": 32869000000.0,
+      "net_zakaatable_assets_only": 44678000000.0
     },
     {
       "name": "Sika",
@@ -1717,6 +1812,7 @@
       "weight": 0.11,
       "zakaatable_pct": 9.1414,
       "zakaatable_pct_broad": 9.6989,
+      "zakaatable_pct_assets_only": 18.2832,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -1745,7 +1841,8 @@
         "total": 2106600000.0
       },
       "net_zakaatable": 2243300000.0,
-      "net_zakaatable_broad": 2380100000.0
+      "net_zakaatable_broad": 2380100000.0,
+      "net_zakaatable_assets_only": 4486700000.0
     },
     {
       "name": "MediaTek",
@@ -1754,6 +1851,7 @@
       "weight": 0.26,
       "zakaatable_pct": 8.7623,
       "zakaatable_pct_broad": 13.9897,
+      "zakaatable_pct_assets_only": 16.5807,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1782,7 +1880,8 @@
         "total": 76714917000.0
       },
       "net_zakaatable": 259432880000.0,
-      "net_zakaatable_broad": 414203402000.0
+      "net_zakaatable_broad": 414203402000.0,
+      "net_zakaatable_assets_only": 490918319000.0
     },
     {
       "name": "Taiwan Semiconductor Manufacturing",
@@ -1791,6 +1890,7 @@
       "weight": 0.6,
       "zakaatable_pct": 5.2908,
       "zakaatable_pct_broad": 5.7158,
+      "zakaatable_pct_assets_only": 7.344,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1819,7 +1919,8 @@
         "total": 808539315000.0
       },
       "net_zakaatable": 2627453709000.0,
-      "net_zakaatable_broad": 2838530096000.0
+      "net_zakaatable_broad": 2838530096000.0,
+      "net_zakaatable_assets_only": 3647069411000.0
     },
     {
       "name": "AstraZeneca",
@@ -1828,6 +1929,7 @@
       "weight": 0.61,
       "zakaatable_pct": 0,
       "zakaatable_pct_broad": 1.1681,
+      "zakaatable_pct_assets_only": 10.1648,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -1856,7 +1958,8 @@
         "total": 29468000000.0
       },
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 3826000000.0
+      "net_zakaatable_broad": 3826000000.0,
+      "net_zakaatable_assets_only": 33294000000.0
     },
     {
       "name": "Compass",
@@ -1865,6 +1968,7 @@
       "weight": 0.17,
       "zakaatable_pct": 1.0768,
       "zakaatable_pct_broad": 1.5832,
+      "zakaatable_pct_assets_only": 13.4954,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1893,7 +1997,8 @@
         "total": 5786000000.0
       },
       "net_zakaatable": 523000000.0,
-      "net_zakaatable_broad": 769000000.0
+      "net_zakaatable_broad": 769000000.0,
+      "net_zakaatable_assets_only": 6555000000.0
     },
     {
       "name": "GSK",
@@ -1902,6 +2007,7 @@
       "weight": 0.21,
       "zakaatable_pct": 0,
       "zakaatable_pct_broad": 5.1877,
+      "zakaatable_pct_assets_only": 26.1148,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -1930,7 +2036,8 @@
         "total": 18855000000.0
       },
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 4674000000.0
+      "net_zakaatable_broad": 4674000000.0,
+      "net_zakaatable_assets_only": 23529000000.0
     },
     {
       "name": "RELX",
@@ -1939,6 +2046,7 @@
       "weight": 0.26,
       "zakaatable_pct": 0,
       "zakaatable_pct_broad": 0,
+      "zakaatable_pct_assets_only": 6.8194,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -1967,7 +2075,8 @@
         "total": 5735000000.0
       },
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 0
+      "net_zakaatable_broad": 0,
+      "net_zakaatable_assets_only": 2759000000.0
     },
     {
       "name": "Rio Tinto",
@@ -1976,6 +2085,7 @@
       "weight": 0.19,
       "zakaatable_pct": 6.7143,
       "zakaatable_pct_broad": 10.3167,
+      "zakaatable_pct_assets_only": 16.955,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -2004,7 +2114,8 @@
         "total": 10310000000.0
       },
       "net_zakaatable": 10428000000.0,
-      "net_zakaatable_broad": 16023000000.0
+      "net_zakaatable_broad": 16023000000.0,
+      "net_zakaatable_assets_only": 26333000000.0
     },
     {
       "name": "Unilever",
@@ -2013,6 +2124,7 @@
       "weight": 0.42,
       "zakaatable_pct": 0.9491,
       "zakaatable_pct_broad": 2.6267,
+      "zakaatable_pct_assets_only": 15.1556,
       "fallback": false,
       "error": null,
       "bs_date": "2025-06-30",
@@ -2041,7 +2153,8 @@
         "total": 17200000000.0
       },
       "net_zakaatable": 1303000000.0,
-      "net_zakaatable_broad": 3606000000.0
+      "net_zakaatable_broad": 3606000000.0,
+      "net_zakaatable_assets_only": 20806000000.0
     },
     {
       "name": "Abbott Laboratories",
@@ -2050,6 +2163,7 @@
       "weight": 0.64,
       "zakaatable_pct": 5.7497,
       "zakaatable_pct_broad": 6.2341,
+      "zakaatable_pct_assets_only": 13.1376,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2078,7 +2192,8 @@
         "total": 13552000000.0
       },
       "net_zakaatable": 11287000000.0,
-      "net_zakaatable_broad": 12238000000.0
+      "net_zakaatable_broad": 12238000000.0,
+      "net_zakaatable_assets_only": 25790000000.0
     },
     {
       "name": "AbbVie",
@@ -2087,6 +2202,7 @@
       "weight": 1.03,
       "zakaatable_pct": 5.5424,
       "zakaatable_pct_broad": 5.6133,
+      "zakaatable_pct_assets_only": 7.0184,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2115,7 +2231,8 @@
         "total": 5772000000.0
       },
       "net_zakaatable": 22767000000.0,
-      "net_zakaatable_broad": 23058000000.0
+      "net_zakaatable_broad": 23058000000.0,
+      "net_zakaatable_assets_only": 28830000000.0
     },
     {
       "name": "Adobe",
@@ -2124,6 +2241,7 @@
       "weight": 0.66,
       "zakaatable_pct": 8.5105,
       "zakaatable_pct_broad": 10.5457,
+      "zakaatable_pct_assets_only": 11.4972,
       "fallback": false,
       "error": null,
       "bs_date": "2025-11-30",
@@ -2152,7 +2270,8 @@
         "total": 1022000000.0
       },
       "net_zakaatable": 9141000000.0,
-      "net_zakaatable_broad": 11327000000.0
+      "net_zakaatable_broad": 11327000000.0,
+      "net_zakaatable_assets_only": 12349000000.0
     },
     {
       "name": "Advanced Micro Devices",
@@ -2161,6 +2280,7 @@
       "weight": 0.65,
       "zakaatable_pct": 6.0578,
       "zakaatable_pct_broad": 6.1768,
+      "zakaatable_pct_assets_only": 8.4736,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2189,7 +2309,8 @@
         "total": 7408000000.0
       },
       "net_zakaatable": 19539000000.0,
-      "net_zakaatable_broad": 19923000000.0
+      "net_zakaatable_broad": 19923000000.0,
+      "net_zakaatable_assets_only": 27331000000.0
     },
     {
       "name": "Alphabet Class A",
@@ -2198,6 +2319,7 @@
       "weight": 3.65,
       "zakaatable_pct": 3.5565,
       "zakaatable_pct_broad": 5.712,
+      "zakaatable_pct_assets_only": 7.8639,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2226,7 +2348,8 @@
         "total": 77671000000.0
       },
       "net_zakaatable": 128367000000.0,
-      "net_zakaatable_broad": 206167000000.0
+      "net_zakaatable_broad": 206167000000.0,
+      "net_zakaatable_assets_only": 283838000000.0
     },
     {
       "name": "Alphabet Class C",
@@ -2235,6 +2358,7 @@
       "weight": 2.99,
       "zakaatable_pct": 3.5514,
       "zakaatable_pct_broad": 5.7038,
+      "zakaatable_pct_assets_only": 7.8526,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2263,7 +2387,8 @@
         "total": 77671000000.0
       },
       "net_zakaatable": 128367000000.0,
-      "net_zakaatable_broad": 206167000000.0
+      "net_zakaatable_broad": 206167000000.0,
+      "net_zakaatable_assets_only": 283838000000.0
     },
     {
       "name": "Amazon.com",
@@ -2272,6 +2397,7 @@
       "weight": 6.78,
       "zakaatable_pct": 1.4847,
       "zakaatable_pct_broad": 1.4847,
+      "zakaatable_pct_assets_only": 10.7452,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2300,7 +2426,8 @@
         "total": 197429000000.0
       },
       "net_zakaatable": 31654000000.0,
-      "net_zakaatable_broad": 31654000000.0
+      "net_zakaatable_broad": 31654000000.0,
+      "net_zakaatable_assets_only": 229083000000.0
     },
     {
       "name": "Apple",
@@ -2309,6 +2436,7 @@
       "weight": 8.62,
       "zakaatable_pct": 1.9277,
       "zakaatable_pct_broad": 3.9652,
+      "zakaatable_pct_assets_only": 6.1733,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2337,7 +2465,8 @@
         "total": 84411000000.0
       },
       "net_zakaatable": 73693000000.0,
-      "net_zakaatable_broad": 151581000000.0
+      "net_zakaatable_broad": 151581000000.0,
+      "net_zakaatable_assets_only": 235992000000.0
     },
     {
       "name": "Applied Materials",
@@ -2346,6 +2475,7 @@
       "weight": 0.44,
       "zakaatable_pct": 6.2043,
       "zakaatable_pct_broad": 8.1994,
+      "zakaatable_pct_assets_only": 9.488,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -2374,7 +2504,8 @@
         "total": 3591000000.0
       },
       "net_zakaatable": 17290000000.0,
-      "net_zakaatable_broad": 22850000000.0
+      "net_zakaatable_broad": 22850000000.0,
+      "net_zakaatable_assets_only": 26441000000.0
     },
     {
       "name": "Booking",
@@ -2383,6 +2514,7 @@
       "weight": 0.54,
       "zakaatable_pct": 8.4875,
       "zakaatable_pct_broad": 8.9834,
+      "zakaatable_pct_assets_only": 16.5872,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2411,7 +2543,8 @@
         "total": 9982000000.0
       },
       "net_zakaatable": 11142000000.0,
-      "net_zakaatable_broad": 11793000000.0
+      "net_zakaatable_broad": 11793000000.0,
+      "net_zakaatable_assets_only": 21775000000.0
     },
     {
       "name": "Broadcom",
@@ -2420,6 +2553,7 @@
       "weight": 3.57,
       "zakaatable_pct": 1.6174,
       "zakaatable_pct_broad": 1.6174,
+      "zakaatable_pct_assets_only": 2.0252,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -2448,7 +2582,8 @@
         "total": 6253000000.0
       },
       "net_zakaatable": 24802000000.0,
-      "net_zakaatable_broad": 24802000000.0
+      "net_zakaatable_broad": 24802000000.0,
+      "net_zakaatable_assets_only": 31055000000.0
     },
     {
       "name": "Chevron",
@@ -2457,6 +2592,7 @@
       "weight": 0.79,
       "zakaatable_pct": 1.4992,
       "zakaatable_pct_broad": 14.113,
+      "zakaatable_pct_assets_only": 23.9717,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2485,7 +2621,8 @@
         "total": 35472000000.0
       },
       "net_zakaatable": 5394000000.0,
-      "net_zakaatable_broad": 50779000000.0
+      "net_zakaatable_broad": 50779000000.0,
+      "net_zakaatable_assets_only": 86251000000.0
     },
     {
       "name": "Cisco Systems",
@@ -2494,6 +2631,7 @@
       "weight": 0.78,
       "zakaatable_pct": 6.9679,
       "zakaatable_pct_broad": 9.5758,
+      "zakaatable_pct_assets_only": 13.3819,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -2522,7 +2660,8 @@
         "total": 11614000000.0
       },
       "net_zakaatable": 21262000000.0,
-      "net_zakaatable_broad": 29220000000.0
+      "net_zakaatable_broad": 29220000000.0,
+      "net_zakaatable_assets_only": 40834000000.0
     },
     {
       "name": "Coca-Cola",
@@ -2531,6 +2670,7 @@
       "weight": 0.8,
       "zakaatable_pct": 1.3901,
       "zakaatable_pct_broad": 7.7109,
+      "zakaatable_pct_assets_only": 14.2978,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2559,7 +2699,8 @@
         "total": 22499000000.0
       },
       "net_zakaatable": 4748000000.0,
-      "net_zakaatable_broad": 26338000000.0
+      "net_zakaatable_broad": 26338000000.0,
+      "net_zakaatable_assets_only": 48837000000.0
     },
     {
       "name": "ConocoPhillips",
@@ -2568,6 +2709,7 @@
       "weight": 0.42,
       "zakaatable_pct": 3.6342,
       "zakaatable_pct_broad": 11.1134,
+      "zakaatable_pct_assets_only": 19.272,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2596,7 +2738,8 @@
         "total": 10989000000.0
       },
       "net_zakaatable": 4895000000.0,
-      "net_zakaatable_broad": 14969000000.0
+      "net_zakaatable_broad": 14969000000.0,
+      "net_zakaatable_assets_only": 25958000000.0
     },
     {
       "name": "Danaher",
@@ -2605,6 +2748,7 @@
       "weight": 0.49,
       "zakaatable_pct": 2.261,
       "zakaatable_pct_broad": 2.261,
+      "zakaatable_pct_assets_only": 6.6176,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2633,7 +2777,8 @@
         "total": 6324000000.0
       },
       "net_zakaatable": 3282000000.0,
-      "net_zakaatable_broad": 3282000000.0
+      "net_zakaatable_broad": 3282000000.0,
+      "net_zakaatable_assets_only": 9606000000.0
     },
     {
       "name": "Eli Lilly",
@@ -2642,6 +2787,7 @@
       "weight": 2.0,
       "zakaatable_pct": 1.7059,
       "zakaatable_pct_broad": 2.9926,
+      "zakaatable_pct_assets_only": 5.4525,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2670,7 +2816,8 @@
         "total": 24396000000.0
       },
       "net_zakaatable": 16918000000.0,
-      "net_zakaatable_broad": 29679000000.0
+      "net_zakaatable_broad": 29679000000.0,
+      "net_zakaatable_assets_only": 54075000000.0
     },
     {
       "name": "Exxon Mobil",
@@ -2679,6 +2826,7 @@
       "weight": 1.55,
       "zakaatable_pct": 1.7154,
       "zakaatable_pct_broad": 9.1818,
+      "zakaatable_pct_assets_only": 21.7801,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2707,7 +2855,8 @@
         "total": 77850000000.0
       },
       "net_zakaatable": 10600000000.0,
-      "net_zakaatable_broad": 56738000000.0
+      "net_zakaatable_broad": 56738000000.0,
+      "net_zakaatable_assets_only": 134588000000.0
     },
     {
       "name": "Home Depot",
@@ -2716,6 +2865,7 @@
       "weight": 1.28,
       "zakaatable_pct": 1.4937,
       "zakaatable_pct_broad": 1.4937,
+      "zakaatable_pct_assets_only": 9.4509,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -2744,7 +2894,8 @@
         "total": 30407000000.0
       },
       "net_zakaatable": 5708000000.0,
-      "net_zakaatable_broad": 5708000000.0
+      "net_zakaatable_broad": 5708000000.0,
+      "net_zakaatable_assets_only": 36115000000.0
     },
     {
       "name": "Intuitive Surgical",
@@ -2753,6 +2904,7 @@
       "weight": 0.61,
       "zakaatable_pct": 5.1306,
       "zakaatable_pct_broad": 7.4969,
+      "zakaatable_pct_assets_only": 7.986,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2781,7 +2933,8 @@
         "total": 851100000.0
       },
       "net_zakaatable": 8928400000.0,
-      "net_zakaatable_broad": 13046200000.0
+      "net_zakaatable_broad": 13046200000.0,
+      "net_zakaatable_assets_only": 13897300000.0
     },
     {
       "name": "Johnson & Johnson",
@@ -2790,6 +2943,7 @@
       "weight": 1.14,
       "zakaatable_pct": 1.0247,
       "zakaatable_pct_broad": 2.1924,
+      "zakaatable_pct_assets_only": 10.6169,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2818,7 +2972,8 @@
         "total": 49592000000.0
       },
       "net_zakaatable": 6032000000.0,
-      "net_zakaatable_broad": 12906000000.0
+      "net_zakaatable_broad": 12906000000.0,
+      "net_zakaatable_assets_only": 62498000000.0
     },
     {
       "name": "Lowe's",
@@ -2827,6 +2982,7 @@
       "weight": 0.46,
       "zakaatable_pct": 4.5154,
       "zakaatable_pct_broad": 4.5154,
+      "zakaatable_pct_assets_only": 12.5356,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -2855,7 +3011,8 @@
         "total": 12673000000.0
       },
       "net_zakaatable": 7135000000.0,
-      "net_zakaatable_broad": 7135000000.0
+      "net_zakaatable_broad": 7135000000.0,
+      "net_zakaatable_assets_only": 19808000000.0
     },
     {
       "name": "MasterCard",
@@ -2864,6 +3021,7 @@
       "weight": 1.42,
       "zakaatable_pct": 1.088,
       "zakaatable_pct_broad": 2.029,
+      "zakaatable_pct_assets_only": 5.4332,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2892,7 +3050,8 @@
         "total": 15820000000.0
       },
       "net_zakaatable": 5056000000.0,
-      "net_zakaatable_broad": 9429000000.0
+      "net_zakaatable_broad": 9429000000.0,
+      "net_zakaatable_assets_only": 25249000000.0
     },
     {
       "name": "Merck",
@@ -2901,6 +3060,7 @@
       "weight": 0.83,
       "zakaatable_pct": 6.8965,
       "zakaatable_pct_broad": 7.2639,
+      "zakaatable_pct_assets_only": 16.007,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -2929,7 +3089,8 @@
         "total": 26586000000.0
       },
       "net_zakaatable": 20971000000.0,
-      "net_zakaatable_broad": 22088000000.0
+      "net_zakaatable_broad": 22088000000.0,
+      "net_zakaatable_assets_only": 48674000000.0
     },
     {
       "name": "Meta Platforms",
@@ -2938,6 +3099,7 @@
       "weight": 4.21,
       "zakaatable_pct": 5.4062,
       "zakaatable_pct_broad": 7.1238,
+      "zakaatable_pct_assets_only": 8.5019,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -2966,7 +3128,8 @@
         "total": 22085000000.0
       },
       "net_zakaatable": 86637000000.0,
-      "net_zakaatable_broad": 114161000000.0
+      "net_zakaatable_broad": 114161000000.0,
+      "net_zakaatable_assets_only": 136246000000.0
     },
     {
       "name": "Micron Technology",
@@ -2975,6 +3138,7 @@
       "weight": 0.31,
       "zakaatable_pct": 5.3713,
       "zakaatable_pct_broad": 5.891,
+      "zakaatable_pct_assets_only": 7.1138,
       "fallback": false,
       "error": null,
       "bs_date": "2025-11-30",
@@ -3003,7 +3167,8 @@
         "total": 5501000000.0
       },
       "net_zakaatable": 24164000000.0,
-      "net_zakaatable_broad": 26502000000.0
+      "net_zakaatable_broad": 26502000000.0,
+      "net_zakaatable_assets_only": 32003000000.0
     },
     {
       "name": "Microsoft",
@@ -3012,6 +3177,7 @@
       "weight": 7.97,
       "zakaatable_pct": 4.6082,
       "zakaatable_pct_broad": 5.3268,
+      "zakaatable_pct_assets_only": 6.8253,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3040,7 +3206,8 @@
         "total": 44215000000.0
       },
       "net_zakaatable": 135969000000.0,
-      "net_zakaatable_broad": 157171000000.0
+      "net_zakaatable_broad": 157171000000.0,
+      "net_zakaatable_assets_only": 201386000000.0
     },
     {
       "name": "NIKE",
@@ -3049,6 +3216,7 @@
       "weight": 0.3,
       "zakaatable_pct": 17.5524,
       "zakaatable_pct_broad": 17.5524,
+      "zakaatable_pct_assets_only": 25.5668,
       "fallback": false,
       "error": null,
       "bs_date": "2025-11-30",
@@ -3077,7 +3245,8 @@
         "total": 7528000000.0
       },
       "net_zakaatable": 16487000000.0,
-      "net_zakaatable_broad": 16487000000.0
+      "net_zakaatable_broad": 16487000000.0,
+      "net_zakaatable_assets_only": 24015000000.0
     },
     {
       "name": "NVIDIA",
@@ -3086,6 +3255,7 @@
       "weight": 8.18,
       "zakaatable_pct": 2.1748,
       "zakaatable_pct_broad": 2.7034,
+      "zakaatable_pct_assets_only": 3.1796,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -3114,7 +3284,8 @@
         "total": 20924000000.0
       },
       "net_zakaatable": 95568000000.0,
-      "net_zakaatable_broad": 118798000000.0
+      "net_zakaatable_broad": 118798000000.0,
+      "net_zakaatable_assets_only": 139722000000.0
     },
     {
       "name": "Oracle",
@@ -3123,6 +3294,7 @@
       "weight": 0.9,
       "zakaatable_pct": 3.6552,
       "zakaatable_pct_broad": 6.2673,
+      "zakaatable_pct_assets_only": 10.3973,
       "fallback": false,
       "error": null,
       "bs_date": "2025-11-30",
@@ -3151,7 +3323,8 @@
         "total": 18231000000.0
       },
       "net_zakaatable": 16135000000.0,
-      "net_zakaatable_broad": 27666000000.0
+      "net_zakaatable_broad": 27666000000.0,
+      "net_zakaatable_assets_only": 45897000000.0
     },
     {
       "name": "PepsiCo",
@@ -3160,6 +3333,7 @@
       "weight": 0.69,
       "zakaatable_pct": 2.6239,
       "zakaatable_pct_broad": 6.6924,
+      "zakaatable_pct_assets_only": 16.5573,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3188,7 +3362,8 @@
         "total": 22077000000.0
       },
       "net_zakaatable": 5872000000.0,
-      "net_zakaatable_broad": 14977000000.0
+      "net_zakaatable_broad": 14977000000.0,
+      "net_zakaatable_assets_only": 37054000000.0
     },
     {
       "name": "Procter & Gamble",
@@ -3197,6 +3372,7 @@
       "weight": 1.3,
       "zakaatable_pct": 0,
       "zakaatable_pct_broad": 0,
+      "zakaatable_pct_assets_only": 7.0765,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3225,7 +3401,8 @@
         "total": 36698000000.0
       },
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 0
+      "net_zakaatable_broad": 0,
+      "net_zakaatable_assets_only": 26588000000.0
     },
     {
       "name": "QUALCOMM",
@@ -3234,6 +3411,7 @@
       "weight": 0.58,
       "zakaatable_pct": 12.6976,
       "zakaatable_pct_broad": 12.6976,
+      "zakaatable_pct_assets_only": 16.3174,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3262,7 +3440,8 @@
         "total": 5459000000.0
       },
       "net_zakaatable": 19149000000.0,
-      "net_zakaatable_broad": 19149000000.0
+      "net_zakaatable_broad": 19149000000.0,
+      "net_zakaatable_assets_only": 24608000000.0
     },
     {
       "name": "S&P Global",
@@ -3271,6 +3450,7 @@
       "weight": 0.52,
       "zakaatable_pct": 3.667,
       "zakaatable_pct_broad": 4.1486,
+      "zakaatable_pct_assets_only": 5.3528,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3299,7 +3479,8 @@
         "total": 1508000000.0
       },
       "net_zakaatable": 4592000000.0,
-      "net_zakaatable_broad": 5195000000.0
+      "net_zakaatable_broad": 5195000000.0,
+      "net_zakaatable_assets_only": 6703000000.0
     },
     {
       "name": "Salesforce",
@@ -3308,6 +3489,7 @@
       "weight": 1.06,
       "zakaatable_pct": 11.008,
       "zakaatable_pct_broad": 17.1589,
+      "zakaatable_pct_assets_only": 17.1589,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -3336,7 +3518,8 @@
         "total": 0.0
       },
       "net_zakaatable": 19228000000.0,
-      "net_zakaatable_broad": 29972000000.0
+      "net_zakaatable_broad": 29972000000.0,
+      "net_zakaatable_assets_only": 29972000000.0
     },
     {
       "name": "ServiceNow",
@@ -3345,6 +3528,7 @@
       "weight": 0.74,
       "zakaatable_pct": 7.8792,
       "zakaatable_pct_broad": 13.6774,
+      "zakaatable_pct_assets_only": 14.7935,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3373,7 +3557,8 @@
         "total": 1226000000.0
       },
       "net_zakaatable": 8655000000.0,
-      "net_zakaatable_broad": 15024000000.0
+      "net_zakaatable_broad": 15024000000.0,
+      "net_zakaatable_assets_only": 16250000000.0
     },
     {
       "name": "Starbucks",
@@ -3382,6 +3567,7 @@
       "weight": 0.34,
       "zakaatable_pct": 1.9361,
       "zakaatable_pct_broad": 4.0963,
+      "zakaatable_pct_assets_only": 8.9598,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3410,7 +3596,8 @@
         "total": 5225700000.0
       },
       "net_zakaatable": 2080300000.0,
-      "net_zakaatable_broad": 4401400000.0
+      "net_zakaatable_broad": 4401400000.0,
+      "net_zakaatable_assets_only": 9627100000.0
     },
     {
       "name": "Tesla",
@@ -3419,6 +3606,7 @@
       "weight": 3.72,
       "zakaatable_pct": 3.1594,
       "zakaatable_pct_broad": 3.6188,
+      "zakaatable_pct_assets_only": 5.0132,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3447,7 +3635,8 @@
         "total": 21018000000.0
       },
       "net_zakaatable": 47624000000.0,
-      "net_zakaatable_broad": 54549000000.0
+      "net_zakaatable_broad": 54549000000.0,
+      "net_zakaatable_assets_only": 75567000000.0
     },
     {
       "name": "Texas Instruments",
@@ -3456,6 +3645,7 @@
       "weight": 0.56,
       "zakaatable_pct": 5.9116,
       "zakaatable_pct_broad": 6.383,
+      "zakaatable_pct_assets_only": 7.1741,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3484,7 +3674,8 @@
         "total": 1623000000.0
       },
       "net_zakaatable": 12127000000.0,
-      "net_zakaatable_broad": 13094000000.0
+      "net_zakaatable_broad": 13094000000.0,
+      "net_zakaatable_assets_only": 14717000000.0
     },
     {
       "name": "Thermo Fisher Scientific",
@@ -3493,6 +3684,7 @@
       "weight": 0.66,
       "zakaatable_pct": 5.4064,
       "zakaatable_pct_broad": 5.4064,
+      "zakaatable_pct_assets_only": 11.7494,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -3521,7 +3713,8 @@
         "total": 12036000000.0
       },
       "net_zakaatable": 10259000000.0,
-      "net_zakaatable_broad": 10259000000.0
+      "net_zakaatable_broad": 10259000000.0,
+      "net_zakaatable_assets_only": 22295000000.0
     },
     {
       "name": "Uber Technologies",
@@ -3530,6 +3723,7 @@
       "weight": 0.42,
       "zakaatable_pct": 4.957,
       "zakaatable_pct_broad": 18.873,
+      "zakaatable_pct_assets_only": 22.7974,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3558,7 +3752,8 @@
         "total": 5724000000.0
       },
       "net_zakaatable": 7230000000.0,
-      "net_zakaatable_broad": 27527000000.0
+      "net_zakaatable_broad": 27527000000.0,
+      "net_zakaatable_assets_only": 33251000000.0
     },
     {
       "name": "Union Pacific",
@@ -3567,6 +3762,7 @@
       "weight": 0.46,
       "zakaatable_pct": 0.6965,
       "zakaatable_pct_broad": 2.5452,
+      "zakaatable_pct_assets_only": 4.7675,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3595,7 +3791,8 @@
         "total": 3468000000.0
       },
       "net_zakaatable": 1087000000.0,
-      "net_zakaatable_broad": 3972000000.0
+      "net_zakaatable_broad": 3972000000.0,
+      "net_zakaatable_assets_only": 7440000000.0
     },
     {
       "name": "United Parcel Service",
@@ -3604,6 +3801,7 @@
       "weight": 0.3,
       "zakaatable_pct": 8.9122,
       "zakaatable_pct_broad": 9.0723,
+      "zakaatable_pct_assets_only": 19.4024,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -3632,7 +3830,8 @@
         "total": 10192000000.0
       },
       "net_zakaatable": 8793000000.0,
-      "net_zakaatable_broad": 8951000000.0
+      "net_zakaatable_broad": 8951000000.0,
+      "net_zakaatable_assets_only": 19143000000.0
     },
     {
       "name": "UnitedHealth",
@@ -3641,6 +3840,7 @@
       "weight": 1.53,
       "zakaatable_pct": 4.2352,
       "zakaatable_pct_broad": 24.4267,
+      "zakaatable_pct_assets_only": 56.4121,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -3669,7 +3869,8 @@
         "total": 83951000000.0
       },
       "net_zakaatable": 11116000000.0,
-      "net_zakaatable_broad": 64112000000.0
+      "net_zakaatable_broad": 64112000000.0,
+      "net_zakaatable_assets_only": 148063000000.0
     },
     {
       "name": "Visa",
@@ -3678,6 +3879,7 @@
       "weight": 1.8,
       "zakaatable_pct": 2.7716,
       "zakaatable_pct_broad": 2.8506,
+      "zakaatable_pct_assets_only": 4.6467,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3706,7 +3908,8 @@
         "total": 11004000000.0
       },
       "net_zakaatable": 16981000000.0,
-      "net_zakaatable_broad": 17465000000.0
+      "net_zakaatable_broad": 17465000000.0,
+      "net_zakaatable_assets_only": 28469000000.0
     },
     {
       "name": "Walmart",
@@ -3715,6 +3918,7 @@
       "weight": 1.29,
       "zakaatable_pct": 0,
       "zakaatable_pct_broad": 0,
+      "zakaatable_pct_assets_only": 8.8382,
       "fallback": false,
       "error": null,
       "bs_date": "2025-10-31",
@@ -3743,7 +3947,8 @@
         "total": 111390000000.0
       },
       "net_zakaatable": 0,
-      "net_zakaatable_broad": 0
+      "net_zakaatable_broad": 0,
+      "net_zakaatable_assets_only": 92920000000.0
     },
     {
       "name": "Prologis REITs",
@@ -3752,6 +3957,7 @@
       "weight": 0.32,
       "zakaatable_pct": 0.0401,
       "zakaatable_pct_broad": 8.5412,
+      "zakaatable_pct_assets_only": 10.2108,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3780,7 +3986,8 @@
         "total": 2180245000.0
       },
       "net_zakaatable": 52312000.0,
-      "net_zakaatable_broad": 11153934000.0
+      "net_zakaatable_broad": 11153934000.0,
+      "net_zakaatable_assets_only": 13334179000.0
     },
     {
       "name": "Alibaba Holding ADR",
@@ -3789,6 +3996,7 @@
       "weight": 0.27,
       "zakaatable_pct": 9.1818,
       "zakaatable_pct_broad": 33.5046,
+      "zakaatable_pct_assets_only": 48.1516,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -3817,7 +4025,8 @@
         "total": 372645000000.0
       },
       "net_zakaatable": 233600000000.0,
-      "net_zakaatable_broad": 852415000000.0
+      "net_zakaatable_broad": 852415000000.0,
+      "net_zakaatable_assets_only": 1225060000000.0
     },
     {
       "name": "JD.com ADR",
@@ -3826,6 +4035,7 @@
       "weight": 0.06,
       "zakaatable_pct": 33.6961,
       "zakaatable_pct_broad": 79.169,
+      "zakaatable_pct_assets_only": 100,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -3854,7 +4064,8 @@
         "total": 264880000000.0
       },
       "net_zakaatable": 93047000000.0,
-      "net_zakaatable_broad": 218614000000.0
+      "net_zakaatable_broad": 218614000000.0,
+      "net_zakaatable_assets_only": 483494000000.0
     },
     {
       "name": "Pinduoduo ADR",
@@ -3863,6 +4074,7 @@
       "weight": 0.26,
       "zakaatable_pct": 25.238,
       "zakaatable_pct_broad": 25.3055,
+      "zakaatable_pct_assets_only": 44.9438,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -3891,7 +4103,8 @@
         "total": 194892242000.0
       },
       "net_zakaatable": 250464652000.0,
-      "net_zakaatable_broad": 251134906000.0
+      "net_zakaatable_broad": 251134906000.0,
+      "net_zakaatable_assets_only": 446027148000.0
     },
     {
       "name": "Infosys ADR",
@@ -3900,6 +4113,7 @@
       "weight": 0.31,
       "zakaatable_pct": 10.8547,
       "zakaatable_pct_broad": 13.9785,
+      "zakaatable_pct_assets_only": 18.4014,
       "fallback": false,
       "error": null,
       "bs_date": "2025-12-31",
@@ -3928,7 +4142,8 @@
         "total": 2642000000.0
       },
       "net_zakaatable": 6484000000.0,
-      "net_zakaatable_broad": 8350000000.0
+      "net_zakaatable_broad": 8350000000.0,
+      "net_zakaatable_assets_only": 10992000000.0
     },
     {
       "name": "Taiwan Semiconductor Manufacturing ADR",
@@ -3937,6 +4152,7 @@
       "weight": 0.3,
       "zakaatable_pct": 4.4969,
       "zakaatable_pct_broad": 4.8582,
+      "zakaatable_pct_assets_only": 6.242,
       "fallback": false,
       "error": null,
       "bs_date": "2025-09-30",
@@ -3965,7 +4181,8 @@
         "total": 808539315000.0
       },
       "net_zakaatable": 2627453709000.0,
-      "net_zakaatable_broad": 2838530096000.0
+      "net_zakaatable_broad": 2838530096000.0,
+      "net_zakaatable_assets_only": 3647069411000.0
     }
   ]
 }

@@ -1,11 +1,12 @@
 {
-  "computed_at": "2026-02-17T15:26:11.961121Z",
+  "computed_at": "2026-02-17T17:49:21.776945Z",
   "holdings": [
     {
       "name": "AST SpaceMobile",
       "ticker": "ASTS",
       "zakaatable_pct": 3.8399,
       "zakaatable_pct_broad": 3.8399,
+      "zakaatable_pct_assets_only": 4.1824,
       "current_price": 80.5503,
       "price_gbp": 59.1015,
       "trading_currency": "USD",
@@ -36,13 +37,15 @@
         "total": 102511000.0
       },
       "net_zakaatable": 1149384000.0,
-      "net_zakaatable_broad": 1149384000.0
+      "net_zakaatable_broad": 1149384000.0,
+      "net_zakaatable_assets_only": 1251895000.0
     },
     {
       "name": "NVIDIA",
       "ticker": "NVDA",
       "zakaatable_pct": 2.1748,
       "zakaatable_pct_broad": 2.7034,
+      "zakaatable_pct_assets_only": 3.1796,
       "current_price": 180.49,
       "price_gbp": 132.4295,
       "trading_currency": "USD",
@@ -73,13 +76,15 @@
         "total": 20924000000.0
       },
       "net_zakaatable": 95568000000.0,
-      "net_zakaatable_broad": 118798000000.0
+      "net_zakaatable_broad": 118798000000.0,
+      "net_zakaatable_assets_only": 139722000000.0
     },
     {
       "name": "Alphabet (Class A)",
       "ticker": "GOOGL",
       "zakaatable_pct": 3.5565,
       "zakaatable_pct_broad": 5.712,
+      "zakaatable_pct_assets_only": 7.8639,
       "current_price": 298.32,
       "price_gbp": 218.8839,
       "trading_currency": "USD",
@@ -110,13 +115,15 @@
         "total": 77671000000.0
       },
       "net_zakaatable": 128367000000.0,
-      "net_zakaatable_broad": 206167000000.0
+      "net_zakaatable_broad": 206167000000.0,
+      "net_zakaatable_assets_only": 283838000000.0
     },
     {
       "name": "Meta Platforms",
       "ticker": "META",
       "zakaatable_pct": 5.4062,
       "zakaatable_pct_broad": 7.1238,
+      "zakaatable_pct_assets_only": 8.5019,
       "current_price": 633.525,
       "price_gbp": 464.8312,
       "trading_currency": "USD",
@@ -147,13 +154,15 @@
         "total": 22085000000.0
       },
       "net_zakaatable": 86637000000.0,
-      "net_zakaatable_broad": 114161000000.0
+      "net_zakaatable_broad": 114161000000.0,
+      "net_zakaatable_assets_only": 136246000000.0
     },
     {
       "name": "Apple",
       "ticker": "AAPL",
       "zakaatable_pct": 1.9277,
       "zakaatable_pct_broad": 3.9652,
+      "zakaatable_pct_assets_only": 6.1733,
       "current_price": 260.09,
       "price_gbp": 190.8338,
       "trading_currency": "USD",
@@ -184,13 +193,15 @@
         "total": 84411000000.0
       },
       "net_zakaatable": 73693000000.0,
-      "net_zakaatable_broad": 151581000000.0
+      "net_zakaatable_broad": 151581000000.0,
+      "net_zakaatable_assets_only": 235992000000.0
     },
     {
       "name": "Microsoft",
       "ticker": "MSFT",
       "zakaatable_pct": 4.6082,
       "zakaatable_pct_broad": 5.3268,
+      "zakaatable_pct_assets_only": 6.8253,
       "current_price": 397.06,
       "price_gbp": 291.3317,
       "trading_currency": "USD",
@@ -221,13 +232,15 @@
         "total": 44215000000.0
       },
       "net_zakaatable": 135969000000.0,
-      "net_zakaatable_broad": 157171000000.0
+      "net_zakaatable_broad": 157171000000.0,
+      "net_zakaatable_assets_only": 201386000000.0
     },
     {
       "name": "Amazon",
       "ticker": "AMZN",
       "zakaatable_pct": 1.4847,
       "zakaatable_pct_broad": 1.4847,
+      "zakaatable_pct_assets_only": 10.7452,
       "current_price": 198.63,
       "price_gbp": 145.7392,
       "trading_currency": "USD",
@@ -258,13 +271,15 @@
         "total": 197429000000.0
       },
       "net_zakaatable": 31654000000.0,
-      "net_zakaatable_broad": 31654000000.0
+      "net_zakaatable_broad": 31654000000.0,
+      "net_zakaatable_assets_only": 229083000000.0
     },
     {
       "name": "Rocket Lab",
       "ticker": "RKLB",
       "zakaatable_pct": 3.2825,
       "zakaatable_pct_broad": 3.413,
+      "zakaatable_pct_assets_only": 3.685,
       "current_price": 66.265,
       "price_gbp": 48.6201,
       "trading_currency": "USD",
@@ -295,13 +310,15 @@
         "total": 96280000.0
       },
       "net_zakaatable": 1161873000.0,
-      "net_zakaatable_broad": 1208075000.0
+      "net_zakaatable_broad": 1208075000.0,
+      "net_zakaatable_assets_only": 1304355000.0
     },
     {
       "name": "Atos",
       "ticker": "ATO.PA",
       "zakaatable_pct": 100,
       "zakaatable_pct_broad": 100,
+      "zakaatable_pct_assets_only": 100,
       "current_price": 41.305,
       "price_gbp": 35.9193,
       "trading_currency": "EUR",
@@ -332,7 +349,8 @@
         "total": 567000000.0
       },
       "net_zakaatable": 2988000000.0,
-      "net_zakaatable_broad": 3290000000.0
+      "net_zakaatable_broad": 3290000000.0,
+      "net_zakaatable_assets_only": 3857000000.0
     }
   ]
 }

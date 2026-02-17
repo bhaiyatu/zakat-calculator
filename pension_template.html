@@ -35,6 +35,22 @@
         .sort-btn::after { content: ' \2195'; font-size: 0.7em; opacity: 0.4; }
         .sort-btn.asc::after { content: ' \2191'; opacity: 1; }
         .sort-btn.desc::after { content: ' \2193'; opacity: 1; }
+        .method-pill {
+            border: 1px solid #dbe3eb;
+            background: #f8fafc;
+            color: #475569;
+            border-radius: 0.75rem;
+            padding: 0.55rem 0.75rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .method-pill:hover { border-color: #0d7377; color: #0d7377; }
+        .method-pill.active {
+            background: #0d7377;
+            border-color: #0d7377;
+            color: #ffffff;
+        }
         input[type="number"]::-webkit-inner-spin-button,
         input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
         input[type="number"] { -moz-appearance: textfield; }
@@ -63,18 +79,13 @@
 
         <!-- Method Toggle -->
         <div class="bg-white rounded-2xl shadow-sm border border-sand p-4 mb-4 max-w-3xl mx-auto">
-            <div class="flex items-center justify-between gap-4">
-                <div class="flex-1">
-                    <p class="text-sm font-semibold text-slate-700" id="methodLabel">Current Assets Only</p>
-                    <p class="text-xs text-slate-400" id="methodDesc">Cash, receivables, inventory &mdash; conservative approach</p>
-                </div>
-                <label class="relative inline-flex items-center cursor-pointer shrink-0">
-                    <input type="checkbox" id="methodToggle" class="sr-only peer">
-                    <div class="w-14 h-7 bg-teal-600 peer-checked:bg-amber-500 rounded-full transition-colors duration-300 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all after:duration-300 peer-checked:after:translate-x-7"></div>
-                </label>
-                <div class="flex-1 text-right">
-                    <p class="text-sm font-semibold text-slate-400 peer-checked:text-slate-700" id="methodLabelBroad">All Liquid Assets</p>
-                    <p class="text-xs text-slate-400" id="methodDescBroad">Includes long-term investments &mdash; IFG approach</p>
+            <div>
+                <p class="text-sm font-semibold text-slate-700" id="methodLabel">Current Assets Only</p>
+                <p class="text-xs text-slate-400 mt-1" id="methodDesc">Cash, receivables, inventory minus deductible liabilities.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
+                    <button class="method-pill active" data-method="strict">Current Assets Only</button>
+                    <button class="method-pill" data-method="broad">All Liquid Assets</button>
+                    <button class="method-pill" data-method="assets_only">Liquid Assets Only (No Liabilities)</button>
                 </div>
             </div>
         </div>
@@ -235,8 +246,10 @@
 
                 <h3 class="font-semibold text-slate-800 mt-4">Formula</h3>
                 <div class="bg-slate-50 rounded-lg p-4 font-mono text-xs leading-loose">
-                    Net Zakaatable = max(Assets - Liabilities, 0)<br>
-                    Company Zakaatable % = min(Net Zakaatable / Market Cap &times; 100, 100%)<br>
+                    Strict = max(Current Assets - Liabilities, 0)<br>
+                    Broad = max(All Liquid Assets - Liabilities, 0)<br>
+                    Assets-Only = All Liquid Assets (no liabilities deducted)<br>
+                    Company Zakaatable % = min(Method Amount / Market Cap &times; 100, 100%)<br>
                     Fund Zakaatable % = &Sigma;(Company % &times; Weight) + Cash Allocation<br>
                     <strong>Zakat = Pension Value &times; Fund Zakaatable % &times; 2.5%</strong>
                 </div>
@@ -271,14 +284,51 @@
     let sortDir = 'desc';
     let searchTerm = '';
     let countryFilter = '';
-    let useBroad = false;  // false = strict (current assets only), true = broad (all liquid assets / IFG)
+    const METHOD_META = {
+        strict: {
+            label: 'Current Assets Only',
+            desc: 'Cash, receivables, inventory minus deductible liabilities.',
+        },
+        broad: {
+            label: 'All Liquid Assets',
+            desc: 'Adds non-current liquid assets, still deducts liabilities.',
+        },
+        assets_only: {
+            label: 'Liquid Assets Only (No Liabilities)',
+            desc: 'Uses broad liquid assets and skips all liability deductions.',
+        },
+    };
+    let activeMethod = 'strict';
 
-    // Helper to get the active fund % based on toggle
+    function usingBroadAssets() {
+        return activeMethod === 'broad' || activeMethod === 'assets_only';
+    }
+
     function activeFundPct() {
-        return useBroad ? DATA.fund_zakaatable_pct_broad : DATA.fund_zakaatable_pct;
+        if (activeMethod === 'assets_only') {
+            return DATA.fund_zakaatable_pct_assets_only ?? DATA.fund_zakaatable_pct_broad ?? DATA.fund_zakaatable_pct;
+        }
+        if (activeMethod === 'broad') {
+            return DATA.fund_zakaatable_pct_broad ?? DATA.fund_zakaatable_pct;
+        }
+        return DATA.fund_zakaatable_pct;
     }
     function activeCompanyPct(h) {
-        return useBroad ? (h.zakaatable_pct_broad ?? h.zakaatable_pct) : h.zakaatable_pct;
+        if (activeMethod === 'assets_only') {
+            return h.zakaatable_pct_assets_only ?? h.zakaatable_pct_broad ?? h.zakaatable_pct;
+        }
+        if (activeMethod === 'broad') {
+            return h.zakaatable_pct_broad ?? h.zakaatable_pct;
+        }
+        return h.zakaatable_pct;
+    }
+    function refreshMethodUi() {
+        const meta = METHOD_META[activeMethod] || METHOD_META.strict;
+        document.getElementById('methodLabel').textContent = meta.label;
+        document.getElementById('methodDesc').textContent = meta.desc;
+        document.querySelectorAll('.method-pill').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.method === activeMethod);
+        });
     }
 
     // Init
@@ -302,15 +352,12 @@
         document.getElementById('searchInput').addEventListener('input', e => { searchTerm = e.target.value.toLowerCase(); renderTable(); });
         document.getElementById('countryFilter').addEventListener('change', e => { countryFilter = e.target.value; renderTable(); });
 
-        // Method toggle listener
-        document.getElementById('methodToggle').addEventListener('change', e => {
-            useBroad = e.target.checked;
-            // Update toggle label styling
-            document.getElementById('methodLabel').className = useBroad
-                ? 'text-sm font-semibold text-slate-400' : 'text-sm font-semibold text-slate-700';
-            document.getElementById('methodLabelBroad').className = useBroad
-                ? 'text-sm font-semibold text-slate-700' : 'text-sm font-semibold text-slate-400';
-            refreshDisplay();
+        document.querySelectorAll('.method-pill').forEach(btn => {
+            btn.addEventListener('click', () => {
+                activeMethod = btn.dataset.method;
+                refreshMethodUi();
+                refreshDisplay();
+            });
         });
 
         document.querySelectorAll('.sort-btn').forEach(btn => {
@@ -336,6 +383,7 @@
             arrow.textContent = content.classList.contains('hidden') ? '+' : '\u2212';
         });
 
+        refreshMethodUi();
         refreshDisplay();
     }
 
@@ -417,7 +465,7 @@
                 : pct < 25 ? 'text-amber-700'
                 : 'text-rose-700';
 
-            const assetsTotal = useBroad ? (assetsBroad.total || assets.total || 0) : (assets.total || 0);
+            const assetsTotal = usingBroadAssets() ? (assetsBroad.total || assets.total || 0) : (assets.total || 0);
 
             return `<tr class="hover:bg-slate-50/50 transition-colors">
                 <td class="px-4 py-3">

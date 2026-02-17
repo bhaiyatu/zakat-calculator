@@ -30,6 +30,22 @@
         .pattern-bg {
             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d7377' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
+        .method-pill {
+            border: 1px solid #dbe3eb;
+            background: #f8fafc;
+            color: #475569;
+            border-radius: 0.75rem;
+            padding: 0.55rem 0.75rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .method-pill:hover { border-color: #0d7377; color: #0d7377; }
+        .method-pill.active {
+            background: #0d7377;
+            border-color: #0d7377;
+            color: #ffffff;
+        }
         input[type="number"]::-webkit-inner-spin-button,
         input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
         input[type="number"] { -moz-appearance: textfield; }
@@ -55,18 +71,13 @@
 
         <!-- Method Toggle -->
         <div class="bg-white rounded-2xl shadow-sm border border-sand p-4 mb-4 max-w-3xl mx-auto">
-            <div class="flex items-center justify-between gap-4">
-                <div class="flex-1">
-                    <p class="text-sm font-semibold text-slate-700" id="methodLabel">Current Assets Only</p>
-                    <p class="text-xs text-slate-400" id="methodDesc">Cash, receivables, inventory &mdash; conservative approach</p>
-                </div>
-                <label class="relative inline-flex items-center cursor-pointer shrink-0">
-                    <input type="checkbox" id="methodToggle" class="sr-only peer">
-                    <div class="w-14 h-7 bg-teal-600 peer-checked:bg-amber-500 rounded-full transition-colors duration-300 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all after:duration-300 peer-checked:after:translate-x-7"></div>
-                </label>
-                <div class="flex-1 text-right">
-                    <p class="text-sm font-semibold text-slate-400" id="methodLabelBroad">All Liquid Assets</p>
-                    <p class="text-xs text-slate-400" id="methodDescBroad">Includes long-term investments &mdash; IFG approach</p>
+            <div>
+                <p class="text-sm font-semibold text-slate-700" id="methodLabel">Current Assets Only</p>
+                <p class="text-xs text-slate-400 mt-1" id="methodDesc">Cash, receivables, inventory minus deductible liabilities.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
+                    <button class="method-pill active" data-method="strict">Current Assets Only</button>
+                    <button class="method-pill" data-method="broad">All Liquid Assets</button>
+                    <button class="method-pill" data-method="assets_only">Liquid Assets Only (No Liabilities)</button>
                 </div>
             </div>
         </div>
@@ -105,8 +116,10 @@
             <div id="methContent" class="hidden mt-6 text-sm text-slate-600 space-y-4 leading-relaxed">
                 <p>Each stock's zakaatable percentage is calculated from its actual balance sheet. The formula is:</p>
                 <div class="bg-slate-50 rounded-lg p-4 font-mono text-xs leading-loose">
-                    Net Zakaatable Assets = (Cash + Receivables + Inventory + Other Current) - (Payables + Short-term Debt + Accrued Expenses + Taxes)<br>
-                    Zakaatable % = Net Zakaatable Assets / Market Cap &times; 100<br>
+                    Strict = max(Current Assets - Liabilities, 0)<br>
+                    Broad = max(All Liquid Assets - Liabilities, 0)<br>
+                    Assets-Only = All Liquid Assets (no liabilities deducted)<br>
+                    Zakaatable % = Method Amount / Market Cap &times; 100<br>
                     <strong>Your Zakat = Shares &times; Price &times; Zakaatable % &times; 2.5%</strong>
                 </div>
                 <p>Deferred revenue, lease liabilities, long-term debt, and deferred taxes are <strong>not</strong> deducted from assets, as they are not genuine current debts in the zakat sense.</p>
@@ -130,31 +143,62 @@
         return n.toFixed(0);
     };
 
-    // State
-    let useBroad = false;
+    const METHOD_META = {
+        strict: {
+            label: 'Current Assets Only',
+            desc: 'Cash, receivables, inventory minus deductible liabilities.',
+        },
+        broad: {
+            label: 'All Liquid Assets',
+            desc: 'Adds non-current liquid assets, still deducts liabilities.',
+        },
+        assets_only: {
+            label: 'Liquid Assets Only (No Liabilities)',
+            desc: 'Uses broad liquid assets and skips all liability deductions.',
+        },
+    };
+    let activeMethod = 'strict';
     const inputs = {};
     DATA.holdings.forEach(h => {
         inputs[h.ticker] = { mode: 'shares', shares: 0, value: 0 };
     });
 
+    function usingBroadAssets() {
+        return activeMethod === 'broad' || activeMethod === 'assets_only';
+    }
+
     function activeCompanyPct(h) {
-        return useBroad ? (h.zakaatable_pct_broad ?? h.zakaatable_pct) : h.zakaatable_pct;
+        if (activeMethod === 'assets_only') {
+            return h.zakaatable_pct_assets_only ?? h.zakaatable_pct_broad ?? h.zakaatable_pct;
+        }
+        if (activeMethod === 'broad') {
+            return h.zakaatable_pct_broad ?? h.zakaatable_pct;
+        }
+        return h.zakaatable_pct;
+    }
+
+    function refreshMethodUi() {
+        const meta = METHOD_META[activeMethod] || METHOD_META.strict;
+        document.getElementById('methodLabel').textContent = meta.label;
+        document.getElementById('methodDesc').textContent = meta.desc;
+        document.querySelectorAll('.method-pill').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.method === activeMethod);
+        });
     }
 
     function init() {
         document.getElementById('dataTimestamp').textContent = 'Data: ' + new Date(DATA.computed_at).toLocaleDateString('en-GB');
 
-        // Method toggle listener
-        document.getElementById('methodToggle').addEventListener('change', e => {
-            useBroad = e.target.checked;
-            document.getElementById('methodLabel').className = useBroad
-                ? 'text-sm font-semibold text-slate-400' : 'text-sm font-semibold text-slate-700';
-            document.getElementById('methodLabelBroad').className = useBroad
-                ? 'text-sm font-semibold text-slate-700' : 'text-sm font-semibold text-slate-400';
-            renderCards();
-            recalcAll();
+        document.querySelectorAll('.method-pill').forEach(btn => {
+            btn.addEventListener('click', () => {
+                activeMethod = btn.dataset.method;
+                refreshMethodUi();
+                renderCards();
+                recalcAll();
+            });
         });
 
+        refreshMethodUi();
         renderCards();
 
         // Methodology section toggle
@@ -185,11 +229,11 @@
             const liabs = h.liabilities || {};
 
             // Show appropriate assets total based on method
-            const assetsTotal = useBroad ? (assetsBroad.total || assets.total || 0) : (assets.total || 0);
+            const assetsTotal = usingBroadAssets() ? (assetsBroad.total || assets.total || 0) : (assets.total || 0);
 
             // Build the broad extra rows if using broad method and data exists
             let broadRows = '';
-            if (useBroad && assetsBroad.nc_liquid_total) {
+            if (usingBroadAssets() && assetsBroad.nc_liquid_total) {
                 broadRows = `
                     <div class="font-medium text-amber-700 col-span-2 mt-2 mb-1">+ Non-Current Liquid Assets (Broad)</div>
                     <div>Long-term Investments</div><div class="text-right font-mono">${assetsBroad.nc_investments ? fmtCompact(assetsBroad.nc_investments) : '-'}</div>

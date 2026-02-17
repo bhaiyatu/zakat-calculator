@@ -12,8 +12,10 @@ Methodology:
   NOT deducted: deferred revenue, lease liabilities, long-term debt, deferred taxes,
                 pension obligations, provisions, OtherCurrentLiabilities (too opaque)
 
-  Net Zakaatable = max(Zakaatable Assets - Deductible Liabilities, 0)
-  Zakaatable % = min(Net Zakaatable / Market Cap * 100, 100)
+  Strict Net Zakaatable = max(Current Assets - Deductible Liabilities, 0)
+  Broad Net Zakaatable = max(All Liquid Assets - Deductible Liabilities, 0)
+  Assets-Only Zakaatable = All Liquid Assets (no liability deductions)
+  Zakaatable % = min(Method Amount / Market Cap * 100, 100)
 
   Fund Zakaatable % = weighted sum of company zakaatable % + cash allocation
   Zakat = Value * Fund Zakaatable % * 2.5%
@@ -193,6 +195,7 @@ def fetch_company(ticker_symbol):
     total_deductions = payables + current_debt + accrued + taxes
     net_zakaatable_strict = max(gross_zakaatable - total_deductions, 0)
     net_zakaatable_broad = max(gross_zakaatable_broad - total_deductions, 0)
+    net_zakaatable_assets_only = gross_zakaatable_broad
 
     # If all balance sheet values are 0 (all NaN), treat as missing data
     all_zero = (cash_sti == 0 and receivables == 0 and inventory == 0
@@ -242,6 +245,7 @@ def fetch_company(ticker_symbol):
         },
         "net_zakaatable": net_zakaatable_strict,
         "net_zakaatable_broad": net_zakaatable_broad,
+        "net_zakaatable_assets_only": net_zakaatable_assets_only,
         "error": None,
         "fallback": False,
     }
@@ -311,26 +315,34 @@ def _convert_and_calc_pct(net_val, market_cap, fin_curr, trade_curr, fx_rates):
 
 
 def compute_zakaatable_pcts(company_data, fx_rates):
-    """Compute both strict and broad zakaatable % for a single company.
-    Returns (strict_pct, broad_pct)."""
+    """Compute strict, broad, and assets-only zakaatable % for a company.
+    Returns (strict_pct, broad_pct, assets_only_pct)."""
     if company_data.get("fallback"):
         fb = company_data.get("zakaatable_pct", 25.0)
-        return fb, fb
+        return fb, fb, fb
 
     market_cap = company_data.get("market_cap", 0)
     if not market_cap or market_cap <= 0:
-        return 25.0, 25.0
+        return 25.0, 25.0, 25.0
 
     fin_curr = company_data.get("financial_currency", "USD")
     trade_curr = company_data.get("trading_currency", "USD")
 
     net_strict = company_data.get("net_zakaatable", 0)
     net_broad = company_data.get("net_zakaatable_broad", net_strict)
+    assets_only = company_data.get(
+        "net_zakaatable_assets_only",
+        company_data.get("assets_broad", {}).get(
+            "total",
+            company_data.get("assets", {}).get("total", net_broad),
+        ),
+    )
 
     pct_strict = _convert_and_calc_pct(net_strict, market_cap, fin_curr, trade_curr, fx_rates)
     pct_broad = _convert_and_calc_pct(net_broad, market_cap, fin_curr, trade_curr, fx_rates)
+    pct_assets_only = _convert_and_calc_pct(assets_only, market_cap, fin_curr, trade_curr, fx_rates)
 
-    return pct_strict, pct_broad
+    return pct_strict, pct_broad, pct_assets_only
 
 
 def compute_pension_data(fund_holdings, balance_sheets, fx_rates):
@@ -342,7 +354,7 @@ def compute_pension_data(fund_holdings, balance_sheets, fx_rates):
         ticker = h["ticker"]
         bs_data = balance_sheets.get(ticker, {})
 
-        pct_strict, pct_broad = compute_zakaatable_pcts(bs_data, fx_rates)
+        pct_strict, pct_broad, pct_assets_only = compute_zakaatable_pcts(bs_data, fx_rates)
 
         entry = {
             "name": h["name"],
@@ -351,6 +363,7 @@ def compute_pension_data(fund_holdings, balance_sheets, fx_rates):
             "weight": h["weight"],
             "zakaatable_pct": pct_strict,
             "zakaatable_pct_broad": pct_broad,
+            "zakaatable_pct_assets_only": pct_assets_only,
             "fallback": bs_data.get("fallback", True),
             "error": bs_data.get("error"),
             "bs_date": bs_data.get("bs_date", "N/A"),
@@ -362,16 +375,27 @@ def compute_pension_data(fund_holdings, balance_sheets, fx_rates):
             "liabilities": bs_data.get("liabilities", {}),
             "net_zakaatable": bs_data.get("net_zakaatable", 0),
             "net_zakaatable_broad": bs_data.get("net_zakaatable_broad", 0),
+            "net_zakaatable_assets_only": bs_data.get(
+                "net_zakaatable_assets_only",
+                bs_data.get("assets_broad", {}).get(
+                    "total",
+                    bs_data.get("assets", {}).get("total", 0),
+                ),
+            ),
         }
         results.append(entry)
 
         status = "FALLBACK" if entry["fallback"] else "OK"
-        print(f"  {h['name']:<40} weight={h['weight']:5.2f}%  strict={pct_strict:6.2f}%  broad={pct_broad:6.2f}%  [{status}]")
+        print(
+            f"  {h['name']:<40} weight={h['weight']:5.2f}%  "
+            f"strict={pct_strict:6.2f}%  broad={pct_broad:6.2f}%  assets_only={pct_assets_only:6.2f}%  [{status}]"
+        )
 
     # Compute fund-level zakaatable %
     cash_contrib = fund_holdings["fund_cash_pct"]  # cash is 100% zakaatable
     fund_pct_strict = sum(r["weight"] * r["zakaatable_pct"] / 100 for r in results) + cash_contrib
     fund_pct_broad = sum(r["weight"] * r["zakaatable_pct_broad"] / 100 for r in results) + cash_contrib
+    fund_pct_assets_only = sum(r["weight"] * r["zakaatable_pct_assets_only"] / 100 for r in results) + cash_contrib
 
     pension_data = {
         "fund_name": fund_holdings["fund_name"],
@@ -380,6 +404,7 @@ def compute_pension_data(fund_holdings, balance_sheets, fx_rates):
         "fund_cash_pct": fund_holdings["fund_cash_pct"],
         "fund_zakaatable_pct": round(fund_pct_strict, 4),
         "fund_zakaatable_pct_broad": round(fund_pct_broad, 4),
+        "fund_zakaatable_pct_assets_only": round(fund_pct_assets_only, 4),
         "computed_at": datetime.utcnow().isoformat() + "Z",
         "holdings": results,
     }
@@ -388,7 +413,10 @@ def compute_pension_data(fund_holdings, balance_sheets, fx_rates):
     with open(out_path, "w") as f:
         json.dump(pension_data, f, indent=2)
 
-    print(f"\n  Fund zakaatable %:  strict={fund_pct_strict:.4f}%  broad={fund_pct_broad:.4f}%")
+    print(
+        "\n  Fund zakaatable %:  "
+        f"strict={fund_pct_strict:.4f}%  broad={fund_pct_broad:.4f}%  assets_only={fund_pct_assets_only:.4f}%"
+    )
     print(f"  (vs common 25% estimate)")
     print(f"  Saved to {out_path}")
 
@@ -402,7 +430,7 @@ def compute_isa_data(isa_holdings, balance_sheets, fx_rates):
         ticker = h["ticker"]
         bs_data = balance_sheets.get(ticker, {})
 
-        pct_strict, pct_broad = compute_zakaatable_pcts(bs_data, fx_rates)
+        pct_strict, pct_broad, pct_assets_only = compute_zakaatable_pcts(bs_data, fx_rates)
 
         # Get current price and convert to GBP
         current_price = bs_data.get("current_price", 0)
@@ -424,6 +452,7 @@ def compute_isa_data(isa_holdings, balance_sheets, fx_rates):
             "ticker": ticker,
             "zakaatable_pct": pct_strict,
             "zakaatable_pct_broad": pct_broad,
+            "zakaatable_pct_assets_only": pct_assets_only,
             "current_price": current_price,
             "price_gbp": round(price_gbp, 4),
             "trading_currency": trade_curr,
@@ -437,6 +466,13 @@ def compute_isa_data(isa_holdings, balance_sheets, fx_rates):
             "liabilities": bs_data.get("liabilities", {}),
             "net_zakaatable": bs_data.get("net_zakaatable", 0),
             "net_zakaatable_broad": bs_data.get("net_zakaatable_broad", 0),
+            "net_zakaatable_assets_only": bs_data.get(
+                "net_zakaatable_assets_only",
+                bs_data.get("assets_broad", {}).get(
+                    "total",
+                    bs_data.get("assets", {}).get("total", 0),
+                ),
+            ),
         }
         results.append(entry)
 
