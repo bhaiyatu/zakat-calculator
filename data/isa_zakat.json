@@ -1,0 +1,338 @@
+{
+  "computed_at": "2026-02-17T15:26:11.961121Z",
+  "holdings": [
+    {
+      "name": "AST SpaceMobile",
+      "ticker": "ASTS",
+      "zakaatable_pct": 3.8399,
+      "zakaatable_pct_broad": 3.8399,
+      "current_price": 80.5503,
+      "price_gbp": 59.1015,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-09-30",
+      "market_cap": 29932349440,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 1204282000.0,
+        "receivables": 11491000.0,
+        "inventory": 10885000.0,
+        "other_current": 25237000.0,
+        "total": 1251895000.0
+      },
+      "assets_broad": {
+        "nc_investments": 0.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 0.0,
+        "total": 1251895000.0
+      },
+      "liabilities": {
+        "payables": 50707000.0,
+        "current_debt": 8947000.0,
+        "accrued_expenses": 42857000.0,
+        "taxes_payable": 0.0,
+        "total": 102511000.0
+      },
+      "net_zakaatable": 1149384000.0,
+      "net_zakaatable_broad": 1149384000.0
+    },
+    {
+      "name": "NVIDIA",
+      "ticker": "NVDA",
+      "zakaatable_pct": 2.1748,
+      "zakaatable_pct_broad": 2.7034,
+      "current_price": 180.49,
+      "price_gbp": 132.4295,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-10-31",
+      "market_cap": 4394390388736,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 60608000000.0,
+        "receivables": 33391000000.0,
+        "inventory": 19784000000.0,
+        "other_current": 2709000000.0,
+        "total": 116492000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 8187000000.0,
+        "nc_deferred_tax_asset": 13674000000.0,
+        "nc_receivables": 1369000000.0,
+        "nc_liquid_total": 23230000000.0,
+        "total": 139722000000.0
+      },
+      "liabilities": {
+        "payables": 8624000000.0,
+        "current_debt": 999000000.0,
+        "accrued_expenses": 8386000000.0,
+        "taxes_payable": 2915000000.0,
+        "total": 20924000000.0
+      },
+      "net_zakaatable": 95568000000.0,
+      "net_zakaatable_broad": 118798000000.0
+    },
+    {
+      "name": "Alphabet (Class A)",
+      "ticker": "GOOGL",
+      "zakaatable_pct": 3.5565,
+      "zakaatable_pct_broad": 5.712,
+      "current_price": 298.32,
+      "price_gbp": 218.8839,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 3609382092800,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 126843000000.0,
+        "receivables": 62886000000.0,
+        "inventory": 0.0,
+        "other_current": 16309000000.0,
+        "total": 206038000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 68687000000.0,
+        "nc_deferred_tax_asset": 9113000000.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 77800000000.0,
+        "total": 283838000000.0
+      },
+      "liabilities": {
+        "payables": 12200000000.0,
+        "current_debt": 0.0,
+        "accrued_expenses": 64948000000.0,
+        "taxes_payable": 523000000.0,
+        "total": 77671000000.0
+      },
+      "net_zakaatable": 128367000000.0,
+      "net_zakaatable_broad": 206167000000.0
+    },
+    {
+      "name": "Meta Platforms",
+      "ticker": "META",
+      "zakaatable_pct": 5.4062,
+      "zakaatable_pct_broad": 7.1238,
+      "current_price": 633.525,
+      "price_gbp": 464.8312,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 1602536734720,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 81592000000.0,
+        "receivables": 19769000000.0,
+        "inventory": 0.0,
+        "other_current": 7361000000.0,
+        "total": 108722000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 27524000000.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 27524000000.0,
+        "total": 136246000000.0
+      },
+      "liabilities": {
+        "payables": 8894000000.0,
+        "current_debt": 0.0,
+        "accrued_expenses": 11269000000.0,
+        "taxes_payable": 1922000000.0,
+        "total": 22085000000.0
+      },
+      "net_zakaatable": 86637000000.0,
+      "net_zakaatable_broad": 114161000000.0
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "zakaatable_pct": 1.9277,
+      "zakaatable_pct_broad": 3.9652,
+      "current_price": 260.09,
+      "price_gbp": 190.8338,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 3822783299584,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 66907000000.0,
+        "receivables": 70320000000.0,
+        "inventory": 5875000000.0,
+        "other_current": 15002000000.0,
+        "total": 158104000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 77888000000.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 77888000000.0,
+        "total": 235992000000.0
+      },
+      "liabilities": {
+        "payables": 70587000000.0,
+        "current_debt": 13824000000.0,
+        "accrued_expenses": 0.0,
+        "taxes_payable": 0.0,
+        "total": 84411000000.0
+      },
+      "net_zakaatable": 73693000000.0,
+      "net_zakaatable_broad": 151581000000.0
+    },
+    {
+      "name": "Microsoft",
+      "ticker": "MSFT",
+      "zakaatable_pct": 4.6082,
+      "zakaatable_pct_broad": 5.3268,
+      "current_price": 397.06,
+      "price_gbp": 291.3317,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 2950579617792,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 89456000000.0,
+        "receivables": 56535000000.0,
+        "inventory": 1059000000.0,
+        "other_current": 33134000000.0,
+        "total": 180184000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 21202000000.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 21202000000.0,
+        "total": 201386000000.0
+      },
+      "liabilities": {
+        "payables": 37328000000.0,
+        "current_debt": 4837000000.0,
+        "accrued_expenses": 0.0,
+        "taxes_payable": 2050000000.0,
+        "total": 44215000000.0
+      },
+      "net_zakaatable": 135969000000.0,
+      "net_zakaatable_broad": 157171000000.0
+    },
+    {
+      "name": "Amazon",
+      "ticker": "AMZN",
+      "zakaatable_pct": 1.4847,
+      "zakaatable_pct_broad": 1.4847,
+      "current_price": 198.63,
+      "price_gbp": 145.7392,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 2131955286016,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 123029000000.0,
+        "receivables": 67729000000.0,
+        "inventory": 38325000000.0,
+        "other_current": 0.0,
+        "total": 229083000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 0.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 0.0,
+        "total": 229083000000.0
+      },
+      "liabilities": {
+        "payables": 121909000000.0,
+        "current_debt": 0.0,
+        "accrued_expenses": 75520000000.0,
+        "taxes_payable": 0.0,
+        "total": 197429000000.0
+      },
+      "net_zakaatable": 31654000000.0,
+      "net_zakaatable_broad": 31654000000.0
+    },
+    {
+      "name": "Rocket Lab",
+      "ticker": "RKLB",
+      "zakaatable_pct": 3.2825,
+      "zakaatable_pct_broad": 3.413,
+      "current_price": 66.265,
+      "price_gbp": 48.6201,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-09-30",
+      "market_cap": 35395866624,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 976740000.0,
+        "receivables": 120602000.0,
+        "inventory": 144999000.0,
+        "other_current": 15812000.0,
+        "total": 1258153000.0
+      },
+      "assets_broad": {
+        "nc_investments": 46202000.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 46202000.0,
+        "total": 1304355000.0
+      },
+      "liabilities": {
+        "payables": 61229000.0,
+        "current_debt": 17090000.0,
+        "accrued_expenses": 17961000.0,
+        "taxes_payable": 0.0,
+        "total": 96280000.0
+      },
+      "net_zakaatable": 1161873000.0,
+      "net_zakaatable_broad": 1208075000.0
+    },
+    {
+      "name": "Atos",
+      "ticker": "ATO.PA",
+      "zakaatable_pct": 100,
+      "zakaatable_pct_broad": 100,
+      "current_price": 41.305,
+      "price_gbp": 35.9193,
+      "trading_currency": "EUR",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-06-30",
+      "market_cap": 800417728,
+      "financial_currency": "EUR",
+      "assets": {
+        "cash_and_sti": 1174000000.0,
+        "receivables": 1487000000.0,
+        "inventory": 166000000.0,
+        "other_current": 728000000.0,
+        "total": 3555000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 89000000.0,
+        "nc_deferred_tax_asset": 213000000.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 302000000.0,
+        "total": 3857000000.0
+      },
+      "liabilities": {
+        "payables": 243000000.0,
+        "current_debt": 12000000.0,
+        "accrued_expenses": 0.0,
+        "taxes_payable": 312000000.0,
+        "total": 567000000.0
+      },
+      "net_zakaatable": 2988000000.0,
+      "net_zakaatable_broad": 3290000000.0
+    }
+  ]
+}

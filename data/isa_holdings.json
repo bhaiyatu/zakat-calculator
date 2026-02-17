@@ -1,0 +1,13 @@
+{
+  "holdings": [
+    {"name": "AST SpaceMobile", "ticker": "ASTS"},
+    {"name": "NVIDIA", "ticker": "NVDA"},
+    {"name": "Alphabet (Class A)", "ticker": "GOOGL"},
+    {"name": "Meta Platforms", "ticker": "META"},
+    {"name": "Apple", "ticker": "AAPL"},
+    {"name": "Microsoft", "ticker": "MSFT"},
+    {"name": "Amazon", "ticker": "AMZN"},
+    {"name": "Rocket Lab", "ticker": "RKLB"},
+    {"name": "Atos", "ticker": "ATO.PA"}
+  ]
+}

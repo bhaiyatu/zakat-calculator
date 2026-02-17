@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension Zakat Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        cream: '#faf9f7',
+                        sand: '#f0ece4',
+                        teal: { 50: '#effefa', 100: '#c8fff4', 600: '#0d7377', 700: '#0a5c5f', 800: '#0b4a4d', 900: '#0d3d3f' },
+                        gold: { 400: '#d4a76a', 500: '#c4944e' },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d7377' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .sort-btn { cursor: pointer; user-select: none; }
+        .sort-btn:hover { color: #0d7377; }
+        .sort-btn::after { content: ' \2195'; font-size: 0.7em; opacity: 0.4; }
+        .sort-btn.asc::after { content: ' \2191'; opacity: 1; }
+        .sort-btn.desc::after { content: ' \2193'; opacity: 1; }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+        input[type="number"] { -moz-appearance: textfield; }
+    </style>
+</head>
+<body class="bg-cream pattern-bg min-h-screen text-slate-800">
+
+    <!-- Nav -->
+    <nav class="bg-white/80 backdrop-blur border-b border-sand sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="index.html" class="text-teal-700 font-semibold text-sm hover:text-teal-600 transition">&larr; Back</a>
+            <span class="text-xs text-slate-400" id="dataTimestamp"></span>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="font-display text-4xl md:text-5xl text-teal-900 mb-3">Pension Zakat Calculator</h1>
+            <p class="text-slate-500 text-lg max-w-2xl mx-auto">
+                Fidelity HSBC Islamic Global Equity Index Fund (Class 4)
+            </p>
+            <p class="text-slate-400 text-sm mt-1">Tracking the Dow Jones Islamic Market Titans 100 Index</p>
+        </header>
+
+        <!-- Method Toggle -->
+        <div class="bg-white rounded-2xl shadow-sm border border-sand p-4 mb-4 max-w-3xl mx-auto">
+            <div class="flex items-center justify-between gap-4">
+                <div class="flex-1">
+                    <p class="text-sm font-semibold text-slate-700" id="methodLabel">Current Assets Only</p>
+                    <p class="text-xs text-slate-400" id="methodDesc">Cash, receivables, inventory &mdash; conservative approach</p>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer shrink-0">
+                    <input type="checkbox" id="methodToggle" class="sr-only peer">
+                    <div class="w-14 h-7 bg-teal-600 peer-checked:bg-amber-500 rounded-full transition-colors duration-300 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all after:duration-300 peer-checked:after:translate-x-7"></div>
+                </label>
+                <div class="flex-1 text-right">
+                    <p class="text-sm font-semibold text-slate-400 peer-checked:text-slate-700" id="methodLabelBroad">All Liquid Assets</p>
+                    <p class="text-xs text-slate-400" id="methodDescBroad">Includes long-term investments &mdash; IFG approach</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator Card -->
+        <div class="bg-white rounded-2xl shadow-sm border border-sand p-6 md:p-10 mb-8 max-w-3xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <!-- Input -->
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-2">Your Pension Value</label>
+                    <div class="relative">
+                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-lg font-light select-none">&pound;</span>
+                        <input
+                            type="number"
+                            id="pensionInput"
+                            class="w-full bg-cream border border-slate-200 text-2xl font-semibold py-4 pl-10 pr-4 rounded-xl focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition placeholder-slate-300"
+                            placeholder="0"
+                            min="0"
+                            step="100"
+                        >
+                    </div>
+
+                    <div class="mt-6 space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Fund zakaatable %</span>
+                            <span id="fundPctDisplay" class="font-semibold text-teal-700">0.00%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">vs common 25% estimate</span>
+                            <span id="savingsDisplay" class="font-medium text-emerald-600">-</span>
+                        </div>
+                        <div class="h-px bg-slate-100"></div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Zakaatable portion</span>
+                            <span id="zakaatableAmount" class="font-medium">&pound;0.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Zakat rate</span>
+                            <span class="font-medium">2.5%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div class="bg-gradient-to-br from-teal-700 to-teal-800 rounded-2xl p-8 text-center text-white">
+                    <p class="text-teal-100 text-sm font-medium mb-1 uppercase tracking-wider">Your Zakat Due</p>
+                    <div class="text-4xl md:text-5xl font-bold mb-3 tracking-tight">
+                        &pound;<span id="resultDisplay">0.00</span>
+                    </div>
+                    <p class="text-teal-200/70 text-xs">
+                        Based on balance sheet analysis of <span id="holdingsCount">0</span> companies
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-teal-600/40 text-xs text-teal-200/60">
+                        Fund cash (<span id="cashPctDisplay">0</span>%) is 100% zakaatable
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual Comparison -->
+        <div class="bg-white rounded-2xl shadow-sm border border-sand p-6 mb-8 max-w-3xl mx-auto">
+            <h3 class="text-sm font-semibold text-slate-600 mb-4 uppercase tracking-wider">How This Compares</h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-slate-600">Balance sheet method (this calculator)</span>
+                        <span id="barLabel1" class="font-semibold text-teal-700">0%</span>
+                    </div>
+                    <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                        <div id="bar1" class="h-full bg-teal-600 rounded-full transition-all duration-700" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-slate-600">Common 25% estimate</span>
+                        <span class="font-semibold text-slate-500">25%</span>
+                    </div>
+                    <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                        <div class="h-full bg-slate-400 rounded-full" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Holdings Table -->
+        <section class="mb-12">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+                <h2 class="font-display text-2xl text-teal-900">Holdings Breakdown</h2>
+                <div class="flex gap-3 items-center">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search company or country..."
+                        class="bg-white border border-slate-200 text-sm rounded-lg py-2 px-4 focus:outline-none focus:border-teal-500 w-64 transition"
+                    >
+                    <select id="countryFilter" class="bg-white border border-slate-200 text-sm rounded-lg py-2 px-3 focus:outline-none focus:border-teal-500 transition">
+                        <option value="">All countries</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-sand overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider border-b border-slate-100">
+                            <tr>
+                                <th class="px-4 py-3 font-medium sort-btn" data-sort="name">Company</th>
+                                <th class="px-4 py-3 font-medium sort-btn" data-sort="country">Country</th>
+                                <th class="px-4 py-3 font-medium text-right sort-btn" data-sort="weight">Fund Weight</th>
+                                <th class="px-4 py-3 font-medium text-right sort-btn" data-sort="zakaatable_pct">Zakaatable %</th>
+                                <th class="px-4 py-3 font-medium text-right sort-btn" data-sort="contribution">Contribution</th>
+                                <th class="px-4 py-3 font-medium text-right">Assets</th>
+                                <th class="px-4 py-3 font-medium text-right">Liabilities</th>
+                                <th class="px-4 py-3 font-medium text-center">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody" class="divide-y divide-slate-50"></tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="text-xs text-slate-400 mt-3 text-center" id="tableFooter"></p>
+        </section>
+
+        <!-- Methodology -->
+        <section class="bg-white rounded-2xl shadow-sm border border-sand p-6 md:p-8 mb-12 max-w-4xl mx-auto">
+            <button id="methToggle" class="w-full flex items-center justify-between text-left">
+                <h2 class="font-display text-xl text-teal-900">Methodology</h2>
+                <span class="text-slate-400 text-xl" id="methArrow">+</span>
+            </button>
+            <div id="methContent" class="hidden mt-6 text-sm text-slate-600 space-y-4 leading-relaxed">
+                <p>This calculator uses actual company balance sheets to determine what percentage of each stock's market capitalisation is backed by zakaatable assets, rather than relying on the commonly-used 25% estimate.</p>
+
+                <h3 class="font-semibold text-slate-800 mt-4">Zakaatable Assets (included)</h3>
+                <ul class="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>Cash &amp; short-term investments</strong> &mdash; liquid wealth that is inherently zakaatable</li>
+                    <li><strong>Trade receivables</strong> &mdash; money owed to the company by customers</li>
+                    <li><strong>Inventory</strong> &mdash; goods held for sale, zakaatable as trade goods</li>
+                    <li><strong>Other current assets</strong> &mdash; prepaid items and other short-term liquid assets</li>
+                </ul>
+
+                <h3 class="font-semibold text-slate-800 mt-4">Deductible Liabilities (subtracted)</h3>
+                <ul class="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>Accounts payable</strong> &mdash; trade debts owed to suppliers</li>
+                    <li><strong>Short-term debt</strong> &mdash; current borrowings (excluding lease obligations)</li>
+                    <li><strong>Accrued expenses</strong> &mdash; wages, interest, and other costs genuinely owed</li>
+                    <li><strong>Taxes payable</strong> &mdash; current tax obligations</li>
+                </ul>
+
+                <h3 class="font-semibold text-slate-800 mt-4">Not Deducted (excluded from liabilities)</h3>
+                <ul class="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>Deferred revenue</strong> &mdash; money already received, not a real debt</li>
+                    <li><strong>Lease liabilities</strong> &mdash; operational cost, not financial debt in the zakat sense</li>
+                    <li><strong>Long-term debt</strong> &mdash; only current debts are deductible per most scholars</li>
+                    <li><strong>Deferred tax liabilities</strong> &mdash; an accounting construct, not real debt</li>
+                    <li><strong>Pension obligations</strong> &mdash; long-term and uncertain</li>
+                    <li><strong>Provisions</strong> &mdash; uncertain, may never be paid</li>
+                </ul>
+
+                <h3 class="font-semibold text-slate-800 mt-4">Formula</h3>
+                <div class="bg-slate-50 rounded-lg p-4 font-mono text-xs leading-loose">
+                    Net Zakaatable = max(Assets - Liabilities, 0)<br>
+                    Company Zakaatable % = min(Net Zakaatable / Market Cap &times; 100, 100%)<br>
+                    Fund Zakaatable % = &Sigma;(Company % &times; Weight) + Cash Allocation<br>
+                    <strong>Zakat = Pension Value &times; Fund Zakaatable % &times; 2.5%</strong>
+                </div>
+
+                <p class="text-xs text-slate-400 mt-4">
+                    Data sourced from Yahoo Finance quarterly/annual balance sheets. Currency conversions use live exchange rates.
+                    Where balance sheet data is unavailable, the standard 25% estimate is used as a fallback and flagged accordingly.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-sand py-6 text-center text-xs text-slate-400">
+        <p>This is a personal calculator tool, not financial or religious advice. Consult a scholar for your specific situation.</p>
+    </footer>
+
+    <script>
+    const DATA = /* __PENSION_DATA__ */;
+
+    const fmt = (n, dp=2) => n.toLocaleString('en-GB', { minimumFractionDigits: dp, maximumFractionDigits: dp });
+    const fmtCompact = (n) => {
+        if (n >= 1e12) return (n/1e12).toFixed(1) + 'T';
+        if (n >= 1e9) return (n/1e9).toFixed(1) + 'B';
+        if (n >= 1e6) return (n/1e6).toFixed(1) + 'M';
+        if (n >= 1e3) return (n/1e3).toFixed(1) + 'K';
+        return n.toFixed(0);
+    };
+
+    // State
+    let sortKey = 'weight';
+    let sortDir = 'desc';
+    let searchTerm = '';
+    let countryFilter = '';
+    let useBroad = false;  // false = strict (current assets only), true = broad (all liquid assets / IFG)
+
+    // Helper to get the active fund % based on toggle
+    function activeFundPct() {
+        return useBroad ? DATA.fund_zakaatable_pct_broad : DATA.fund_zakaatable_pct;
+    }
+    function activeCompanyPct(h) {
+        return useBroad ? (h.zakaatable_pct_broad ?? h.zakaatable_pct) : h.zakaatable_pct;
+    }
+
+    // Init
+    function init() {
+        document.getElementById('holdingsCount').textContent = DATA.holdings.length;
+        document.getElementById('cashPctDisplay').textContent = DATA.fund_cash_pct;
+        document.getElementById('dataTimestamp').textContent = 'Data: ' + new Date(DATA.computed_at).toLocaleDateString('en-GB');
+
+        // Country filter
+        const countries = [...new Set(DATA.holdings.map(h => h.country))].sort();
+        const select = document.getElementById('countryFilter');
+        countries.forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c;
+            opt.textContent = c;
+            select.appendChild(opt);
+        });
+
+        // Event listeners
+        document.getElementById('pensionInput').addEventListener('input', updateCalc);
+        document.getElementById('searchInput').addEventListener('input', e => { searchTerm = e.target.value.toLowerCase(); renderTable(); });
+        document.getElementById('countryFilter').addEventListener('change', e => { countryFilter = e.target.value; renderTable(); });
+
+        // Method toggle listener
+        document.getElementById('methodToggle').addEventListener('change', e => {
+            useBroad = e.target.checked;
+            // Update toggle label styling
+            document.getElementById('methodLabel').className = useBroad
+                ? 'text-sm font-semibold text-slate-400' : 'text-sm font-semibold text-slate-700';
+            document.getElementById('methodLabelBroad').className = useBroad
+                ? 'text-sm font-semibold text-slate-700' : 'text-sm font-semibold text-slate-400';
+            refreshDisplay();
+        });
+
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const key = btn.dataset.sort;
+                if (sortKey === key) {
+                    sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+                } else {
+                    sortKey = key;
+                    sortDir = 'desc';
+                }
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('asc', 'desc'));
+                btn.classList.add(sortDir);
+                renderTable();
+            });
+        });
+
+        // Methodology section toggle
+        document.getElementById('methToggle').addEventListener('click', () => {
+            const content = document.getElementById('methContent');
+            const arrow = document.getElementById('methArrow');
+            content.classList.toggle('hidden');
+            arrow.textContent = content.classList.contains('hidden') ? '+' : '\u2212';
+        });
+
+        refreshDisplay();
+    }
+
+    function refreshDisplay() {
+        // Update fund % display
+        const pct = activeFundPct();
+        document.getElementById('fundPctDisplay').textContent = fmt(pct) + '%';
+
+        // Comparison bars
+        const barPct = Math.min(pct / 25 * 100, 100);
+        document.getElementById('bar1').style.width = barPct + '%';
+        document.getElementById('barLabel1').textContent = fmt(pct) + '%';
+
+        updateCalc();
+        renderTable();
+    }
+
+    function updateCalc() {
+        const val = parseFloat(document.getElementById('pensionInput').value) || 0;
+        const pct = activeFundPct();
+        const zakaatableAmount = val * pct / 100;
+        const zakat = zakaatableAmount * 0.025;
+        const zakat25 = val * 0.25 * 0.025;
+
+        document.getElementById('resultDisplay').textContent = fmt(zakat);
+        document.getElementById('zakaatableAmount').innerHTML = '&pound;' + fmt(zakaatableAmount);
+
+        if (val > 0 && pct < 25) {
+            const saved = zakat25 - zakat;
+            document.getElementById('savingsDisplay').innerHTML = '&pound;' + fmt(saved) + ' less zakat due';
+        } else {
+            document.getElementById('savingsDisplay').textContent = '-';
+        }
+    }
+
+    function renderTable() {
+        let filtered = DATA.holdings;
+
+        if (searchTerm) {
+            filtered = filtered.filter(h =>
+                h.name.toLowerCase().includes(searchTerm) ||
+                h.ticker.toLowerCase().includes(searchTerm) ||
+                h.country.toLowerCase().includes(searchTerm)
+            );
+        }
+        if (countryFilter) {
+            filtered = filtered.filter(h => h.country === countryFilter);
+        }
+
+        // Sort — use active method's zakaatable_pct
+        filtered.sort((a, b) => {
+            let va, vb;
+            switch (sortKey) {
+                case 'name': va = a.name; vb = b.name; break;
+                case 'country': va = a.country; vb = b.country; break;
+                case 'weight': va = a.weight; vb = b.weight; break;
+                case 'zakaatable_pct': va = activeCompanyPct(a); vb = activeCompanyPct(b); break;
+                case 'contribution': va = a.weight * activeCompanyPct(a); vb = b.weight * activeCompanyPct(b); break;
+                default: va = a.weight; vb = b.weight;
+            }
+            if (typeof va === 'string') {
+                return sortDir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+            }
+            return sortDir === 'asc' ? va - vb : vb - va;
+        });
+
+        const tbody = document.getElementById('tableBody');
+        tbody.innerHTML = filtered.map(h => {
+            const pct = activeCompanyPct(h);
+            const contrib = (h.weight * pct / 100);
+            const assets = h.assets || {};
+            const assetsBroad = h.assets_broad || {};
+            const liabs = h.liabilities || {};
+            const statusIcon = h.fallback
+                ? '<span class="inline-block w-5 h-5 rounded-full bg-amber-100 text-amber-600 text-xs leading-5 text-center" title="Using 25% estimate - no balance sheet data">!</span>'
+                : '<span class="inline-block w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 text-xs leading-5 text-center" title="Calculated from balance sheet">&#10003;</span>';
+
+            const zakatColor = pct < 10 ? 'text-teal-700'
+                : pct < 25 ? 'text-amber-700'
+                : 'text-rose-700';
+
+            const assetsTotal = useBroad ? (assetsBroad.total || assets.total || 0) : (assets.total || 0);
+
+            return `<tr class="hover:bg-slate-50/50 transition-colors">
+                <td class="px-4 py-3">
+                    <div class="font-medium text-slate-800">${h.name}</div>
+                    <div class="text-xs text-slate-400">${h.ticker} &middot; ${h.bs_date || 'N/A'}</div>
+                </td>
+                <td class="px-4 py-3 text-slate-600">${h.country}</td>
+                <td class="px-4 py-3 text-right font-mono text-slate-700">${fmt(h.weight)}%</td>
+                <td class="px-4 py-3 text-right font-mono font-semibold ${zakatColor}">${fmt(pct)}%</td>
+                <td class="px-4 py-3 text-right font-mono text-slate-500 text-xs">${fmt(contrib, 4)}%</td>
+                <td class="px-4 py-3 text-right text-xs text-slate-500">${assetsTotal ? fmtCompact(assetsTotal) : '-'}</td>
+                <td class="px-4 py-3 text-right text-xs text-slate-500">${liabs.total ? fmtCompact(liabs.total) : '-'}</td>
+                <td class="px-4 py-3 text-center">${statusIcon}</td>
+            </tr>`;
+        }).join('');
+
+        const total = filtered.reduce((s, h) => s + h.weight * activeCompanyPct(h) / 100, 0);
+        document.getElementById('tableFooter').textContent =
+            `Showing ${filtered.length} of ${DATA.holdings.length} holdings. Filtered weighted zakaatable: ${fmt(total, 4)}%`;
+    }
+
+    init();
+    </script>
+</body>
+</html>

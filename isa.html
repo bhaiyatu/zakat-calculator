@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISA Zakat Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        cream: '#faf9f7',
+                        sand: '#f0ece4',
+                        teal: { 50: '#effefa', 100: '#c8fff4', 600: '#0d7377', 700: '#0a5c5f', 800: '#0b4a4d', 900: '#0d3d3f' },
+                        gold: { 400: '#d4a76a', 500: '#c4944e' },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d7377' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+        input[type="number"] { -moz-appearance: textfield; }
+    </style>
+</head>
+<body class="bg-cream pattern-bg min-h-screen text-slate-800">
+
+    <!-- Nav -->
+    <nav class="bg-white/80 backdrop-blur border-b border-sand sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="index.html" class="text-teal-700 font-semibold text-sm hover:text-teal-600 transition">&larr; Back</a>
+            <span class="text-xs text-slate-400" id="dataTimestamp"></span>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="font-display text-4xl md:text-5xl text-teal-900 mb-3">ISA Zakat Calculator</h1>
+            <p class="text-slate-500 text-lg">Individual Stock Holdings</p>
+        </header>
+
+        <!-- Method Toggle -->
+        <div class="bg-white rounded-2xl shadow-sm border border-sand p-4 mb-4 max-w-3xl mx-auto">
+            <div class="flex items-center justify-between gap-4">
+                <div class="flex-1">
+                    <p class="text-sm font-semibold text-slate-700" id="methodLabel">Current Assets Only</p>
+                    <p class="text-xs text-slate-400" id="methodDesc">Cash, receivables, inventory &mdash; conservative approach</p>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer shrink-0">
+                    <input type="checkbox" id="methodToggle" class="sr-only peer">
+                    <div class="w-14 h-7 bg-teal-600 peer-checked:bg-amber-500 rounded-full transition-colors duration-300 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all after:duration-300 peer-checked:after:translate-x-7"></div>
+                </label>
+                <div class="flex-1 text-right">
+                    <p class="text-sm font-semibold text-slate-400" id="methodLabelBroad">All Liquid Assets</p>
+                    <p class="text-xs text-slate-400" id="methodDescBroad">Includes long-term investments &mdash; IFG approach</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Card -->
+        <div id="summaryCard" class="bg-gradient-to-br from-teal-700 to-teal-800 rounded-2xl p-6 md:p-8 mb-10 text-white">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <p class="text-teal-200/70 text-xs uppercase tracking-wider mb-1">Total ISA Value</p>
+                    <p class="text-2xl font-bold">&pound;<span id="totalValue">0.00</span></p>
+                </div>
+                <div>
+                    <p class="text-teal-200/70 text-xs uppercase tracking-wider mb-1">Zakaatable Portion</p>
+                    <p class="text-2xl font-bold">&pound;<span id="totalZakaatable">0.00</span></p>
+                </div>
+                <div>
+                    <p class="text-teal-200/70 text-xs uppercase tracking-wider mb-1">Effective Zakaatable %</p>
+                    <p class="text-2xl font-bold"><span id="effectivePct">0.00</span>%</p>
+                </div>
+                <div>
+                    <p class="text-teal-200/70 text-xs uppercase tracking-wider mb-1">Zakat Due (2.5%)</p>
+                    <p class="text-3xl font-bold">&pound;<span id="totalZakat">0.00</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stock Cards -->
+        <div class="grid gap-4" id="stockCards"></div>
+
+        <!-- Methodology -->
+        <section class="bg-white rounded-2xl shadow-sm border border-sand p-6 md:p-8 mt-10 mb-12">
+            <button id="methToggle" class="w-full flex items-center justify-between text-left">
+                <h2 class="font-display text-xl text-teal-900">Methodology</h2>
+                <span class="text-slate-400 text-xl" id="methArrow">+</span>
+            </button>
+            <div id="methContent" class="hidden mt-6 text-sm text-slate-600 space-y-4 leading-relaxed">
+                <p>Each stock's zakaatable percentage is calculated from its actual balance sheet. The formula is:</p>
+                <div class="bg-slate-50 rounded-lg p-4 font-mono text-xs leading-loose">
+                    Net Zakaatable Assets = (Cash + Receivables + Inventory + Other Current) - (Payables + Short-term Debt + Accrued Expenses + Taxes)<br>
+                    Zakaatable % = Net Zakaatable Assets / Market Cap &times; 100<br>
+                    <strong>Your Zakat = Shares &times; Price &times; Zakaatable % &times; 2.5%</strong>
+                </div>
+                <p>Deferred revenue, lease liabilities, long-term debt, and deferred taxes are <strong>not</strong> deducted from assets, as they are not genuine current debts in the zakat sense.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="border-t border-sand py-6 text-center text-xs text-slate-400">
+        <p>This is a personal calculator tool, not financial or religious advice. Consult a scholar for your specific situation.</p>
+    </footer>
+
+    <script>
+    const DATA = {
+  "computed_at": "2026-02-17T15:26:11.961121Z",
+  "holdings": [
+    {
+      "name": "AST SpaceMobile",
+      "ticker": "ASTS",
+      "zakaatable_pct": 3.8399,
+      "zakaatable_pct_broad": 3.8399,
+      "current_price": 80.5503,
+      "price_gbp": 59.1015,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-09-30",
+      "market_cap": 29932349440,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 1204282000.0,
+        "receivables": 11491000.0,
+        "inventory": 10885000.0,
+        "other_current": 25237000.0,
+        "total": 1251895000.0
+      },
+      "assets_broad": {
+        "nc_investments": 0.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 0.0,
+        "total": 1251895000.0
+      },
+      "liabilities": {
+        "payables": 50707000.0,
+        "current_debt": 8947000.0,
+        "accrued_expenses": 42857000.0,
+        "taxes_payable": 0.0,
+        "total": 102511000.0
+      },
+      "net_zakaatable": 1149384000.0,
+      "net_zakaatable_broad": 1149384000.0
+    },
+    {
+      "name": "NVIDIA",
+      "ticker": "NVDA",
+      "zakaatable_pct": 2.1748,
+      "zakaatable_pct_broad": 2.7034,
+      "current_price": 180.49,
+      "price_gbp": 132.4295,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-10-31",
+      "market_cap": 4394390388736,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 60608000000.0,
+        "receivables": 33391000000.0,
+        "inventory": 19784000000.0,
+        "other_current": 2709000000.0,
+        "total": 116492000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 8187000000.0,
+        "nc_deferred_tax_asset": 13674000000.0,
+        "nc_receivables": 1369000000.0,
+        "nc_liquid_total": 23230000000.0,
+        "total": 139722000000.0
+      },
+      "liabilities": {
+        "payables": 8624000000.0,
+        "current_debt": 999000000.0,
+        "accrued_expenses": 8386000000.0,
+        "taxes_payable": 2915000000.0,
+        "total": 20924000000.0
+      },
+      "net_zakaatable": 95568000000.0,
+      "net_zakaatable_broad": 118798000000.0
+    },
+    {
+      "name": "Alphabet (Class A)",
+      "ticker": "GOOGL",
+      "zakaatable_pct": 3.5565,
+      "zakaatable_pct_broad": 5.712,
+      "current_price": 298.32,
+      "price_gbp": 218.8839,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 3609382092800,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 126843000000.0,
+        "receivables": 62886000000.0,
+        "inventory": 0.0,
+        "other_current": 16309000000.0,
+        "total": 206038000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 68687000000.0,
+        "nc_deferred_tax_asset": 9113000000.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 77800000000.0,
+        "total": 283838000000.0
+      },
+      "liabilities": {
+        "payables": 12200000000.0,
+        "current_debt": 0.0,
+        "accrued_expenses": 64948000000.0,
+        "taxes_payable": 523000000.0,
+        "total": 77671000000.0
+      },
+      "net_zakaatable": 128367000000.0,
+      "net_zakaatable_broad": 206167000000.0
+    },
+    {
+      "name": "Meta Platforms",
+      "ticker": "META",
+      "zakaatable_pct": 5.4062,
+      "zakaatable_pct_broad": 7.1238,
+      "current_price": 633.525,
+      "price_gbp": 464.8312,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 1602536734720,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 81592000000.0,
+        "receivables": 19769000000.0,
+        "inventory": 0.0,
+        "other_current": 7361000000.0,
+        "total": 108722000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 27524000000.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 27524000000.0,
+        "total": 136246000000.0
+      },
+      "liabilities": {
+        "payables": 8894000000.0,
+        "current_debt": 0.0,
+        "accrued_expenses": 11269000000.0,
+        "taxes_payable": 1922000000.0,
+        "total": 22085000000.0
+      },
+      "net_zakaatable": 86637000000.0,
+      "net_zakaatable_broad": 114161000000.0
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "zakaatable_pct": 1.9277,
+      "zakaatable_pct_broad": 3.9652,
+      "current_price": 260.09,
+      "price_gbp": 190.8338,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 3822783299584,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 66907000000.0,
+        "receivables": 70320000000.0,
+        "inventory": 5875000000.0,
+        "other_current": 15002000000.0,
+        "total": 158104000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 77888000000.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 77888000000.0,
+        "total": 235992000000.0
+      },
+      "liabilities": {
+        "payables": 70587000000.0,
+        "current_debt": 13824000000.0,
+        "accrued_expenses": 0.0,
+        "taxes_payable": 0.0,
+        "total": 84411000000.0
+      },
+      "net_zakaatable": 73693000000.0,
+      "net_zakaatable_broad": 151581000000.0
+    },
+    {
+      "name": "Microsoft",
+      "ticker": "MSFT",
+      "zakaatable_pct": 4.6082,
+      "zakaatable_pct_broad": 5.3268,
+      "current_price": 397.06,
+      "price_gbp": 291.3317,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 2950579617792,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 89456000000.0,
+        "receivables": 56535000000.0,
+        "inventory": 1059000000.0,
+        "other_current": 33134000000.0,
+        "total": 180184000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 21202000000.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 21202000000.0,
+        "total": 201386000000.0
+      },
+      "liabilities": {
+        "payables": 37328000000.0,
+        "current_debt": 4837000000.0,
+        "accrued_expenses": 0.0,
+        "taxes_payable": 2050000000.0,
+        "total": 44215000000.0
+      },
+      "net_zakaatable": 135969000000.0,
+      "net_zakaatable_broad": 157171000000.0
+    },
+    {
+      "name": "Amazon",
+      "ticker": "AMZN",
+      "zakaatable_pct": 1.4847,
+      "zakaatable_pct_broad": 1.4847,
+      "current_price": 198.63,
+      "price_gbp": 145.7392,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-12-31",
+      "market_cap": 2131955286016,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 123029000000.0,
+        "receivables": 67729000000.0,
+        "inventory": 38325000000.0,
+        "other_current": 0.0,
+        "total": 229083000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 0.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 0.0,
+        "total": 229083000000.0
+      },
+      "liabilities": {
+        "payables": 121909000000.0,
+        "current_debt": 0.0,
+        "accrued_expenses": 75520000000.0,
+        "taxes_payable": 0.0,
+        "total": 197429000000.0
+      },
+      "net_zakaatable": 31654000000.0,
+      "net_zakaatable_broad": 31654000000.0
+    },
+    {
+      "name": "Rocket Lab",
+      "ticker": "RKLB",
+      "zakaatable_pct": 3.2825,
+      "zakaatable_pct_broad": 3.413,
+      "current_price": 66.265,
+      "price_gbp": 48.6201,
+      "trading_currency": "USD",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-09-30",
+      "market_cap": 35395866624,
+      "financial_currency": "USD",
+      "assets": {
+        "cash_and_sti": 976740000.0,
+        "receivables": 120602000.0,
+        "inventory": 144999000.0,
+        "other_current": 15812000.0,
+        "total": 1258153000.0
+      },
+      "assets_broad": {
+        "nc_investments": 46202000.0,
+        "nc_deferred_tax_asset": 0.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 46202000.0,
+        "total": 1304355000.0
+      },
+      "liabilities": {
+        "payables": 61229000.0,
+        "current_debt": 17090000.0,
+        "accrued_expenses": 17961000.0,
+        "taxes_payable": 0.0,
+        "total": 96280000.0
+      },
+      "net_zakaatable": 1161873000.0,
+      "net_zakaatable_broad": 1208075000.0
+    },
+    {
+      "name": "Atos",
+      "ticker": "ATO.PA",
+      "zakaatable_pct": 100,
+      "zakaatable_pct_broad": 100,
+      "current_price": 41.305,
+      "price_gbp": 35.9193,
+      "trading_currency": "EUR",
+      "fallback": false,
+      "error": null,
+      "bs_date": "2025-06-30",
+      "market_cap": 800417728,
+      "financial_currency": "EUR",
+      "assets": {
+        "cash_and_sti": 1174000000.0,
+        "receivables": 1487000000.0,
+        "inventory": 166000000.0,
+        "other_current": 728000000.0,
+        "total": 3555000000.0
+      },
+      "assets_broad": {
+        "nc_investments": 89000000.0,
+        "nc_deferred_tax_asset": 213000000.0,
+        "nc_receivables": 0.0,
+        "nc_liquid_total": 302000000.0,
+        "total": 3857000000.0
+      },
+      "liabilities": {
+        "payables": 243000000.0,
+        "current_debt": 12000000.0,
+        "accrued_expenses": 0.0,
+        "taxes_payable": 312000000.0,
+        "total": 567000000.0
+      },
+      "net_zakaatable": 2988000000.0,
+      "net_zakaatable_broad": 3290000000.0
+    }
+  ]
+};
+
+    const fmt = (n, dp=2) => n.toLocaleString('en-GB', { minimumFractionDigits: dp, maximumFractionDigits: dp });
+    const fmtCompact = (n) => {
+        if (Math.abs(n) >= 1e12) return (n/1e12).toFixed(1) + 'T';
+        if (Math.abs(n) >= 1e9) return (n/1e9).toFixed(1) + 'B';
+        if (Math.abs(n) >= 1e6) return (n/1e6).toFixed(1) + 'M';
+        if (Math.abs(n) >= 1e3) return (n/1e3).toFixed(1) + 'K';
+        return n.toFixed(0);
+    };
+
+    // State
+    let useBroad = false;
+    const inputs = {};
+    DATA.holdings.forEach(h => {
+        inputs[h.ticker] = { mode: 'shares', shares: 0, value: 0 };
+    });
+
+    function activeCompanyPct(h) {
+        return useBroad ? (h.zakaatable_pct_broad ?? h.zakaatable_pct) : h.zakaatable_pct;
+    }
+
+    function init() {
+        document.getElementById('dataTimestamp').textContent = 'Data: ' + new Date(DATA.computed_at).toLocaleDateString('en-GB');
+
+        // Method toggle listener
+        document.getElementById('methodToggle').addEventListener('change', e => {
+            useBroad = e.target.checked;
+            document.getElementById('methodLabel').className = useBroad
+                ? 'text-sm font-semibold text-slate-400' : 'text-sm font-semibold text-slate-700';
+            document.getElementById('methodLabelBroad').className = useBroad
+                ? 'text-sm font-semibold text-slate-700' : 'text-sm font-semibold text-slate-400';
+            renderCards();
+            recalcAll();
+        });
+
+        renderCards();
+
+        // Methodology section toggle
+        document.getElementById('methToggle').addEventListener('click', () => {
+            const content = document.getElementById('methContent');
+            const arrow = document.getElementById('methArrow');
+            content.classList.toggle('hidden');
+            arrow.textContent = content.classList.contains('hidden') ? '+' : '\u2212';
+        });
+
+        recalcAll();
+    }
+
+    function renderCards() {
+        const container = document.getElementById('stockCards');
+        container.innerHTML = DATA.holdings.map(h => {
+            const pct = activeCompanyPct(h);
+            const zakatColor = pct < 10 ? 'text-teal-700'
+                : pct < 25 ? 'text-amber-700'
+                : 'text-rose-700';
+
+            const statusBadge = h.fallback
+                ? '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-amber-100 text-amber-700">Estimate</span>'
+                : '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-emerald-100 text-emerald-700">Balance Sheet</span>';
+
+            const assets = h.assets || {};
+            const assetsBroad = h.assets_broad || {};
+            const liabs = h.liabilities || {};
+
+            // Show appropriate assets total based on method
+            const assetsTotal = useBroad ? (assetsBroad.total || assets.total || 0) : (assets.total || 0);
+
+            // Build the broad extra rows if using broad method and data exists
+            let broadRows = '';
+            if (useBroad && assetsBroad.nc_liquid_total) {
+                broadRows = `
+                    <div class="font-medium text-amber-700 col-span-2 mt-2 mb-1">+ Non-Current Liquid Assets (Broad)</div>
+                    <div>Long-term Investments</div><div class="text-right font-mono">${assetsBroad.nc_investments ? fmtCompact(assetsBroad.nc_investments) : '-'}</div>
+                    <div>Deferred Tax Assets</div><div class="text-right font-mono">${assetsBroad.nc_deferred_tax_asset ? fmtCompact(assetsBroad.nc_deferred_tax_asset) : '-'}</div>
+                    <div>Non-Current Receivables</div><div class="text-right font-mono">${assetsBroad.nc_receivables ? fmtCompact(assetsBroad.nc_receivables) : '-'}</div>
+                    <div class="font-semibold border-t border-amber-200 pt-1 text-amber-700">NC Liquid Total</div><div class="text-right font-mono font-semibold border-t border-amber-200 pt-1 text-amber-700">${fmtCompact(assetsBroad.nc_liquid_total)}</div>`;
+            }
+
+            // Restore input state
+            const state = inputs[h.ticker];
+            const inputVal = state.mode === 'shares' ? (state.shares || '') : (state.value || '');
+            const inputPlaceholder = state.mode === 'shares' ? '0' : '0.00';
+            const inputStep = state.mode === 'shares' ? '1' : '0.01';
+            const inputLabel = state.mode === 'shares' ? 'Number of shares' : 'Total value (GBP)';
+            const sharesActive = state.mode === 'shares' ? 'active-mode' : '';
+            const valueActive = state.mode === 'value' ? 'active-mode' : '';
+
+            return `
+            <div class="bg-white rounded-2xl shadow-sm border border-sand overflow-hidden" data-ticker="${h.ticker}">
+                <div class="p-5">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-800">${h.name}</h3>
+                            <p class="text-xs text-slate-400">${h.ticker} &middot; Price: &pound;${fmt(h.price_gbp, 2)} &middot; BS: ${h.bs_date || 'N/A'}</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            ${statusBadge}
+                            <span class="font-mono font-bold text-lg ${zakatColor}" data-pct-display="${h.ticker}">${fmt(pct)}%</span>
+                        </div>
+                    </div>
+
+                    <!-- Input Row -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 items-end">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-500 mb-1">Input mode</label>
+                            <div class="flex rounded-lg border border-slate-200 overflow-hidden text-sm">
+                                <button class="flex-1 py-2 px-3 mode-btn ${sharesActive}" data-ticker="${h.ticker}" data-mode="shares">Shares</button>
+                                <button class="flex-1 py-2 px-3 mode-btn border-l border-slate-200 ${valueActive}" data-ticker="${h.ticker}" data-mode="value">GBP Value</button>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-500 mb-1 input-label-${h.ticker}">${inputLabel}</label>
+                            <input
+                                type="number"
+                                class="stock-input w-full bg-cream border border-slate-200 rounded-lg py-2 px-3 text-lg font-semibold focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition"
+                                data-ticker="${h.ticker}"
+                                placeholder="${inputPlaceholder}"
+                                min="0"
+                                step="${inputStep}"
+                                value="${inputVal || ''}"
+                            >
+                        </div>
+                        <div class="bg-teal-50 rounded-lg p-3 text-center">
+                            <p class="text-xs text-teal-600 mb-0.5">Zakat due</p>
+                            <p class="text-xl font-bold text-teal-800">&pound;<span class="stock-zakat" data-ticker="${h.ticker}">0.00</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Expandable details -->
+                    <details class="mt-3">
+                        <summary class="text-xs text-slate-400 cursor-pointer hover:text-teal-600 transition">Balance sheet details</summary>
+                        <div class="mt-3 grid grid-cols-2 gap-x-6 gap-y-1 text-xs text-slate-500 bg-slate-50 rounded-lg p-3">
+                            <div class="font-medium text-slate-700 col-span-2 mb-1">Zakaatable Assets (Current)</div>
+                            <div>Cash & STI</div><div class="text-right font-mono">${assets.cash_and_sti ? fmtCompact(assets.cash_and_sti) : '-'}</div>
+                            <div>Receivables</div><div class="text-right font-mono">${assets.receivables ? fmtCompact(assets.receivables) : '-'}</div>
+                            <div>Inventory</div><div class="text-right font-mono">${assets.inventory ? fmtCompact(assets.inventory) : '-'}</div>
+                            <div>Other Current</div><div class="text-right font-mono">${assets.other_current ? fmtCompact(assets.other_current) : '-'}</div>
+                            <div class="font-semibold border-t border-slate-200 pt-1">Current Assets Total</div><div class="text-right font-mono font-semibold border-t border-slate-200 pt-1">${assets.total ? fmtCompact(assets.total) : '-'}</div>
+
+                            ${broadRows}
+
+                            <div class="font-medium text-slate-700 col-span-2 mt-2 mb-1">Deductible Liabilities</div>
+                            <div>Payables</div><div class="text-right font-mono">${liabs.payables ? fmtCompact(liabs.payables) : '-'}</div>
+                            <div>Current Debt</div><div class="text-right font-mono">${liabs.current_debt ? fmtCompact(liabs.current_debt) : '-'}</div>
+                            <div>Accrued Expenses</div><div class="text-right font-mono">${liabs.accrued_expenses ? fmtCompact(liabs.accrued_expenses) : '-'}</div>
+                            <div>Taxes Payable</div><div class="text-right font-mono">${liabs.taxes_payable ? fmtCompact(liabs.taxes_payable) : '-'}</div>
+                            <div class="font-semibold border-t border-slate-200 pt-1">Total Liabilities</div><div class="text-right font-mono font-semibold border-t border-slate-200 pt-1">${liabs.total ? fmtCompact(liabs.total) : '-'}</div>
+
+                            <div class="col-span-2 mt-2 pt-2 border-t border-slate-200 flex justify-between font-semibold text-slate-700">
+                                <span>Market Cap</span><span class="font-mono">${h.market_cap ? fmtCompact(h.market_cap) : '-'}</span>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>`;
+        }).join('');
+
+        // Style active mode buttons
+        if (!document.getElementById('active-mode-style')) {
+            const style = document.createElement('style');
+            style.id = 'active-mode-style';
+            style.textContent = `.active-mode { background: #0d7377; color: white; font-weight: 500; }`;
+            document.head.appendChild(style);
+        }
+
+        // Re-attach mode toggle listeners
+        document.querySelectorAll('.mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const ticker = btn.dataset.ticker;
+                const mode = btn.dataset.mode;
+                inputs[ticker].mode = mode;
+
+                const card = btn.closest('[data-ticker]');
+                card.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active-mode'));
+                btn.classList.add('active-mode');
+
+                const label = document.querySelector(`.input-label-${ticker}`);
+                if (label) label.textContent = mode === 'shares' ? 'Number of shares' : 'Total value (GBP)';
+
+                const input = card.querySelector('.stock-input');
+                input.value = '';
+                input.placeholder = mode === 'shares' ? '0' : '0.00';
+                input.step = mode === 'shares' ? '1' : '0.01';
+                inputs[ticker].shares = 0;
+                inputs[ticker].value = 0;
+                recalcAll();
+            });
+        });
+
+        // Re-attach input listeners
+        document.querySelectorAll('.stock-input').forEach(input => {
+            input.addEventListener('input', () => {
+                const ticker = input.dataset.ticker;
+                const val = parseFloat(input.value) || 0;
+                if (inputs[ticker].mode === 'shares') {
+                    inputs[ticker].shares = val;
+                } else {
+                    inputs[ticker].value = val;
+                }
+                recalcAll();
+            });
+        });
+
+        // Recalculate with current inputs after re-render
+        recalcAll();
+    }
+
+    function recalcAll() {
+        let totalVal = 0;
+        let totalZakaatable = 0;
+
+        DATA.holdings.forEach(h => {
+            const state = inputs[h.ticker];
+            let stockVal;
+
+            if (state.mode === 'shares') {
+                stockVal = state.shares * h.price_gbp;
+            } else {
+                stockVal = state.value;
+            }
+
+            const pct = activeCompanyPct(h);
+            const zakaatableVal = stockVal * pct / 100;
+            const zakat = zakaatableVal * 0.025;
+
+            totalVal += stockVal;
+            totalZakaatable += zakaatableVal;
+
+            const el = document.querySelector(`.stock-zakat[data-ticker="${h.ticker}"]`);
+            if (el) el.textContent = fmt(zakat);
+        });
+
+        const totalZakat = totalZakaatable * 0.025;
+        const effectivePct = totalVal > 0 ? (totalZakaatable / totalVal * 100) : 0;
+
+        document.getElementById('totalValue').textContent = fmt(totalVal);
+        document.getElementById('totalZakaatable').textContent = fmt(totalZakaatable);
+        document.getElementById('effectivePct').textContent = fmt(effectivePct);
+        document.getElementById('totalZakat').textContent = fmt(totalZakat);
+    }
+
+    init();
+    </script>
+</body>
+</html>

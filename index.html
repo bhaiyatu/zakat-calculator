@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        cream: '#faf9f7',
+                        sand: '#f0ece4',
+                        teal: { 600: '#0d7377', 700: '#0a5c5f', 800: '#0b4a4d', 900: '#0d3d3f' },
+                        gold: { 400: '#d4a76a', 500: '#c4944e' },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d7377' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-cream pattern-bg min-h-screen text-slate-800 flex flex-col">
+
+    <div class="flex-1 flex items-center justify-center px-4 py-16">
+        <div class="max-w-2xl w-full text-center">
+
+            <!-- Title -->
+            <h1 class="font-display text-5xl md:text-6xl text-teal-900 mb-4">Zakat Calculator</h1>
+            <p class="text-slate-500 text-lg mb-2 max-w-lg mx-auto">
+                Precise zakat calculation based on actual company balance sheets, not estimates.
+            </p>
+            <p class="text-slate-400 text-sm mb-12 max-w-md mx-auto">
+                Instead of the common 25% rule, this tool analyses the zakaatable assets of every company in your portfolio using their latest financial statements.
+            </p>
+
+            <!-- Cards -->
+            <div class="grid md:grid-cols-2 gap-6 max-w-xl mx-auto">
+                <a href="pension.html" class="group block bg-white rounded-2xl shadow-sm border border-sand p-8 hover:shadow-md hover:border-teal-200 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-4 mx-auto group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"></path></svg>
+                    </div>
+                    <h2 class="font-display text-xl text-teal-900 mb-2">Pension</h2>
+                    <p class="text-sm text-slate-500">HSBC Islamic Global Equity Index Fund with 107 holdings analysed</p>
+                </a>
+
+                <a href="isa.html" class="group block bg-white rounded-2xl shadow-sm border border-sand p-8 hover:shadow-md hover:border-teal-200 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-4 mx-auto group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"></path></svg>
+                    </div>
+                    <h2 class="font-display text-xl text-teal-900 mb-2">ISA</h2>
+                    <p class="text-sm text-slate-500">9 individual stocks with per-share zakat calculation</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-sand py-6 text-center text-xs text-slate-400">
+        <p>This is a personal calculator tool, not financial or religious advice. Consult a scholar for your specific situation.</p>
+    </footer>
+
+</body>
+</html>
