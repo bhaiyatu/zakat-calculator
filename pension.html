@@ -174,21 +174,22 @@
         <section class="mb-12">
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
                 <h2 class="font-display text-2xl text-teal-900">Holdings Breakdown</h2>
-                <div class="flex gap-3 items-center">
+                <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center w-full sm:w-auto">
                     <input
                         type="text"
                         id="searchInput"
                         placeholder="Search company or country..."
-                        class="bg-white border border-slate-200 text-sm rounded-lg py-2 px-4 focus:outline-none focus:border-teal-500 w-64 transition"
+                        class="bg-white border border-slate-200 text-sm rounded-lg py-2 px-4 focus:outline-none focus:border-teal-500 w-full sm:w-64 transition"
                     >
-                    <select id="countryFilter" class="bg-white border border-slate-200 text-sm rounded-lg py-2 px-3 focus:outline-none focus:border-teal-500 transition">
+                    <select id="countryFilter" class="bg-white border border-slate-200 text-sm rounded-lg py-2 px-3 focus:outline-none focus:border-teal-500 transition w-full sm:w-auto">
                         <option value="">All countries</option>
                     </select>
                 </div>
             </div>
 
             <div class="bg-white rounded-2xl shadow-sm border border-sand overflow-hidden">
-                <div class="overflow-x-auto">
+                <div id="mobileCards" class="md:hidden p-3 space-y-3"></div>
+                <div class="hidden md:block overflow-x-auto">
                     <table class="w-full text-left text-sm">
                         <thead class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider border-b border-slate-100">
                             <tr>
@@ -4638,6 +4639,7 @@
         });
 
         const tbody = document.getElementById('tableBody');
+        const mobileCards = document.getElementById('mobileCards');
         tbody.innerHTML = filtered.map(h => {
             const pct = activeCompanyPct(h);
             const contrib = (h.weight * pct / 100);
@@ -4700,6 +4702,71 @@
                 <td class="px-4 py-3 text-right text-xs text-slate-500">${liabs.total ? fmtCompact(liabs.total) : '-'}</td>
                 <td class="px-4 py-3 text-center">${statusIcon}</td>
             </tr>`;
+        }).join('');
+
+        mobileCards.innerHTML = filtered.map(h => {
+            const pct = activeCompanyPct(h);
+            const contrib = (h.weight * pct / 100);
+            const assets = h.assets || {};
+            const assetsBroad = h.assets_broad || {};
+            const liabs = h.liabilities || {};
+            const assetsTotal = usingBroadAssets() ? (assetsBroad.total || assets.total || 0) : (assets.total || 0);
+
+            const statusBadge = h.fallback
+                ? '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] bg-amber-100 text-amber-700">Estimate</span>'
+                : '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] bg-emerald-100 text-emerald-700">Balance Sheet</span>';
+
+            const zakatColor = pct < 10 ? 'text-teal-700'
+                : pct < 25 ? 'text-amber-700'
+                : 'text-rose-700';
+
+            let broadRows = '';
+            if (usingBroadAssets() && assetsBroad.nc_liquid_total) {
+                broadRows = `
+                    <div class="font-medium text-amber-700 col-span-2 mt-2 mb-1">+ Non-Current Liquid Assets (Broad)</div>
+                    <div>Long-term Investments</div><div class="text-right font-mono">${assetsBroad.nc_investments ? fmtCompact(assetsBroad.nc_investments) : '-'}</div>
+                    <div>Deferred Tax Assets</div><div class="text-right font-mono">${assetsBroad.nc_deferred_tax_asset ? fmtCompact(assetsBroad.nc_deferred_tax_asset) : '-'}</div>
+                    <div>Non-Current Receivables</div><div class="text-right font-mono">${assetsBroad.nc_receivables ? fmtCompact(assetsBroad.nc_receivables) : '-'}</div>
+                    <div class="font-semibold border-t border-amber-200 pt-1 text-amber-700">NC Liquid Total</div><div class="text-right font-mono font-semibold border-t border-amber-200 pt-1 text-amber-700">${fmtCompact(assetsBroad.nc_liquid_total)}</div>`;
+            }
+
+            return `<div class="border border-slate-200 rounded-xl p-3 bg-white">
+                <div class="flex items-start justify-between gap-3">
+                    <div>
+                        <div class="font-semibold text-slate-800 leading-tight">${h.name}</div>
+                        <div class="text-[11px] text-slate-400 mt-0.5">${h.ticker} &middot; ${h.country} &middot; ${h.bs_date || 'N/A'}</div>
+                    </div>
+                    ${statusBadge}
+                </div>
+                <div class="mt-3 grid grid-cols-2 gap-x-3 gap-y-1.5 text-[11px]">
+                    <div class="text-slate-500">Fund Weight</div><div class="text-right font-mono text-slate-700">${fmt(h.weight)}%</div>
+                    <div class="text-slate-500">Zakaatable %</div><div class="text-right font-mono font-semibold ${zakatColor}">${fmt(pct)}%</div>
+                    <div class="text-slate-500">Contribution</div><div class="text-right font-mono text-slate-600">${fmt(contrib, 4)}%</div>
+                    <div class="text-slate-500">Assets</div><div class="text-right font-mono text-slate-600">${assetsTotal ? fmtCompact(assetsTotal) : '-'}</div>
+                    <div class="text-slate-500">Liabilities</div><div class="text-right font-mono text-slate-600">${liabs.total ? fmtCompact(liabs.total) : '-'}</div>
+                </div>
+                <details class="mt-3">
+                    <summary class="text-[11px] text-teal-700 cursor-pointer hover:text-teal-600 transition">Balance sheet details</summary>
+                    <div class="mt-2 grid grid-cols-2 gap-x-4 gap-y-1 text-[11px] text-slate-500 bg-slate-50 rounded-lg p-2">
+                        <div class="font-medium text-slate-700 col-span-2 mb-1">Zakaatable Assets (Current)</div>
+                        <div>Cash & STI</div><div class="text-right font-mono">${assets.cash_and_sti ? fmtCompact(assets.cash_and_sti) : '-'}</div>
+                        <div>Receivables</div><div class="text-right font-mono">${assets.receivables ? fmtCompact(assets.receivables) : '-'}</div>
+                        <div>Inventory</div><div class="text-right font-mono">${assets.inventory ? fmtCompact(assets.inventory) : '-'}</div>
+                        <div>Other Current</div><div class="text-right font-mono">${assets.other_current ? fmtCompact(assets.other_current) : '-'}</div>
+                        <div class="font-semibold border-t border-slate-200 pt-1">Current Assets Total</div><div class="text-right font-mono font-semibold border-t border-slate-200 pt-1">${assets.total ? fmtCompact(assets.total) : '-'}</div>
+                        ${broadRows}
+                        <div class="font-medium text-slate-700 col-span-2 mt-2 mb-1">Deductible Liabilities</div>
+                        <div>Payables</div><div class="text-right font-mono">${liabs.payables ? fmtCompact(liabs.payables) : '-'}</div>
+                        <div>Current Debt</div><div class="text-right font-mono">${liabs.current_debt ? fmtCompact(liabs.current_debt) : '-'}</div>
+                        <div>Accrued Expenses</div><div class="text-right font-mono">${liabs.accrued_expenses ? fmtCompact(liabs.accrued_expenses) : '-'}</div>
+                        <div>Taxes Payable</div><div class="text-right font-mono">${liabs.taxes_payable ? fmtCompact(liabs.taxes_payable) : '-'}</div>
+                        <div class="font-semibold border-t border-slate-200 pt-1">Total Liabilities</div><div class="text-right font-mono font-semibold border-t border-slate-200 pt-1">${liabs.total ? fmtCompact(liabs.total) : '-'}</div>
+                        <div class="col-span-2 mt-2 pt-2 border-t border-slate-200 flex justify-between font-semibold text-slate-700">
+                            <span>Market Cap</span><span class="font-mono">${h.market_cap ? fmtCompact(h.market_cap) : '-'}</span>
+                        </div>
+                    </div>
+                </details>
+            </div>`;
         }).join('');
 
         const total = filtered.reduce((s, h) => s + h.weight * activeCompanyPct(h) / 100, 0);
