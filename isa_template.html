@@ -187,7 +187,18 @@
     }
 
     function init() {
-        document.getElementById('dataTimestamp').textContent = 'Data: ' + new Date(DATA.computed_at).toLocaleDateString('en-GB');
+        const refreshedAt = new Date(DATA.computed_at);
+        const refreshedLabel = refreshedAt.toLocaleString('en-GB', {
+            day: '2-digit',
+            month: 'short',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false,
+            timeZoneName: 'short',
+        });
+        document.getElementById('dataTimestamp').textContent = 'Data: ' + refreshedLabel;
 
         document.querySelectorAll('.method-pill').forEach(btn => {
             btn.addEventListener('click', () => {
