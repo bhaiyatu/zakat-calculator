@@ -2,10 +2,10 @@
   "BHP.AX": {
     "ticker": "BHP.AX",
     "long_name": "BHP Group Limited",
-    "market_cap": 270313193472,
+    "market_cap": 270821031936,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 53.23,
+    "current_price": 53.33,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -38,10 +38,10 @@
   "CSL.AX": {
     "ticker": "CSL.AX",
     "long_name": "CSL Limited",
-    "market_cap": 74805493760,
+    "market_cap": 74359152640,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 154.19,
+    "current_price": 153.27,
     "bs_date": "2024-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -74,10 +74,10 @@
   "WES.AX": {
     "ticker": "WES.AX",
     "long_name": "Wesfarmers Limited",
-    "market_cap": 95636209664,
+    "market_cap": 95352414208,
     "trading_currency": "AUD",
     "financial_currency": "AUD",
-    "current_price": 84.24,
+    "current_price": 83.99,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -110,10 +110,10 @@
   "WDS.AX": {
     "ticker": "WDS.AX",
     "long_name": "Woodside Energy Group Ltd",
-    "market_cap": 51519815680,
+    "market_cap": 52147179520,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 27.1,
+    "current_price": 27.43,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -146,10 +146,10 @@
   "9988.HK": {
     "ticker": "9988.HK",
     "long_name": "Alibaba Group Holding Limited",
-    "market_cap": 2954558963712,
+    "market_cap": 2809409568768,
     "trading_currency": "HKD",
     "financial_currency": "CNY",
-    "current_price": 154.7,
+    "current_price": 147.1,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -182,10 +182,10 @@
   "9618.HK": {
     "ticker": "9618.HK",
     "long_name": "JD.com, Inc.",
-    "market_cap": 326840614912,
+    "market_cap": 320359366656,
     "trading_currency": "HKD",
     "financial_currency": "CNY",
-    "current_price": 105.9,
+    "current_price": 103.8,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -218,10 +218,10 @@
   "3690.HK": {
     "ticker": "3690.HK",
     "long_name": "Meituan",
-    "market_cap": 501068529664,
+    "market_cap": 493129564160,
     "trading_currency": "HKD",
     "financial_currency": "CNY",
-    "current_price": 82.05,
+    "current_price": 80.75,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -254,10 +254,10 @@
   "NOVO-B.CO": {
     "ticker": "NOVO-B.CO",
     "long_name": "Novo Nordisk A/S",
-    "market_cap": 1366920790016,
+    "market_cap": 1338461782016,
     "trading_currency": "DKK",
     "financial_currency": "DKK",
-    "current_price": 307.4,
+    "current_price": 301.0,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -290,10 +290,10 @@
   "AI.PA": {
     "ticker": "AI.PA",
     "long_name": "L'Air Liquide S.A.",
-    "market_cap": 96816930816,
+    "market_cap": 101463588864,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 167.52,
+    "current_price": 175.56,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -326,10 +326,10 @@
   "EL.PA": {
     "ticker": "EL.PA",
     "long_name": "EssilorLuxottica Soci\u00e9t\u00e9 anonyme",
-    "market_cap": 107924135936,
+    "market_cap": 110332747776,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 233.0,
+    "current_price": 238.2,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -362,10 +362,10 @@
   "RMS.PA": {
     "ticker": "RMS.PA",
     "long_name": "Herm\u00e8s International Soci\u00e9t\u00e9 en commandite par actions",
-    "market_cap": 213761245184,
+    "market_cap": 221414293504,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 2039.0,
+    "current_price": 2112.0,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -398,10 +398,10 @@
   "OR.PA": {
     "ticker": "OR.PA",
     "long_name": "L'Or\u00e9al S.A.",
-    "market_cap": 210844303360,
+    "market_cap": 214127067136,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 395.0,
+    "current_price": 401.15,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -434,10 +434,10 @@
   "SAF.PA": {
     "ticker": "SAF.PA",
     "long_name": "Safran SA",
-    "market_cap": 142487633920,
+    "market_cap": 144278618112,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 342.1,
+    "current_price": 346.4,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -470,10 +470,10 @@
   "SAN.PA": {
     "ticker": "SAN.PA",
     "long_name": "Sanofi",
-    "market_cap": 95699787776,
+    "market_cap": 96402391040,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 79.0,
+    "current_price": 79.58,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -506,10 +506,10 @@
   "SU.PA": {
     "ticker": "SU.PA",
     "long_name": "Schneider Electric S.E.",
-    "market_cap": 145812520960,
+    "market_cap": 147246170112,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 259.35,
+    "current_price": 261.9,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -542,10 +542,10 @@
   "SAP.DE": {
     "ticker": "SAP.DE",
     "long_name": "SAP SE",
-    "market_cap": 198844547072,
+    "market_cap": 202408230912,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 170.74,
+    "current_price": 173.8,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 19074018967552,
+    "market_cap": 19207991328768,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1409.5,
+    "current_price": 1419.4,
     "error": "Balance sheet data all empty/NaN",
     "zakaatable_pct": 25.0,
     "fallback": true
@@ -589,10 +589,10 @@
   "ACN": {
     "ticker": "ACN",
     "long_name": "Accenture plc",
-    "market_cap": 133298847744,
+    "market_cap": 133546909696,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 214.95,
+    "current_price": 215.35,
     "bs_date": "2025-11-30",
     "bs_type": "quarterly",
     "assets": {
@@ -625,10 +625,10 @@
   "ETN": {
     "ticker": "ETN",
     "long_name": "Eaton Corporation plc",
-    "market_cap": 146890686464,
+    "market_cap": 145356832768,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 377.32,
+    "current_price": 373.38,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -661,10 +661,10 @@
   "LIN": {
     "ticker": "LIN",
     "long_name": "Linde plc",
-    "market_cap": 229817253888,
+    "market_cap": 232818278400,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 490.11,
+    "current_price": 496.51,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -697,10 +697,10 @@
   "MDT": {
     "ticker": "MDT",
     "long_name": "Medtronic plc",
-    "market_cap": 125157679104,
+    "market_cap": 124234194944,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 97.58,
+    "current_price": 96.86,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -733,10 +733,10 @@
   "4568.T": {
     "ticker": "4568.T",
     "long_name": "Daiichi Sankyo Company, Limited",
-    "market_cap": 5443961225216,
+    "market_cap": 5402312310784,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 2941.0,
+    "current_price": 2918.5,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -769,10 +769,10 @@
   "6367.T": {
     "ticker": "6367.T",
     "long_name": "Daikin Industries,Ltd.",
-    "market_cap": 5850720108544,
+    "market_cap": 5777512726528,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 19980.0,
+    "current_price": 19730.0,
     "bs_date": "2025-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -805,10 +805,10 @@
   "9983.T": {
     "ticker": "9983.T",
     "long_name": "Fast Retailing Co., Ltd.",
-    "market_cap": 20766238179328,
+    "market_cap": 20545319993344,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 67680.0,
+    "current_price": 66960.0,
     "bs_date": "2025-08-31",
     "bs_type": "quarterly",
     "assets": {
@@ -841,10 +841,10 @@
   "6501.T": {
     "ticker": "6501.T",
     "long_name": "Hitachi, Ltd.",
-    "market_cap": 22516783382528,
+    "market_cap": 22237128163328,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 4992.0,
+    "current_price": 4930.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -877,10 +877,10 @@
   "7741.T": {
     "ticker": "7741.T",
     "long_name": "HOYA Corporation",
-    "market_cap": 9330990514176,
+    "market_cap": 9312396115968,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 27600.0,
+    "current_price": 27545.0,
     "bs_date": "2025-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -913,10 +913,10 @@
   "6861.T": {
     "ticker": "6861.T",
     "long_name": "Keyence Corporation",
-    "market_cap": 14604867469312,
+    "market_cap": 14898322997248,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 60220.0,
+    "current_price": 61430.0,
     "bs_date": "2024-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -949,10 +949,10 @@
   "6981.T": {
     "ticker": "6981.T",
     "long_name": "Murata Manufacturing Co., Ltd.",
-    "market_cap": 6673205821440,
+    "market_cap": 6689588248576,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 3666.0,
+    "current_price": 3675.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -985,10 +985,10 @@
   "6098.T": {
     "ticker": "6098.T",
     "long_name": "Recruit Holdings Co., Ltd.",
-    "market_cap": 8857584664576,
+    "market_cap": 8783503818752,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 6337.0,
+    "current_price": 6284.0,
     "bs_date": "2025-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1021,10 +1021,10 @@
   "4063.T": {
     "ticker": "4063.T",
     "long_name": "Shin-Etsu Chemical Co., Ltd.",
-    "market_cap": 10766037024768,
+    "market_cap": 10775406051328,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 5745.0,
+    "current_price": 5750.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1057,10 +1057,10 @@
   "8035.T": {
     "ticker": "8035.T",
     "long_name": "Tokyo Electron Limited",
-    "market_cap": 20458516774912,
+    "market_cap": 20151386767360,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 44630.0,
+    "current_price": 43960.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1093,10 +1093,10 @@
   "ASML.AS": {
     "ticker": "ASML.AS",
     "long_name": "ASML Holding N.V.",
-    "market_cap": 480604422144,
+    "market_cap": 487358201856,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 1238.2,
+    "current_price": 1255.6,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1129,10 +1129,10 @@
   "005930.KS": {
     "ticker": "005930.KS",
     "long_name": "Samsung Electronics Co., Ltd.",
-    "market_cap": 1270355763134464,
+    "market_cap": 1271024435855360,
     "trading_currency": "KRW",
     "financial_currency": "KRW",
-    "current_price": 190000.0,
+    "current_price": 190100.0,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1165,10 +1165,10 @@
   "000660.KS": {
     "ticker": "000660.KS",
     "long_name": "SK hynix Inc.",
-    "market_cap": 617267062636544,
+    "market_cap": 655242089725952,
     "trading_currency": "KRW",
     "financial_currency": "KRW",
-    "current_price": 894000.0,
+    "current_price": 949000.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1201,10 +1201,10 @@
   "ITX.MC": {
     "ticker": "ITX.MC",
     "long_name": "Industria de Dise\u00f1o Textil, S.A.",
-    "market_cap": 180499955712,
+    "market_cap": 179689717760,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 57.92,
+    "current_price": 57.66,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1237,10 +1237,10 @@
   "ATCO-A.ST": {
     "ticker": "ATCO-A.ST",
     "long_name": "Atlas Copco AB (publ)",
-    "market_cap": 949033959424,
+    "market_cap": 952199806976,
     "trading_currency": "SEK",
     "financial_currency": "SEK",
-    "current_price": 194.85,
+    "current_price": 195.5,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1273,10 +1273,10 @@
   "ATCO-B.ST": {
     "ticker": "ATCO-B.ST",
     "long_name": "Atlas Copco AB (publ)",
-    "market_cap": 819476299776,
+    "market_cap": 826295123968,
     "trading_currency": "SEK",
     "financial_currency": "SEK",
-    "current_price": 168.25,
+    "current_price": 169.65,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1309,10 +1309,10 @@
   "ABBN.SW": {
     "ticker": "ABBN.SW",
     "long_name": "ABB Ltd",
-    "market_cap": 127107514368,
+    "market_cap": 127761956864,
     "trading_currency": "CHF",
     "financial_currency": "USD",
-    "current_price": 69.92,
+    "current_price": 70.28,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1345,10 +1345,10 @@
   "CFR.SW": {
     "ticker": "CFR.SW",
     "long_name": "Compagnie Financi\u00e8re Richemont SA",
-    "market_cap": 93306118144,
+    "market_cap": 95422709760,
     "trading_currency": "CHF",
     "financial_currency": "EUR",
-    "current_price": 158.7,
+    "current_price": 162.3,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1381,10 +1381,10 @@
   "LONN.SW": {
     "ticker": "LONN.SW",
     "long_name": "Lonza Group AG",
-    "market_cap": 37752336384,
+    "market_cap": 37626077184,
     "trading_currency": "CHF",
     "financial_currency": "CHF",
-    "current_price": 538.2,
+    "current_price": 536.4,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1417,10 +1417,10 @@
   "NESN.SW": {
     "ticker": "NESN.SW",
     "long_name": "Nestl\u00e9 S.A.",
-    "market_cap": 209496178688,
+    "market_cap": 208158375936,
     "trading_currency": "CHF",
     "financial_currency": "CHF",
-    "current_price": 81.43,
+    "current_price": 80.91,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1453,10 +1453,10 @@
   "NOVN.SW": {
     "ticker": "NOVN.SW",
     "long_name": "Novartis AG",
-    "market_cap": 241343037440,
+    "market_cap": 241304862720,
     "trading_currency": "CHF",
     "financial_currency": "USD",
-    "current_price": 126.48,
+    "current_price": 126.46,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1489,10 +1489,10 @@
   "ROG.SW": {
     "ticker": "ROG.SW",
     "long_name": "Roche Holding AG",
-    "market_cap": 292946444288,
+    "market_cap": 292628168704,
     "trading_currency": "CHF",
     "financial_currency": "CHF",
-    "current_price": 368.2,
+    "current_price": 367.8,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1525,10 +1525,10 @@
   "SIKA.SW": {
     "ticker": "SIKA.SW",
     "long_name": "Sika AG",
-    "market_cap": 24507899904,
+    "market_cap": 25374298112,
     "trading_currency": "CHF",
     "financial_currency": "CHF",
-    "current_price": 152.75,
+    "current_price": 158.15,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1633,10 +1633,10 @@
   "AZN.L": {
     "ticker": "AZN.L",
     "long_name": "AstraZeneca PLC",
-    "market_cap": 237038338048,
+    "market_cap": 236728303616,
     "trading_currency": "GBp",
     "financial_currency": "USD",
-    "current_price": 15290.0,
+    "current_price": 15270.0,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1669,10 +1669,10 @@
   "CPG.L": {
     "ticker": "CPG.L",
     "long_name": "Compass Group PLC",
-    "market_cap": 37321617408,
+    "market_cap": 37627670528,
     "trading_currency": "GBp",
     "financial_currency": "USD",
-    "current_price": 2195.0,
+    "current_price": 2213.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1705,10 +1705,10 @@
   "GSK.L": {
     "ticker": "GSK.L",
     "long_name": "GSK plc",
-    "market_cap": 89335709696,
+    "market_cap": 88813977600,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
-    "current_price": 2226.0,
+    "current_price": 2213.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1741,10 +1741,10 @@
   "REL.L": {
     "ticker": "REL.L",
     "long_name": "RELX PLC",
-    "market_cap": 41456123904,
+    "market_cap": 41980424192,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
-    "current_price": 2293.0,
+    "current_price": 2322.0,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1777,10 +1777,10 @@
   "RIO.L": {
     "ticker": "RIO.L",
     "long_name": "Rio Tinto Group",
-    "market_cap": 115661553664,
+    "market_cap": 115726548992,
     "trading_currency": "GBp",
     "financial_currency": "USD",
-    "current_price": 7118.0,
+    "current_price": 7122.0,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1813,10 +1813,10 @@
   "ULVR.L": {
     "ticker": "ULVR.L",
     "long_name": "Unilever PLC",
-    "market_cap": 116236173312,
+    "market_cap": 117547098112,
     "trading_currency": "GBp",
     "financial_currency": "EUR",
-    "current_price": 5320.0,
+    "current_price": 5380.0,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1849,10 +1849,10 @@
   "ABT": {
     "ticker": "ABT",
     "long_name": "Abbott Laboratories",
-    "market_cap": 195262103552,
+    "market_cap": 195296903168,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 112.19,
+    "current_price": 112.21,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1885,10 +1885,10 @@
   "ABBV": {
     "ticker": "ABBV",
     "long_name": "AbbVie Inc.",
-    "market_cap": 396512755712,
+    "market_cap": 397325729792,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 224.35,
+    "current_price": 224.81,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1921,10 +1921,10 @@
   "ADBE": {
     "ticker": "ADBE",
     "long_name": "Adobe Inc.",
-    "market_cap": 108505300992,
+    "market_cap": 108254142464,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 259.21,
+    "current_price": 258.61,
     "bs_date": "2025-11-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1957,10 +1957,10 @@
   "AMD": {
     "ticker": "AMD",
     "long_name": "Advanced Micro Devices, Inc.",
-    "market_cap": 331576639488,
+    "market_cap": 326326714368,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 203.37,
+    "current_price": 200.15,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1993,10 +1993,10 @@
   "GOOGL": {
     "ticker": "GOOGL",
     "long_name": "Alphabet Inc.",
-    "market_cap": 3663576694784,
+    "market_cap": 3810313371648,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 302.85,
+    "current_price": 314.98,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2029,10 +2029,10 @@
   "GOOG": {
     "ticker": "GOOG",
     "long_name": "Alphabet Inc.",
-    "market_cap": 3672165318656,
+    "market_cap": 3809345273856,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 303.56,
+    "current_price": 314.9,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2065,10 +2065,10 @@
   "AMZN": {
     "ticker": "AMZN",
     "long_name": "Amazon.com, Inc.",
-    "market_cap": 2199155900416,
+    "market_cap": 2255514238976,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 204.86,
+    "current_price": 210.11,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2101,10 +2101,10 @@
   "AAPL": {
     "ticker": "AAPL",
     "long_name": "Apple Inc.",
-    "market_cap": 3829985181696,
+    "market_cap": 3888777003008,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 260.58,
+    "current_price": 264.58,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2137,10 +2137,10 @@
   "AMAT": {
     "ticker": "AMAT",
     "long_name": "Applied Materials, Inc.",
-    "market_cap": 293542002688,
+    "market_cap": 297947168768,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 369.83,
+    "current_price": 375.38,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2173,10 +2173,10 @@
   "BKNG": {
     "ticker": "BKNG",
     "long_name": "Booking Holdings Inc.",
-    "market_cap": 129880997888,
+    "market_cap": 132128301056,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 4007.45,
+    "current_price": 4076.79,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2209,10 +2209,10 @@
   "AVGO": {
     "ticker": "AVGO",
     "long_name": "Broadcom Inc.",
-    "market_cap": 1583537979392,
+    "market_cap": 1577184657408,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 333.99,
+    "current_price": 332.65,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2245,10 +2245,10 @@
   "CVX": {
     "ticker": "CVX",
     "long_name": "Chevron Corporation",
-    "market_cap": 369440555008,
+    "market_cap": 367741108224,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 184.78,
+    "current_price": 183.93,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2281,10 +2281,10 @@
   "CSCO": {
     "ticker": "CSCO",
     "long_name": "Cisco Systems, Inc.",
-    "market_cap": 310397960192,
+    "market_cap": 312926666752,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 78.56,
+    "current_price": 79.2,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2317,10 +2317,10 @@
   "KO": {
     "ticker": "KO",
     "long_name": "The Coca-Cola Company",
-    "market_cap": 339439976448,
+    "market_cap": 343440457728,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 78.91,
+    "current_price": 79.84,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2353,10 +2353,10 @@
   "COP": {
     "ticker": "COP",
     "long_name": "ConocoPhillips",
-    "market_cap": 137893789696,
+    "market_cap": 136583938048,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 111.59,
+    "current_price": 110.53,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2389,10 +2389,10 @@
   "DHR": {
     "ticker": "DHR",
     "long_name": "Danaher Corporation",
-    "market_cap": 149332623360,
+    "market_cap": 148095549440,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 211.25,
+    "current_price": 209.5,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2425,10 +2425,10 @@
   "LLY": {
     "ticker": "LLY",
     "long_name": "Eli Lilly and Company",
-    "market_cap": 965262180352,
+    "market_cap": 952338219008,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 1023.22,
+    "current_price": 1009.52,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2461,10 +2461,10 @@
   "XOM": {
     "ticker": "XOM",
     "long_name": "Exxon Mobil Corporation",
-    "market_cap": 636665462784,
+    "market_cap": 621104136192,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 150.97,
+    "current_price": 147.28,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2497,10 +2497,10 @@
   "HD": {
     "ticker": "HD",
     "long_name": "The Home Depot, Inc.",
-    "market_cap": 376880726016,
+    "market_cap": 380534259712,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 378.58,
+    "current_price": 382.25,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2533,10 +2533,10 @@
   "ISRG": {
     "ticker": "ISRG",
     "long_name": "Intuitive Surgical, Inc.",
-    "market_cap": 177398202368,
+    "market_cap": 179003392000,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 499.53,
+    "current_price": 504.05,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2569,10 +2569,10 @@
   "JNJ": {
     "ticker": "JNJ",
     "long_name": "Johnson & Johnson",
-    "market_cap": 595028148224,
+    "market_cap": 584376451072,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 246.91,
+    "current_price": 242.49,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2605,10 +2605,10 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 156045475840,
+    "market_cap": 157268344832,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 278.18,
+    "current_price": 280.36,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2641,10 +2641,10 @@
   "MA": {
     "ticker": "MA",
     "long_name": "Mastercard Incorporated",
-    "market_cap": 464299655168,
+    "market_cap": 469788098560,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 520.26,
+    "current_price": 526.41,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2677,10 +2677,10 @@
   "MRK": {
     "ticker": "MRK",
     "long_name": "Merck & Co., Inc.",
-    "market_cap": 304379887616,
+    "market_cap": 305378983936,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 121.86,
+    "current_price": 122.26,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2713,10 +2713,10 @@
   "META": {
     "ticker": "META",
     "long_name": "Meta Platforms, Inc.",
-    "market_cap": 1631006883840,
+    "market_cap": 1658528202752,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 644.78,
+    "current_price": 655.66,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2749,10 +2749,10 @@
   "MU": {
     "ticker": "MU",
     "long_name": "Micron Technology, Inc.",
-    "market_cap": 469731278848,
+    "market_cap": 481909309440,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 417.35,
+    "current_price": 428.17,
     "bs_date": "2025-11-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2785,10 +2785,10 @@
   "MSFT": {
     "ticker": "MSFT",
     "long_name": "Microsoft Corporation",
-    "market_cap": 2961505255424,
+    "market_cap": 2952363507712,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 398.46,
+    "current_price": 397.23,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2821,10 +2821,10 @@
   "NKE": {
     "ticker": "NKE",
     "long_name": "NIKE, Inc.",
-    "market_cap": 97127956480,
+    "market_cap": 96817070080,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 65.61,
+    "current_price": 65.4,
     "bs_date": "2025-11-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2857,10 +2857,10 @@
   "NVDA": {
     "ticker": "NVDA",
     "long_name": "NVIDIA Corporation",
-    "market_cap": 4574801297408,
+    "market_cap": 4621547864064,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 187.9,
+    "current_price": 189.82,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2893,10 +2893,10 @@
   "ORCL": {
     "ticker": "ORCL",
     "long_name": "Oracle Corporation",
-    "market_cap": 449910177792,
+    "market_cap": 425595404288,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 156.54,
+    "current_price": 148.08,
     "bs_date": "2025-11-30",
     "bs_type": "quarterly",
     "assets": {
@@ -2929,10 +2929,10 @@
   "PEP": {
     "ticker": "PEP",
     "long_name": "PepsiCo, Inc.",
-    "market_cap": 225050509312,
+    "market_cap": 225529085952,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 164.59,
+    "current_price": 164.94,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2965,10 +2965,10 @@
   "PG": {
     "ticker": "PG",
     "long_name": "The Procter & Gamble Company",
-    "market_cap": 371107364864,
+    "market_cap": 376303222784,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 158.56,
+    "current_price": 160.78,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3001,10 +3001,10 @@
   "QCOM": {
     "ticker": "QCOM",
     "long_name": "QUALCOMM Incorporated",
-    "market_cap": 150882746368,
+    "market_cap": 152602296320,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 141.27,
+    "current_price": 142.88,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3037,10 +3037,10 @@
   "SPGI": {
     "ticker": "SPGI",
     "long_name": "S&P Global Inc.",
-    "market_cap": 126167678976,
+    "market_cap": 126412947456,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 416.67,
+    "current_price": 417.48,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3073,10 +3073,10 @@
   "CRM": {
     "ticker": "CRM",
     "long_name": "Salesforce, Inc.",
-    "market_cap": 176396075008,
+    "market_cap": 176272326656,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 185.29,
+    "current_price": 185.16,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3109,10 +3109,10 @@
   "NOW": {
     "ticker": "NOW",
     "long_name": "ServiceNow, Inc.",
-    "market_cap": 113290706944,
+    "market_cap": 110019756032,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 107.37,
+    "current_price": 104.27,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3145,10 +3145,10 @@
   "SBUX": {
     "ticker": "SBUX",
     "long_name": "Starbucks Corporation",
-    "market_cap": 109144940544,
+    "market_cap": 111070355456,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 95.8,
+    "current_price": 97.49,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3181,10 +3181,10 @@
   "TSLA": {
     "ticker": "TSLA",
     "long_name": "Tesla, Inc.",
-    "market_cap": 1544913682432,
+    "market_cap": 1545326559232,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 411.71,
+    "current_price": 411.82,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3217,10 +3217,10 @@
   "TXN": {
     "ticker": "TXN",
     "long_name": "Texas Instruments Incorporated",
-    "market_cap": 198125256704,
+    "market_cap": 199651737600,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 218.05,
+    "current_price": 219.73,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3253,10 +3253,10 @@
   "TMO": {
     "ticker": "TMO",
     "long_name": "Thermo Fisher Scientific Inc.",
-    "market_cap": 193534738432,
+    "market_cap": 191960514560,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 515.12,
+    "current_price": 510.93,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3289,10 +3289,10 @@
   "UBER": {
     "ticker": "UBER",
     "long_name": "Uber Technologies, Inc.",
-    "market_cap": 151556947968,
+    "market_cap": 153468551168,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 72.94,
+    "current_price": 73.86,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3325,10 +3325,10 @@
   "UNP": {
     "ticker": "UNP",
     "long_name": "Union Pacific Corporation",
-    "market_cap": 156044165120,
+    "market_cap": 157901471744,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 262.97,
+    "current_price": 266.1,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3361,10 +3361,10 @@
   "UPS": {
     "ticker": "UPS",
     "long_name": "United Parcel Service, Inc.",
-    "market_cap": 98022473728,
+    "market_cap": 99032055808,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 115.54,
+    "current_price": 116.73,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3397,10 +3397,10 @@
   "UNH": {
     "ticker": "UNH",
     "long_name": "UnitedHealth Group Incorporated",
-    "market_cap": 262629769216,
+    "market_cap": 262693191680,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 289.93,
+    "current_price": 290.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3433,10 +3433,10 @@
   "V": {
     "ticker": "V",
     "long_name": "Visa Inc.",
-    "market_cap": 614909607936,
+    "market_cap": 618804346880,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 318.93,
+    "current_price": 320.95,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3469,10 +3469,10 @@
   "WMT": {
     "ticker": "WMT",
     "long_name": "Walmart Inc.",
-    "market_cap": 995569958912,
+    "market_cap": 980580958208,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 124.87,
+    "current_price": 122.99,
     "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3505,10 +3505,10 @@
   "PLD": {
     "ticker": "PLD",
     "long_name": "Prologis, Inc.",
-    "market_cap": 129149665280,
+    "market_cap": 131443965952,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 139.04,
+    "current_price": 141.51,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3541,10 +3541,10 @@
   "BABA": {
     "ticker": "BABA",
     "long_name": "Alibaba Group Holding Limited",
-    "market_cap": 368293347328,
+    "market_cap": 368723034112,
     "trading_currency": "USD",
     "financial_currency": "CNY",
-    "current_price": 154.27,
+    "current_price": 154.45,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3577,10 +3577,10 @@
   "JD": {
     "ticker": "JD",
     "long_name": "JD.com, Inc.",
-    "market_cap": 40234323968,
+    "market_cap": 40440881152,
     "trading_currency": "USD",
     "financial_currency": "CNY",
-    "current_price": 27.27,
+    "current_price": 27.41,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3613,10 +3613,10 @@
   "PDD": {
     "ticker": "PDD",
     "long_name": "PDD Holdings Inc.",
-    "market_cap": 144732946432,
+    "market_cap": 148977696768,
     "trading_currency": "USD",
     "financial_currency": "CNY",
-    "current_price": 101.95,
+    "current_price": 104.94,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3649,10 +3649,10 @@
   "INFY": {
     "ticker": "INFY",
     "long_name": "Infosys Limited",
-    "market_cap": 58864795648,
+    "market_cap": 59269361664,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 14.55,
+    "current_price": 14.65,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3685,10 +3685,10 @@
   "TSM": {
     "ticker": "TSM",
     "long_name": "Taiwan Semiconductor Manufacturing Company Limited",
-    "market_cap": 1869164445696,
+    "market_cap": 1921807548416,
     "trading_currency": "USD",
     "financial_currency": "TWD",
-    "current_price": 360.39,
+    "current_price": 370.54,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3721,10 +3721,10 @@
   "ASTS": {
     "ticker": "ASTS",
     "long_name": "AST SpaceMobile, Inc.",
-    "market_cap": 32292569088,
+    "market_cap": 29975275520,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 86.4,
+    "current_price": 80.2,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3757,10 +3757,10 @@
   "RKLB": {
     "ticker": "RKLB",
     "long_name": "Rocket Lab Corporation",
-    "market_cap": 40905691136,
+    "market_cap": 37850316800,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 76.58,
+    "current_price": 70.86,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -3793,10 +3793,10 @@
   "ATO.PA": {
     "ticker": "ATO.PA",
     "long_name": "Atos SE",
-    "market_cap": 783171072,
+    "market_cap": 773191296,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
-    "current_price": 40.415,
+    "current_price": 39.9,
     "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
