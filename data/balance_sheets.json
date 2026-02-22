@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 19207991328768,
+    "market_cap": 19203931242496,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1419.4,
+    "current_price": 1419.1,
     "error": "Balance sheet data all empty/NaN",
     "zakaatable_pct": 25.0,
     "fallback": true
@@ -2965,7 +2965,7 @@
   "PG": {
     "ticker": "PG",
     "long_name": "The Procter & Gamble Company",
-    "market_cap": 376303222784,
+    "market_cap": 375699996672,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 160.78,
