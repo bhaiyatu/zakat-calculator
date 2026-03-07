@@ -510,32 +510,32 @@
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 249.35,
-    "bs_date": "2025-06-30",
+    "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 4013000000.0,
-      "receivables": 8985000000.0,
-      "inventory": 5866000000.0,
-      "other_current": 0.0,
-      "total": 18864000000.0
+      "cash_and_sti": 4634000000.0,
+      "receivables": 7221000000.0,
+      "inventory": 5368000000.0,
+      "other_current": 601000000.0,
+      "total": 17824000000.0
     },
     "assets_broad": {
-      "nc_investments": 1719000000.0,
-      "nc_deferred_tax_asset": 1717000000.0,
+      "nc_investments": 1633000000.0,
+      "nc_deferred_tax_asset": 1567000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 3436000000.0,
-      "total": 22300000000.0
+      "nc_liquid_total": 3200000000.0,
+      "total": 21024000000.0
     },
     "liabilities": {
-      "payables": 8394000000.0,
-      "current_debt": 4641000000.0,
+      "payables": 9327000000.0,
+      "current_debt": 2859000000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 3330000000.0,
-      "total": 16365000000.0
+      "taxes_payable": 3674000000.0,
+      "total": 15860000000.0
     },
-    "net_zakaatable": 2499000000.0,
-    "net_zakaatable_broad": 5935000000.0,
-    "net_zakaatable_assets_only": 22300000000.0,
+    "net_zakaatable": 1964000000.0,
+    "net_zakaatable_broad": 5164000000.0,
+    "net_zakaatable_assets_only": 21024000000.0,
     "error": null,
     "fallback": false
   },
@@ -697,10 +697,10 @@
   "MDT": {
     "ticker": "MDT",
     "long_name": "Medtronic plc",
-    "market_cap": 116692303872,
+    "market_cap": 116705140736,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 90.89,
+    "current_price": 90.9,
     "bs_date": "2026-01-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1705,7 +1705,7 @@
   "GSK.L": {
     "ticker": "GSK.L",
     "long_name": "GSK plc",
-    "market_cap": 81758330880,
+    "market_cap": 81687224320,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2038.0,
@@ -2965,7 +2965,7 @@
   "PG": {
     "ticker": "PG",
     "long_name": "The Procter & Gamble Company",
-    "market_cap": 359568769024,
+    "market_cap": 358992379904,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 153.63,
@@ -3077,32 +3077,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 202.11,
-    "bs_date": "2025-10-31",
+    "bs_date": "2026-01-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 11323000000.0,
-      "receivables": 5474000000.0,
+      "cash_and_sti": 9565000000.0,
+      "receivables": 14339000000.0,
       "inventory": 0.0,
-      "other_current": 2431000000.0,
-      "total": 19228000000.0
+      "other_current": 2243000000.0,
+      "total": 26147000000.0
     },
     "assets_broad": {
-      "nc_investments": 6410000000.0,
-      "nc_deferred_tax_asset": 4334000000.0,
+      "nc_investments": 7591000000.0,
+      "nc_deferred_tax_asset": 2985000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 10744000000.0,
-      "total": 29972000000.0
+      "nc_liquid_total": 10576000000.0,
+      "total": 36723000000.0
     },
     "liabilities": {
       "payables": 0.0,
-      "current_debt": 0.0,
+      "current_debt": 4000000000.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 0.0,
-      "total": 0.0
+      "total": 4000000000.0
     },
-    "net_zakaatable": 19228000000.0,
-    "net_zakaatable_broad": 29972000000.0,
-    "net_zakaatable_assets_only": 29972000000.0,
+    "net_zakaatable": 22147000000.0,
+    "net_zakaatable_broad": 32723000000.0,
+    "net_zakaatable_assets_only": 36723000000.0,
     "error": null,
     "fallback": false
   },
@@ -3253,7 +3253,7 @@
   "TMO": {
     "ticker": "TMO",
     "long_name": "Thermo Fisher Scientific Inc.",
-    "market_cap": 188594176000,
+    "market_cap": 186473955328,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 501.97,
@@ -3397,7 +3397,7 @@
   "UNH": {
     "ticker": "UNH",
     "long_name": "UnitedHealth Group Incorporated",
-    "market_cap": 259504652288,
+    "market_cap": 260030988288,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 286.48,
@@ -3761,32 +3761,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 70.11,
-    "bs_date": "2025-09-30",
+    "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 976740000.0,
-      "receivables": 120602000.0,
-      "inventory": 144999000.0,
-      "other_current": 15812000.0,
-      "total": 1258153000.0
+      "cash_and_sti": 1016577000.0,
+      "receivables": 122986000.0,
+      "inventory": 158407000.0,
+      "other_current": 9836000.0,
+      "total": 1307806000.0
     },
     "assets_broad": {
-      "nc_investments": 46202000.0,
-      "nc_deferred_tax_asset": 0.0,
+      "nc_investments": 82247000.0,
+      "nc_deferred_tax_asset": 1895000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 46202000.0,
-      "total": 1304355000.0
+      "nc_liquid_total": 84142000.0,
+      "total": 1391948000.0
     },
     "liabilities": {
-      "payables": 61229000.0,
-      "current_debt": 17090000.0,
-      "accrued_expenses": 17961000.0,
+      "payables": 72699000.0,
+      "current_debt": 0.0,
+      "accrued_expenses": 19299000.0,
       "taxes_payable": 0.0,
-      "total": 96280000.0
+      "total": 91998000.0
     },
-    "net_zakaatable": 1161873000.0,
-    "net_zakaatable_broad": 1208075000.0,
-    "net_zakaatable_assets_only": 1304355000.0,
+    "net_zakaatable": 1215808000.0,
+    "net_zakaatable_broad": 1299950000.0,
+    "net_zakaatable_assets_only": 1391948000.0,
     "error": null,
     "fallback": false
   },
