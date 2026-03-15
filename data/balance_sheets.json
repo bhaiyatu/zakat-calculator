@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 18684284239872,
+    "market_cap": 18703229911040,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1380.7,
+    "current_price": 1382.1,
     "error": "Balance sheet data all empty/NaN",
     "zakaatable_pct": 25.0,
     "fallback": true
@@ -3757,10 +3757,10 @@
   "RKLB": {
     "ticker": "RKLB",
     "long_name": "Rocket Lab Corporation",
-    "market_cap": 38818942976,
+    "market_cap": 38818770944,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 68.41,
+    "current_price": 68.4097,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
