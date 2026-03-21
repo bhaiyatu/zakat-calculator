@@ -150,32 +150,32 @@
     "trading_currency": "HKD",
     "financial_currency": "CNY",
     "current_price": 123.7,
-    "bs_date": "2025-09-30",
+    "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 373572000000.0,
-      "receivables": 232673000000.0,
+      "cash_and_sti": 338110000000.0,
+      "receivables": 231761000000.0,
       "inventory": 0.0,
       "other_current": 0.0,
-      "total": 606245000000.0
+      "total": 569871000000.0
     },
     "assets_broad": {
-      "nc_investments": 618815000000.0,
+      "nc_investments": 649216000000.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 618815000000.0,
-      "total": 1225060000000.0
+      "nc_liquid_total": 649216000000.0,
+      "total": 1219087000000.0
     },
     "liabilities": {
       "payables": 0.0,
-      "current_debt": 26288000000.0,
-      "accrued_expenses": 340769000000.0,
-      "taxes_payable": 5588000000.0,
-      "total": 372645000000.0
+      "current_debt": 24655000000.0,
+      "accrued_expenses": 351293000000.0,
+      "taxes_payable": 11235000000.0,
+      "total": 387183000000.0
     },
-    "net_zakaatable": 233600000000.0,
-    "net_zakaatable_broad": 852415000000.0,
-    "net_zakaatable_assets_only": 1225060000000.0,
+    "net_zakaatable": 182688000000.0,
+    "net_zakaatable_broad": 831904000000.0,
+    "net_zakaatable_assets_only": 1219087000000.0,
     "error": null,
     "fallback": false
   },
@@ -1741,7 +1741,7 @@
   "REL.L": {
     "ticker": "REL.L",
     "long_name": "RELX PLC",
-    "market_cap": 44734648320,
+    "market_cap": 44722548736,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2494.0,
@@ -2317,7 +2317,7 @@
   "KO": {
     "ticker": "KO",
     "long_name": "The Coca-Cola Company",
-    "market_cap": 321545273344,
+    "market_cap": 321735458816,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 74.75,
@@ -2749,36 +2749,36 @@
   "MU": {
     "ticker": "MU",
     "long_name": "Micron Technology, Inc.",
-    "market_cap": 475977842688,
+    "market_cap": 476918710272,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 422.9,
-    "bs_date": "2025-11-30",
+    "bs_date": "2026-02-28",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 10318000000.0,
-      "receivables": 10184000000.0,
-      "inventory": 8205000000.0,
-      "other_current": 958000000.0,
-      "total": 29665000000.0
+      "cash_and_sti": 14589000000.0,
+      "receivables": 17314000000.0,
+      "inventory": 8267000000.0,
+      "other_current": 1243000000.0,
+      "total": 41413000000.0
     },
     "assets_broad": {
-      "nc_investments": 1697000000.0,
-      "nc_deferred_tax_asset": 641000000.0,
+      "nc_investments": 2038000000.0,
+      "nc_deferred_tax_asset": 680000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 2338000000.0,
-      "total": 32003000000.0
+      "nc_liquid_total": 2718000000.0,
+      "total": 44131000000.0
     },
     "liabilities": {
-      "payables": 3227000000.0,
+      "payables": 3387000000.0,
       "current_debt": 0.0,
-      "accrued_expenses": 1551000000.0,
-      "taxes_payable": 723000000.0,
-      "total": 5501000000.0
+      "accrued_expenses": 1371000000.0,
+      "taxes_payable": 1399000000.0,
+      "total": 6157000000.0
     },
-    "net_zakaatable": 24164000000.0,
-    "net_zakaatable_broad": 26502000000.0,
-    "net_zakaatable_assets_only": 32003000000.0,
+    "net_zakaatable": 35256000000.0,
+    "net_zakaatable_broad": 37974000000.0,
+    "net_zakaatable_assets_only": 44131000000.0,
     "error": null,
     "fallback": false
   },
@@ -2965,7 +2965,7 @@
   "PG": {
     "ticker": "PG",
     "long_name": "The Procter & Gamble Company",
-    "market_cap": 337685217280,
+    "market_cap": 337143889920,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 144.28,
@@ -3545,32 +3545,32 @@
     "trading_currency": "USD",
     "financial_currency": "CNY",
     "current_price": 122.41,
-    "bs_date": "2025-09-30",
+    "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 373572000000.0,
-      "receivables": 232673000000.0,
+      "cash_and_sti": 338110000000.0,
+      "receivables": 231761000000.0,
       "inventory": 0.0,
       "other_current": 0.0,
-      "total": 606245000000.0
+      "total": 569871000000.0
     },
     "assets_broad": {
-      "nc_investments": 618815000000.0,
+      "nc_investments": 649216000000.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 618815000000.0,
-      "total": 1225060000000.0
+      "nc_liquid_total": 649216000000.0,
+      "total": 1219087000000.0
     },
     "liabilities": {
       "payables": 0.0,
-      "current_debt": 26288000000.0,
-      "accrued_expenses": 340769000000.0,
-      "taxes_payable": 5588000000.0,
-      "total": 372645000000.0
+      "current_debt": 24655000000.0,
+      "accrued_expenses": 351293000000.0,
+      "taxes_payable": 11235000000.0,
+      "total": 387183000000.0
     },
-    "net_zakaatable": 233600000000.0,
-    "net_zakaatable_broad": 852415000000.0,
-    "net_zakaatable_assets_only": 1225060000000.0,
+    "net_zakaatable": 182688000000.0,
+    "net_zakaatable_broad": 831904000000.0,
+    "net_zakaatable_assets_only": 1219087000000.0,
     "error": null,
     "fallback": false
   },
