@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 19140328816640,
+    "market_cap": 19129503318016,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1414.4,
+    "current_price": 1413.6,
     "error": "Balance sheet data all empty/NaN",
     "zakaatable_pct": 25.0,
     "fallback": true
@@ -2749,10 +2749,10 @@
   "MU": {
     "ticker": "MU",
     "long_name": "Micron Technology, Inc.",
-    "market_cap": 476918710272,
+    "market_cap": 476896165888,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 422.9,
+    "current_price": 422.88,
     "bs_date": "2026-02-28",
     "bs_type": "quarterly",
     "assets": {
@@ -2785,10 +2785,10 @@
   "MSFT": {
     "ticker": "MSFT",
     "long_name": "Microsoft Corporation",
-    "market_cap": 2838202155008,
+    "market_cap": 2838053519360,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 381.87,
+    "current_price": 381.85,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2857,10 +2857,10 @@
   "NVDA": {
     "ticker": "NVDA",
     "long_name": "NVIDIA Corporation",
-    "market_cap": 4197473583104,
+    "market_cap": 4203063541760,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 172.7,
+    "current_price": 172.93,
     "bs_date": "2026-01-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3613,10 +3613,10 @@
   "PDD": {
     "ticker": "PDD",
     "long_name": "PDD Holdings Inc.",
-    "market_cap": 136555798528,
+    "market_cap": 136562892800,
     "trading_currency": "USD",
     "financial_currency": "CNY",
-    "current_price": 96.19,
+    "current_price": 96.195,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
