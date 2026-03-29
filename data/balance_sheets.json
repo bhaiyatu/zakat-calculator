@@ -372,26 +372,26 @@
       "cash_and_sti": 12239000000.0,
       "receivables": 418000000.0,
       "inventory": 2575000000.0,
-      "other_current": 2000000.0,
-      "total": 15234000000.0
+      "other_current": 372000000.0,
+      "total": 15604000000.0
     },
     "assets_broad": {
-      "nc_investments": 1195000000.0,
+      "nc_investments": 1196000000.0,
       "nc_deferred_tax_asset": 914000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 2109000000.0,
-      "total": 17343000000.0
+      "nc_liquid_total": 2110000000.0,
+      "total": 17714000000.0
     },
     "liabilities": {
-      "payables": 626000000.0,
+      "payables": 792000000.0,
       "current_debt": 0.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 452000000.0,
-      "total": 1078000000.0
+      "total": 1244000000.0
     },
-    "net_zakaatable": 14156000000.0,
-    "net_zakaatable_broad": 16265000000.0,
-    "net_zakaatable_assets_only": 17343000000.0,
+    "net_zakaatable": 14360000000.0,
+    "net_zakaatable_broad": 16470000000.0,
+    "net_zakaatable_assets_only": 17714000000.0,
     "error": null,
     "fallback": false
   },
@@ -405,29 +405,29 @@
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 9896200000.0,
+      "cash_and_sti": 9865000000.0,
       "receivables": 5500300000.0,
       "inventory": 4543300000.0,
-      "other_current": 547300000.0,
-      "total": 20487100000.0
+      "other_current": 2063900000.0,
+      "total": 21972500000.0
     },
     "assets_broad": {
-      "nc_investments": 12142300000.0,
+      "nc_investments": 12867300000.0,
       "nc_deferred_tax_asset": 962700000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 13105000000.0,
-      "total": 33592100000.0
+      "nc_liquid_total": 13830000000.0,
+      "total": 35802500000.0
     },
     "liabilities": {
       "payables": 6727700000.0,
       "current_debt": 2048900000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 2432000000.0,
-      "total": 11208600000.0
+      "taxes_payable": 254800000.0,
+      "total": 9031400000.0
     },
-    "net_zakaatable": 9278500000.0,
-    "net_zakaatable_broad": 22383500000.0,
-    "net_zakaatable_assets_only": 33592100000.0,
+    "net_zakaatable": 12941100000.0,
+    "net_zakaatable_broad": 26771100000.0,
+    "net_zakaatable_assets_only": 35802500000.0,
     "error": null,
     "fallback": false
   },
@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 18243125248000,
+    "market_cap": 18241772584960,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1348.1,
+    "current_price": 1348.0,
     "error": "Balance sheet data all empty/NaN",
     "zakaatable_pct": 25.0,
     "fallback": true
@@ -593,32 +593,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 192.6,
-    "bs_date": "2026-02-28",
+    "bs_date": "2025-11-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 9405596000.0,
-      "receivables": 15737519000.0,
+      "cash_and_sti": 9655311000.0,
+      "receivables": 16006709000.0,
       "inventory": 0.0,
-      "other_current": 2864223000.0,
-      "total": 28007338000.0
+      "other_current": 2404674000.0,
+      "total": 28066694000.0
     },
     "assets_broad": {
-      "nc_investments": 852156000.0,
-      "nc_deferred_tax_asset": 3570872000.0,
-      "nc_receivables": 271701000.0,
-      "nc_liquid_total": 4694729000.0,
-      "total": 32702067000.0
+      "nc_investments": 803000000.0,
+      "nc_deferred_tax_asset": 3690039000.0,
+      "nc_receivables": 188147000.0,
+      "nc_liquid_total": 4681186000.0,
+      "total": 32747880000.0
     },
     "liabilities": {
-      "payables": 3116735000.0,
-      "current_debt": 114063000.0,
-      "accrued_expenses": 9822300000.0,
-      "taxes_payable": 529543000.0,
-      "total": 13582641000.0
+      "payables": 2971647000.0,
+      "current_debt": 113676000.0,
+      "accrued_expenses": 9921485000.0,
+      "taxes_payable": 665737000.0,
+      "total": 13672545000.0
     },
-    "net_zakaatable": 14424697000.0,
-    "net_zakaatable_broad": 19119426000.0,
-    "net_zakaatable_assets_only": 32702067000.0,
+    "net_zakaatable": 14394149000.0,
+    "net_zakaatable_broad": 19075335000.0,
+    "net_zakaatable_assets_only": 32747880000.0,
     "error": null,
     "fallback": false
   },
@@ -1244,29 +1244,29 @@
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 15923000000.0,
-      "receivables": 29891000000.0,
+      "cash_and_sti": 16129000000.0,
+      "receivables": 44042000000.0,
       "inventory": 26659000000.0,
-      "other_current": 1693000000.0,
-      "total": 74166000000.0
+      "other_current": 0.0,
+      "total": 86830000000.0
     },
     "assets_broad": {
-      "nc_investments": 34000000.0,
+      "nc_investments": 2596000000.0,
       "nc_deferred_tax_asset": 2257000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 2291000000.0,
-      "total": 76457000000.0
+      "nc_liquid_total": 4853000000.0,
+      "total": 91683000000.0
     },
     "liabilities": {
-      "payables": 16389000000.0,
-      "current_debt": 4703000000.0,
+      "payables": 47183000000.0,
+      "current_debt": 6471000000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 1908000000.0,
-      "total": 23000000000.0
+      "taxes_payable": 0.0,
+      "total": 53654000000.0
     },
-    "net_zakaatable": 51166000000.0,
-    "net_zakaatable_broad": 53457000000.0,
-    "net_zakaatable_assets_only": 76457000000.0,
+    "net_zakaatable": 33176000000.0,
+    "net_zakaatable_broad": 38029000000.0,
+    "net_zakaatable_assets_only": 91683000000.0,
     "error": null,
     "fallback": false
   },
@@ -1280,29 +1280,29 @@
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 15923000000.0,
-      "receivables": 29891000000.0,
+      "cash_and_sti": 16129000000.0,
+      "receivables": 44042000000.0,
       "inventory": 26659000000.0,
-      "other_current": 1693000000.0,
-      "total": 74166000000.0
+      "other_current": 0.0,
+      "total": 86830000000.0
     },
     "assets_broad": {
-      "nc_investments": 34000000.0,
+      "nc_investments": 2596000000.0,
       "nc_deferred_tax_asset": 2257000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 2291000000.0,
-      "total": 76457000000.0
+      "nc_liquid_total": 4853000000.0,
+      "total": 91683000000.0
     },
     "liabilities": {
-      "payables": 16389000000.0,
-      "current_debt": 4703000000.0,
+      "payables": 47183000000.0,
+      "current_debt": 6471000000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 1908000000.0,
-      "total": 23000000000.0
+      "taxes_payable": 0.0,
+      "total": 53654000000.0
     },
-    "net_zakaatable": 51166000000.0,
-    "net_zakaatable_broad": 53457000000.0,
-    "net_zakaatable_assets_only": 76457000000.0,
+    "net_zakaatable": 33176000000.0,
+    "net_zakaatable_broad": 38029000000.0,
+    "net_zakaatable_assets_only": 91683000000.0,
     "error": null,
     "fallback": false
   },
@@ -1745,32 +1745,32 @@
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2393.0,
-    "bs_date": "2025-12-31",
+    "bs_date": "2025-06-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 131000000.0,
-      "receivables": 2162000000.0,
-      "inventory": 311000000.0,
+      "cash_and_sti": 211000000.0,
+      "receivables": 2157000000.0,
+      "inventory": 307000000.0,
       "other_current": 0.0,
-      "total": 2604000000.0
+      "total": 2675000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
-      "nc_deferred_tax_asset": 75000000.0,
+      "nc_deferred_tax_asset": 84000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 75000000.0,
-      "total": 2679000000.0
+      "nc_liquid_total": 84000000.0,
+      "total": 2759000000.0
     },
     "liabilities": {
-      "payables": 89000000.0,
-      "current_debt": 1541000000.0,
+      "payables": 3691000000.0,
+      "current_debt": 1914000000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 348000000.0,
-      "total": 1978000000.0
+      "taxes_payable": 130000000.0,
+      "total": 5735000000.0
     },
-    "net_zakaatable": 626000000.0,
-    "net_zakaatable_broad": 701000000.0,
-    "net_zakaatable_assets_only": 2679000000.0,
+    "net_zakaatable": 0,
+    "net_zakaatable_broad": 0,
+    "net_zakaatable_assets_only": 2759000000.0,
     "error": null,
     "fallback": false
   },
@@ -1925,32 +1925,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 234.84,
-    "bs_date": "2026-02-28",
+    "bs_date": "2025-11-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 6890000000.0,
-      "receivables": 2092000000.0,
+      "cash_and_sti": 6595000000.0,
+      "receivables": 2344000000.0,
       "inventory": 0.0,
-      "other_current": 1404000000.0,
-      "total": 10386000000.0
+      "other_current": 1224000000.0,
+      "total": 10163000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
-      "nc_deferred_tax_asset": 2138000000.0,
+      "nc_deferred_tax_asset": 2186000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 2138000000.0,
-      "total": 12524000000.0
+      "nc_liquid_total": 2186000000.0,
+      "total": 12349000000.0
     },
     "liabilities": {
-      "payables": 419000000.0,
-      "current_debt": 849000000.0,
-      "accrued_expenses": 179000000.0,
-      "taxes_payable": 753000000.0,
-      "total": 2200000000.0
+      "payables": 417000000.0,
+      "current_debt": 0.0,
+      "accrued_expenses": 197000000.0,
+      "taxes_payable": 408000000.0,
+      "total": 1022000000.0
     },
-    "net_zakaatable": 8186000000.0,
-    "net_zakaatable_broad": 10324000000.0,
-    "net_zakaatable_assets_only": 12524000000.0,
+    "net_zakaatable": 9141000000.0,
+    "net_zakaatable_broad": 11327000000.0,
+    "net_zakaatable_assets_only": 12349000000.0,
     "error": null,
     "fallback": false
   },
@@ -2501,32 +2501,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 321.65,
-    "bs_date": "2026-01-31",
+    "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 1389000000.0,
-      "receivables": 5597000000.0,
-      "inventory": 25817000000.0,
-      "other_current": 1588000000.0,
-      "total": 34391000000.0
+      "cash_and_sti": 1684000000.0,
+      "receivables": 6765000000.0,
+      "inventory": 26203000000.0,
+      "other_current": 1463000000.0,
+      "total": 36115000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 0.0,
       "nc_liquid_total": 0.0,
-      "total": 34391000000.0
+      "total": 36115000000.0
     },
     "liabilities": {
-      "payables": 11491000000.0,
-      "current_debt": 9431000000.0,
-      "accrued_expenses": 6887000000.0,
-      "taxes_payable": 622000000.0,
-      "total": 28431000000.0
+      "payables": 13237000000.0,
+      "current_debt": 9671000000.0,
+      "accrued_expenses": 6785000000.0,
+      "taxes_payable": 714000000.0,
+      "total": 30407000000.0
     },
-    "net_zakaatable": 5960000000.0,
-    "net_zakaatable_broad": 5960000000.0,
-    "net_zakaatable_assets_only": 34391000000.0,
+    "net_zakaatable": 5708000000.0,
+    "net_zakaatable_broad": 5708000000.0,
+    "net_zakaatable_assets_only": 36115000000.0,
     "error": null,
     "fallback": false
   },
@@ -2609,32 +2609,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 230.31,
-    "bs_date": "2026-01-31",
+    "bs_date": "2025-10-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 982000000.0,
-      "receivables": 1090000000.0,
-      "inventory": 17300000000.0,
-      "other_current": 1213000000.0,
-      "total": 20585000000.0
+      "cash_and_sti": 621000000.0,
+      "receivables": 1216000000.0,
+      "inventory": 17183000000.0,
+      "other_current": 788000000.0,
+      "total": 19808000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 0.0,
       "nc_liquid_total": 0.0,
-      "total": 20585000000.0
+      "total": 19808000000.0
     },
     "liabilities": {
-      "payables": 9762000000.0,
-      "current_debt": 2431000000.0,
-      "accrued_expenses": 485000000.0,
-      "taxes_payable": 421000000.0,
-      "total": 13099000000.0
+      "payables": 10236000000.0,
+      "current_debt": 2437000000.0,
+      "accrued_expenses": 0.0,
+      "taxes_payable": 0.0,
+      "total": 12673000000.0
     },
-    "net_zakaatable": 7486000000.0,
-    "net_zakaatable_broad": 7486000000.0,
-    "net_zakaatable_assets_only": 20585000000.0,
+    "net_zakaatable": 7135000000.0,
+    "net_zakaatable_broad": 7135000000.0,
+    "net_zakaatable_assets_only": 19808000000.0,
     "error": null,
     "fallback": false
   },
@@ -2965,7 +2965,7 @@
   "PG": {
     "ticker": "PG",
     "long_name": "The Procter & Gamble Company",
-    "market_cap": 333475250176,
+    "market_cap": 334010679296,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 142.71,
