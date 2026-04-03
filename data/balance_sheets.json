@@ -733,10 +733,10 @@
   "4568.T": {
     "ticker": "4568.T",
     "long_name": "Daiichi Sankyo Company, Limited",
-    "market_cap": 5297852645376,
+    "market_cap": 5251999989760,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 2888.5,
+    "current_price": 2863.5,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -769,10 +769,10 @@
   "6367.T": {
     "ticker": "6367.T",
     "long_name": "Daikin Industries,Ltd.",
-    "market_cap": 5723339620352,
+    "market_cap": 5787762032640,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 19545.0,
+    "current_price": 19765.0,
     "bs_date": "2025-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -805,10 +805,10 @@
   "9983.T": {
     "ticker": "9983.T",
     "long_name": "Fast Retailing Co., Ltd.",
-    "market_cap": 19333342298112,
+    "market_cap": 19729154572288,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 63010.0,
+    "current_price": 64300.0,
     "bs_date": "2025-08-31",
     "bs_type": "quarterly",
     "assets": {
@@ -841,10 +841,10 @@
   "6501.T": {
     "ticker": "6501.T",
     "long_name": "Hitachi, Ltd.",
-    "market_cap": 21149580787712,
+    "market_cap": 21764841144320,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 4675.0,
+    "current_price": 4811.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -877,10 +877,10 @@
   "7741.T": {
     "ticker": "7741.T",
     "long_name": "HOYA Corporation",
-    "market_cap": 9236328218624,
+    "market_cap": 9322537943040,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 27320.0,
+    "current_price": 27575.0,
     "bs_date": "2025-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -913,10 +913,10 @@
   "6861.T": {
     "ticker": "6861.T",
     "long_name": "Keyence Corporation",
-    "market_cap": 13794833072128,
+    "market_cap": 14000979968000,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 56880.0,
+    "current_price": 57730.0,
     "bs_date": "2024-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -949,10 +949,10 @@
   "6981.T": {
     "ticker": "6981.T",
     "long_name": "Murata Manufacturing Co., Ltd.",
-    "market_cap": 6330989936640,
+    "market_cap": 6897102487552,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 3478.0,
+    "current_price": 3789.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -985,10 +985,10 @@
   "6098.T": {
     "ticker": "6098.T",
     "long_name": "Recruit Holdings Co., Ltd.",
-    "market_cap": 9664589725696,
+    "market_cap": 9692514353152,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 6922.0,
+    "current_price": 6942.0,
     "bs_date": "2025-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1021,10 +1021,10 @@
   "4063.T": {
     "ticker": "4063.T",
     "long_name": "Shin-Etsu Chemical Co., Ltd.",
-    "market_cap": 11902683971584,
+    "market_cap": 11973223776256,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 6412.0,
+    "current_price": 6450.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1057,10 +1057,10 @@
   "8035.T": {
     "ticker": "8035.T",
     "long_name": "Tokyo Electron Limited",
-    "market_cap": 17368189239296,
+    "market_cap": 17550916190208,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
-    "current_price": 38020.0,
+    "current_price": 38420.0,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1129,10 +1129,10 @@
   "005930.KS": {
     "ticker": "005930.KS",
     "long_name": "Samsung Electronics Co., Ltd.",
-    "market_cap": 1192797243703296,
+    "market_cap": 1244948615659520,
     "trading_currency": "KRW",
     "financial_currency": "KRW",
-    "current_price": 178400.0,
+    "current_price": 186200.0,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1165,10 +1165,10 @@
   "000660.KS": {
     "ticker": "000660.KS",
     "long_name": "SK hynix Inc.",
-    "market_cap": 573077888958464,
+    "market_cap": 604838836568064,
     "trading_currency": "KRW",
     "financial_currency": "KRW",
-    "current_price": 830000.0,
+    "current_price": 876000.0,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1633,7 +1633,7 @@
   "AZN.L": {
     "ticker": "AZN.L",
     "long_name": "AstraZeneca PLC",
-    "market_cap": 237525549056,
+    "market_cap": 237525614592,
     "trading_currency": "GBp",
     "financial_currency": "USD",
     "current_price": 15316.0,
@@ -1705,7 +1705,7 @@
   "GSK.L": {
     "ticker": "GSK.L",
     "long_name": "GSK plc",
-    "market_cap": 85736382464,
+    "market_cap": 85699796992,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2144.0,
@@ -1741,7 +1741,7 @@
   "REL.L": {
     "ticker": "REL.L",
     "long_name": "RELX PLC",
-    "market_cap": 45241470976,
+    "market_cap": 45155180544,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2525.0,
