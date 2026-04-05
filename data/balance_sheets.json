@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 18275603841024,
+    "market_cap": 18281016590336,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1350.5,
+    "current_price": 1350.9,
     "error": "Balance sheet data all empty/NaN",
     "zakaatable_pct": 25.0,
     "fallback": true
@@ -2825,32 +2825,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 44.19,
-    "bs_date": "2025-11-30",
+    "bs_date": "2026-02-28",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 8345000000.0,
-      "receivables": 5738000000.0,
-      "inventory": 7726000000.0,
-      "other_current": 2206000000.0,
-      "total": 24015000000.0
+      "cash_and_sti": 8057000000.0,
+      "receivables": 5369000000.0,
+      "inventory": 7487000000.0,
+      "other_current": 2271000000.0,
+      "total": 23184000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 0.0,
       "nc_liquid_total": 0.0,
-      "total": 24015000000.0
+      "total": 23184000000.0
     },
     "liabilities": {
-      "payables": 3717000000.0,
+      "payables": 2888000000.0,
       "current_debt": 999000000.0,
-      "accrued_expenses": 2320000000.0,
-      "taxes_payable": 492000000.0,
-      "total": 7528000000.0
+      "accrued_expenses": 2365000000.0,
+      "taxes_payable": 275000000.0,
+      "total": 6527000000.0
     },
-    "net_zakaatable": 16487000000.0,
-    "net_zakaatable_broad": 16487000000.0,
-    "net_zakaatable_assets_only": 24015000000.0,
+    "net_zakaatable": 16657000000.0,
+    "net_zakaatable_broad": 16657000000.0,
+    "net_zakaatable_assets_only": 23184000000.0,
     "error": null,
     "fallback": false
   },
