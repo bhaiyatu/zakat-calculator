@@ -455,14 +455,14 @@
       "total": 31881000000.0
     },
     "liabilities": {
-      "payables": 13444000000.0,
+      "payables": 10012000000.0,
       "current_debt": 2469000000.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 205000000.0,
-      "total": 16118000000.0
+      "total": 12686000000.0
     },
-    "net_zakaatable": 13870000000.0,
-    "net_zakaatable_broad": 15763000000.0,
+    "net_zakaatable": 17302000000.0,
+    "net_zakaatable_broad": 19195000000.0,
     "net_zakaatable_assets_only": 31881000000.0,
     "error": null,
     "fallback": false
@@ -506,7 +506,7 @@
   "SU.PA": {
     "ticker": "SU.PA",
     "long_name": "Schneider Electric S.E.",
-    "market_cap": 146252808192,
+    "market_cap": 146231296000,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 260.2,
@@ -1705,7 +1705,7 @@
   "GSK.L": {
     "ticker": "GSK.L",
     "long_name": "GSK plc",
-    "market_cap": 86964101120,
+    "market_cap": 86956908544,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2176.0,
