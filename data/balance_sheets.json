@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 18271543754752,
+    "market_cap": 18268838428672,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1350.2,
+    "current_price": 1350.0,
     "error": "Balance sheet data all empty/NaN",
     "zakaatable_pct": 25.0,
     "fallback": true
