@@ -186,32 +186,32 @@
     "trading_currency": "HKD",
     "financial_currency": "CNY",
     "current_price": 122.6,
-    "bs_date": "2025-09-30",
+    "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 198272000000.0,
-      "receivables": 41491000000.0,
-      "inventory": 100999000000.0,
-      "other_current": 17165000000.0,
-      "total": 357927000000.0
+      "cash_and_sti": 213232000000.0,
+      "receivables": 29475000000.0,
+      "inventory": 95428000000.0,
+      "other_current": 17898000000.0,
+      "total": 356033000000.0
     },
     "assets_broad": {
-      "nc_investments": 120989000000.0,
-      "nc_deferred_tax_asset": 4578000000.0,
+      "nc_investments": 103818000000.0,
+      "nc_deferred_tax_asset": 5237000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 125567000000.0,
-      "total": 483494000000.0
+      "nc_liquid_total": 109055000000.0,
+      "total": 465088000000.0
     },
     "liabilities": {
-      "payables": 189804000000.0,
-      "current_debt": 20609000000.0,
-      "accrued_expenses": 46937000000.0,
-      "taxes_payable": 7530000000.0,
-      "total": 264880000000.0
+      "payables": 188379000000.0,
+      "current_debt": 11525000000.0,
+      "accrued_expenses": 22217000000.0,
+      "taxes_payable": 7008000000.0,
+      "total": 229129000000.0
     },
-    "net_zakaatable": 93047000000.0,
-    "net_zakaatable_broad": 218614000000.0,
-    "net_zakaatable_assets_only": 483494000000.0,
+    "net_zakaatable": 126904000000.0,
+    "net_zakaatable_broad": 235959000000.0,
+    "net_zakaatable_assets_only": 465088000000.0,
     "error": null,
     "fallback": false
   },
@@ -1705,7 +1705,7 @@
   "GSK.L": {
     "ticker": "GSK.L",
     "long_name": "GSK plc",
-    "market_cap": 85643206656,
+    "market_cap": 85636251648,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2144.0,
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 141202702336,
+    "market_cap": 140979159040,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 251.72,
@@ -2713,7 +2713,7 @@
   "META": {
     "ticker": "META",
     "long_name": "Meta Platforms, Inc.",
-    "market_cap": 1741725368320,
+    "market_cap": 1747831357440,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 688.55,
@@ -3073,7 +3073,7 @@
   "CRM": {
     "ticker": "CRM",
     "long_name": "Salesforce, Inc.",
-    "market_cap": 170665181184,
+    "market_cap": 168115224576,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 182.14,
@@ -3581,32 +3581,32 @@
     "trading_currency": "USD",
     "financial_currency": "CNY",
     "current_price": 31.6,
-    "bs_date": "2025-09-30",
+    "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 198272000000.0,
-      "receivables": 41491000000.0,
-      "inventory": 100999000000.0,
-      "other_current": 17165000000.0,
-      "total": 357927000000.0
+      "cash_and_sti": 213232000000.0,
+      "receivables": 29475000000.0,
+      "inventory": 95428000000.0,
+      "other_current": 17898000000.0,
+      "total": 356033000000.0
     },
     "assets_broad": {
-      "nc_investments": 120989000000.0,
-      "nc_deferred_tax_asset": 4578000000.0,
+      "nc_investments": 103818000000.0,
+      "nc_deferred_tax_asset": 5237000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 125567000000.0,
-      "total": 483494000000.0
+      "nc_liquid_total": 109055000000.0,
+      "total": 465088000000.0
     },
     "liabilities": {
-      "payables": 189804000000.0,
-      "current_debt": 20609000000.0,
-      "accrued_expenses": 46937000000.0,
-      "taxes_payable": 7530000000.0,
-      "total": 264880000000.0
+      "payables": 188379000000.0,
+      "current_debt": 11525000000.0,
+      "accrued_expenses": 22217000000.0,
+      "taxes_payable": 7008000000.0,
+      "total": 229129000000.0
     },
-    "net_zakaatable": 93047000000.0,
-    "net_zakaatable_broad": 218614000000.0,
-    "net_zakaatable_assets_only": 483494000000.0,
+    "net_zakaatable": 126904000000.0,
+    "net_zakaatable_broad": 235959000000.0,
+    "net_zakaatable_assets_only": 465088000000.0,
     "error": null,
     "fallback": false
   },
@@ -3685,7 +3685,7 @@
   "TSM": {
     "ticker": "TSM",
     "long_name": "Taiwan Semiconductor Manufacturing Company Limited",
-    "market_cap": 1921599930368,
+    "market_cap": 1921561264128,
     "trading_currency": "USD",
     "financial_currency": "TWD",
     "current_price": 370.5,
