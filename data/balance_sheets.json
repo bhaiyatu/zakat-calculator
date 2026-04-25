@@ -913,7 +913,7 @@
   "6861.T": {
     "ticker": "6861.T",
     "long_name": "Keyence Corporation",
-    "market_cap": 15322742521856,
+    "market_cap": 15322738327552,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 63180.0,
@@ -3109,7 +3109,7 @@
   "NOW": {
     "ticker": "NOW",
     "long_name": "ServiceNow, Inc.",
-    "market_cap": 93430243328,
+    "market_cap": 92993044480,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 90.17,
@@ -3325,7 +3325,7 @@
   "UNP": {
     "ticker": "UNP",
     "long_name": "Union Pacific Corporation",
-    "market_cap": 159521357824,
+    "market_cap": 159530745856,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 268.7,
@@ -3469,7 +3469,7 @@
   "WMT": {
     "ticker": "WMT",
     "long_name": "Walmart Inc.",
-    "market_cap": 1035774525440,
+    "market_cap": 1035591090176,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 129.92,
