@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 17968417210368,
+    "market_cap": 18011721302016,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1327.8,
+    "current_price": 1331.0,
     "error": "Balance sheet data all empty/NaN",
     "zakaatable_pct": 25.0,
     "fallback": true
@@ -1957,10 +1957,10 @@
   "AMD": {
     "ticker": "AMD",
     "long_name": "Advanced Micro Devices, Inc.",
-    "market_cap": 567073177600,
+    "market_cap": 567056859136,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 347.81,
+    "current_price": 347.8,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2137,10 +2137,10 @@
   "AMAT": {
     "ticker": "AMAT",
     "long_name": "Applied Materials, Inc.",
-    "market_cap": 330967056384,
+    "market_cap": 331022598144,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 417.04,
+    "current_price": 417.11,
     "bs_date": "2026-01-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2173,10 +2173,10 @@
   "BKNG": {
     "ticker": "BKNG",
     "long_name": "Booking Holdings Inc.",
-    "market_cap": 140265717760,
+    "market_cap": 140285165568,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 180.25,
+    "current_price": 180.275,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2713,10 +2713,10 @@
   "META": {
     "ticker": "META",
     "long_name": "Meta Platforms, Inc.",
-    "market_cap": 1713511989248,
+    "market_cap": 1713562583040,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 675.03,
+    "current_price": 675.05,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2785,10 +2785,10 @@
   "MSFT": {
     "ticker": "MSFT",
     "long_name": "Microsoft Corporation",
-    "market_cap": 3155936149504,
+    "market_cap": 3155787776000,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 424.62,
+    "current_price": 424.6,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2857,10 +2857,10 @@
   "NVDA": {
     "ticker": "NVDA",
     "long_name": "NVIDIA Corporation",
-    "market_cap": 5062002737152,
+    "market_cap": 5061759467520,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 208.27,
+    "current_price": 208.26,
     "bs_date": "2026-01-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3217,10 +3217,10 @@
   "TXN": {
     "ticker": "TXN",
     "long_name": "Texas Instruments Incorporated",
-    "market_cap": 252197421056,
+    "market_cap": 252224716800,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 277.14,
+    "current_price": 277.17,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3613,10 +3613,10 @@
   "PDD": {
     "ticker": "PDD",
     "long_name": "PDD Holdings Inc.",
-    "market_cap": 139167940608,
+    "market_cap": 139210522624,
     "trading_currency": "USD",
     "financial_currency": "CNY",
-    "current_price": 98.03,
+    "current_price": 98.06,
     "bs_date": "2025-09-30",
     "bs_type": "quarterly",
     "assets": {
