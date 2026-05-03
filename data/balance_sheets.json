@@ -690,32 +690,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 507.92,
-    "bs_date": "2025-12-31",
+    "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 5056000000.0,
-      "receivables": 5464000000.0,
-      "inventory": 2055000000.0,
-      "other_current": 97000000.0,
-      "total": 12672000000.0
+      "cash_and_sti": 3959000000.0,
+      "receivables": 5642000000.0,
+      "inventory": 2079000000.0,
+      "other_current": 1071000000.0,
+      "total": 12751000000.0
     },
     "assets_broad": {
-      "nc_investments": 2123000000.0,
-      "nc_deferred_tax_asset": 423000000.0,
-      "nc_receivables": 96000000.0,
-      "nc_liquid_total": 2642000000.0,
-      "total": 15314000000.0
+      "nc_investments": 0.0,
+      "nc_deferred_tax_asset": 0.0,
+      "nc_receivables": 0.0,
+      "nc_liquid_total": 0.0,
+      "total": 12751000000.0
     },
     "liabilities": {
-      "payables": 2810000000.0,
-      "current_debt": 6306000000.0,
-      "accrued_expenses": 2237000000.0,
-      "taxes_payable": 1022000000.0,
-      "total": 12375000000.0
+      "payables": 2659000000.0,
+      "current_debt": 6458000000.0,
+      "accrued_expenses": 0.0,
+      "taxes_payable": 0.0,
+      "total": 9117000000.0
     },
-    "net_zakaatable": 297000000.0,
-    "net_zakaatable_broad": 2939000000.0,
-    "net_zakaatable_assets_only": 15314000000.0,
+    "net_zakaatable": 3634000000.0,
+    "net_zakaatable_broad": 3634000000.0,
+    "net_zakaatable_assets_only": 12751000000.0,
     "error": null,
     "fallback": false
   },
@@ -834,32 +834,32 @@
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 72890.0,
-    "bs_date": "2025-08-31",
+    "bs_date": "2026-02-28",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 1792940000000.0,
-      "receivables": 96407000000.0,
-      "inventory": 510958000000.0,
-      "other_current": 24665000000.0,
-      "total": 2424970000000.0
+      "cash_and_sti": 2222150000000.0,
+      "receivables": 90863000000.0,
+      "inventory": 501144000000.0,
+      "other_current": 22323000000.0,
+      "total": 2836480000000.0
     },
     "assets_broad": {
-      "nc_investments": 312438000000.0,
-      "nc_deferred_tax_asset": 40889000000.0,
+      "nc_investments": 219941000000.0,
+      "nc_deferred_tax_asset": 30058000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 353327000000.0,
-      "total": 2778297000000.0
+      "nc_liquid_total": 249999000000.0,
+      "total": 3086479000000.0
     },
     "liabilities": {
-      "payables": 390149000000.0,
+      "payables": 419424000000.0,
       "current_debt": 0.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 73072000000.0,
-      "total": 463221000000.0
+      "taxes_payable": 85034000000.0,
+      "total": 504458000000.0
     },
-    "net_zakaatable": 1961749000000.0,
-    "net_zakaatable_broad": 2315076000000.0,
-    "net_zakaatable_assets_only": 2778297000000.0,
+    "net_zakaatable": 2332022000000.0,
+    "net_zakaatable_broad": 2582021000000.0,
+    "net_zakaatable_assets_only": 3086479000000.0,
     "error": null,
     "fallback": false
   },
@@ -2090,10 +2090,10 @@
   "AMZN": {
     "ticker": "AMZN",
     "long_name": "Amazon.com, Inc.",
-    "market_cap": 2884935614464,
+    "market_cap": 2886656327680,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 268.26,
+    "current_price": 268.42,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2126,10 +2126,10 @@
   "AAPL": {
     "ticker": "AAPL",
     "long_name": "Apple Inc.",
-    "market_cap": 4109006274560,
+    "market_cap": 4110619508736,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 280.14,
+    "current_price": 280.25,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2810,10 +2810,10 @@
   "MSFT": {
     "ticker": "MSFT",
     "long_name": "Microsoft Corporation",
-    "market_cap": 3078640631808,
+    "market_cap": 3076820566016,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 414.44,
+    "current_price": 414.195,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3026,10 +3026,10 @@
   "QCOM": {
     "ticker": "QCOM",
     "long_name": "QUALCOMM Incorporated",
-    "market_cap": 186568540160,
+    "market_cap": 186594902016,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 177.01,
+    "current_price": 177.035,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3242,10 +3242,10 @@
   "TXN": {
     "ticker": "TXN",
     "long_name": "Texas Instruments Incorporated",
-    "market_cap": 255754272768,
+    "market_cap": 255690588160,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 281.02,
+    "current_price": 280.95,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3282,32 +3282,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 469.21,
-    "bs_date": "2025-12-31",
+    "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 10105000000.0,
-      "receivables": 10566000000.0,
-      "inventory": 5425000000.0,
-      "other_current": 2611000000.0,
-      "total": 28707000000.0
+      "cash_and_sti": 3256000000.0,
+      "receivables": 10888000000.0,
+      "inventory": 5496000000.0,
+      "other_current": 2676000000.0,
+      "total": 22316000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 0.0,
       "nc_liquid_total": 0.0,
-      "total": 28707000000.0
+      "total": 22316000000.0
     },
     "liabilities": {
-      "payables": 3622000000.0,
-      "current_debt": 3533000000.0,
-      "accrued_expenses": 5324000000.0,
+      "payables": 3344000000.0,
+      "current_debt": 3090000000.0,
+      "accrued_expenses": 5259000000.0,
       "taxes_payable": 0.0,
-      "total": 12479000000.0
+      "total": 11693000000.0
     },
-    "net_zakaatable": 16228000000.0,
-    "net_zakaatable_broad": 16228000000.0,
-    "net_zakaatable_assets_only": 28707000000.0,
+    "net_zakaatable": 10623000000.0,
+    "net_zakaatable_broad": 10623000000.0,
+    "net_zakaatable_assets_only": 22316000000.0,
     "error": null,
     "fallback": false
   },
