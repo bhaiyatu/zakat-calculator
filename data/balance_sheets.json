@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 19421804363776,
+    "market_cap": 19432629862400,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1435.2,
+    "current_price": 1436.0,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2018,10 +2018,10 @@
   "GOOGL": {
     "ticker": "GOOGL",
     "long_name": "Alphabet Inc.",
-    "market_cap": 4855869472768,
+    "market_cap": 4854816178176,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 400.8,
+    "current_price": 400.713,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2126,10 +2126,10 @@
   "AAPL": {
     "ticker": "AAPL",
     "long_name": "Apple Inc.",
-    "market_cap": 4308095467520,
+    "market_cap": 4307169837056,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 293.32,
+    "current_price": 293.257,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2162,10 +2162,10 @@
   "AMAT": {
     "ticker": "AMAT",
     "long_name": "Applied Materials, Inc.",
-    "market_cap": 345569492992,
+    "market_cap": 345504022528,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 435.44,
+    "current_price": 435.3575,
     "bs_date": "2026-01-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2198,10 +2198,10 @@
   "BKNG": {
     "ticker": "BKNG",
     "long_name": "Booking Holdings Inc.",
-    "market_cap": 128575578112,
+    "market_cap": 128625180672,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 165.93,
+    "current_price": 165.994,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2774,10 +2774,10 @@
   "MU": {
     "ticker": "MU",
     "long_name": "Micron Technology, Inc.",
-    "market_cap": 842203070464,
+    "market_cap": 842180460544,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 746.81,
+    "current_price": 746.79,
     "bs_date": "2026-02-28",
     "bs_type": "quarterly",
     "assets": {
@@ -2810,10 +2810,10 @@
   "MSFT": {
     "ticker": "MSFT",
     "long_name": "Microsoft Corporation",
-    "market_cap": 3083691884544,
+    "market_cap": 3083246239744,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 415.12,
+    "current_price": 415.06,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2882,10 +2882,10 @@
   "NVDA": {
     "ticker": "NVDA",
     "long_name": "NVIDIA Corporation",
-    "market_cap": 5230436024320,
+    "market_cap": 5230849163264,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 215.2,
+    "current_price": 215.217,
     "bs_date": "2026-01-31",
     "bs_type": "quarterly",
     "assets": {
@@ -3782,10 +3782,10 @@
   "RKLB": {
     "ticker": "RKLB",
     "long_name": "Rocket Lab Corporation",
-    "market_cap": 61040865280,
+    "market_cap": 61084270592,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 105.47,
+    "current_price": 105.545,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
