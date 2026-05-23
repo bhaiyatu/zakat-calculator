@@ -1604,29 +1604,29 @@
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 3452978589000.0,
+      "cash_and_sti": 3452596669000.0,
       "receivables": 364689948000.0,
       "inventory": 311453459000.0,
       "other_current": 136373194000.0,
-      "total": 4265495190000.0
+      "total": 4265113270000.0
     },
     "assets_broad": {
-      "nc_investments": 166566536000.0,
+      "nc_investments": 166438280000.0,
       "nc_deferred_tax_asset": 65327650000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 231894186000.0,
-      "total": 4497389376000.0
+      "nc_liquid_total": 231765930000.0,
+      "total": 4496879200000.0
     },
     "liabilities": {
       "payables": 341981849000.0,
-      "current_debt": 156242000000.0,
+      "current_debt": 156241738000.0,
       "accrued_expenses": 381925612000.0,
       "taxes_payable": 318839088000.0,
-      "total": 1198988549000.0
+      "total": 1198988287000.0
     },
-    "net_zakaatable": 3066506641000.0,
-    "net_zakaatable_broad": 3298400827000.0,
-    "net_zakaatable_assets_only": 4497389376000.0,
+    "net_zakaatable": 3066124983000.0,
+    "net_zakaatable_broad": 3297890913000.0,
+    "net_zakaatable_assets_only": 4496879200000.0,
     "error": null,
     "fallback": false
   },
@@ -2137,7 +2137,7 @@
   "AMAT": {
     "ticker": "AMAT",
     "long_name": "Applied Materials, Inc.",
-    "market_cap": 342966435840,
+    "market_cap": 343117496320,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 432.16,
@@ -3692,29 +3692,29 @@
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 3452978589000.0,
+      "cash_and_sti": 3452596669000.0,
       "receivables": 364689948000.0,
       "inventory": 311453459000.0,
       "other_current": 136373194000.0,
-      "total": 4265495190000.0
+      "total": 4265113270000.0
     },
     "assets_broad": {
-      "nc_investments": 166566536000.0,
+      "nc_investments": 166438280000.0,
       "nc_deferred_tax_asset": 65327650000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 231894186000.0,
-      "total": 4497389376000.0
+      "nc_liquid_total": 231765930000.0,
+      "total": 4496879200000.0
     },
     "liabilities": {
       "payables": 341981849000.0,
-      "current_debt": 156242000000.0,
+      "current_debt": 156241738000.0,
       "accrued_expenses": 381925612000.0,
       "taxes_payable": 318839088000.0,
-      "total": 1198988549000.0
+      "total": 1198988287000.0
     },
-    "net_zakaatable": 3066506641000.0,
-    "net_zakaatable_broad": 3298400827000.0,
-    "net_zakaatable_assets_only": 4497389376000.0,
+    "net_zakaatable": 3066124983000.0,
+    "net_zakaatable_broad": 3297890913000.0,
+    "net_zakaatable_assets_only": 4496879200000.0,
     "error": null,
     "fallback": false
   },
@@ -3757,7 +3757,7 @@
   "RKLB": {
     "ticker": "RKLB",
     "long_name": "Rocket Lab Corporation",
-    "market_cap": 78571233280,
+    "market_cap": 78587043840,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 135.76,
