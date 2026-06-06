@@ -290,7 +290,7 @@
   "AI.PA": {
     "ticker": "AI.PA",
     "long_name": "L'Air Liquide S.A.",
-    "market_cap": 105837797376,
+    "market_cap": 116421574656,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 183.4,
@@ -326,7 +326,7 @@
   "EL.PA": {
     "ticker": "EL.PA",
     "long_name": "EssilorLuxottica Soci\u00e9t\u00e9 anonyme",
-    "market_cap": 79933120512,
+    "market_cap": 80099852288,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 174.05,
@@ -1993,7 +1993,7 @@
   "GOOGL": {
     "ticker": "GOOGL",
     "long_name": "Alphabet Inc.",
-    "market_cap": 4483669557248,
+    "market_cap": 4494199357440,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 368.53,
@@ -2029,7 +2029,7 @@
   "GOOG": {
     "ticker": "GOOG",
     "long_name": "Alphabet Inc.",
-    "market_cap": 4449968848896,
+    "market_cap": 4460419481600,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 365.76,
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 118225141760,
+    "market_cap": 118163415040,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 210.74,
