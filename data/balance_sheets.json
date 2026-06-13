@@ -866,7 +866,7 @@
   "6501.T": {
     "ticker": "6501.T",
     "long_name": "Hitachi, Ltd.",
-    "market_cap": 20972581158912,
+    "market_cap": 20941570572288,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 4657.0,
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 123792908288,
+    "market_cap": 123857575936,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 220.78,
