@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 17497487048704,
+    "market_cap": 17543497515008,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1293.0,
+    "current_price": 1296.4,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 123857575936,
+    "market_cap": 123792908288,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 220.78,
