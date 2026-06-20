@@ -614,7 +614,7 @@
   "ACN": {
     "ticker": "ACN",
     "long_name": "Accenture plc",
-    "market_cap": 78763393024,
+    "market_cap": 78316347392,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 127.98,
@@ -722,36 +722,36 @@
   "MDT": {
     "ticker": "MDT",
     "long_name": "Medtronic plc",
-    "market_cap": 101863424000,
+    "market_cap": 101558779904,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 79.34,
-    "bs_date": "2026-01-31",
+    "bs_date": "2026-04-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 8383000000.0,
-      "receivables": 6359000000.0,
-      "inventory": 6309000000.0,
-      "other_current": 3020000000.0,
-      "total": 24071000000.0
+      "cash_and_sti": 9220000000.0,
+      "receivables": 6643000000.0,
+      "inventory": 5951000000.0,
+      "other_current": 2973000000.0,
+      "total": 24787000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
       "nc_deferred_tax_asset": 0.0,
-      "nc_receivables": 3967000000.0,
-      "nc_liquid_total": 3967000000.0,
-      "total": 28038000000.0
+      "nc_receivables": 3943000000.0,
+      "nc_liquid_total": 3943000000.0,
+      "total": 28730000000.0
     },
     "liabilities": {
-      "payables": 2569000000.0,
-      "current_debt": 191000000.0,
-      "accrued_expenses": 3504000000.0,
-      "taxes_payable": 650000000.0,
-      "total": 6914000000.0
+      "payables": 2644000000.0,
+      "current_debt": 1782000000.0,
+      "accrued_expenses": 3634000000.0,
+      "taxes_payable": 914000000.0,
+      "total": 8974000000.0
     },
-    "net_zakaatable": 17157000000.0,
-    "net_zakaatable_broad": 21124000000.0,
-    "net_zakaatable_assets_only": 28038000000.0,
+    "net_zakaatable": 15813000000.0,
+    "net_zakaatable_broad": 19756000000.0,
+    "net_zakaatable_assets_only": 28730000000.0,
     "error": null,
     "fallback": false
   },
@@ -762,32 +762,32 @@
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 2541.5,
-    "bs_date": "2025-09-30",
+    "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 593592000000.0,
-      "receivables": 616852000000.0,
-      "inventory": 608546000000.0,
-      "other_current": 57740000000.0,
-      "total": 1876730000000.0
+      "cash_and_sti": 554543000000.0,
+      "receivables": 741145000000.0,
+      "inventory": 692378000000.0,
+      "other_current": 32281000000.0,
+      "total": 2020347000000.0
     },
     "assets_broad": {
-      "nc_investments": 147028000000.0,
-      "nc_deferred_tax_asset": 339175000000.0,
+      "nc_investments": 194435000000.0,
+      "nc_deferred_tax_asset": 465299000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 486203000000.0,
-      "total": 2362933000000.0
+      "nc_liquid_total": 659734000000.0,
+      "total": 2680081000000.0
     },
     "liabilities": {
-      "payables": 551661000000.0,
-      "current_debt": 100403000000.0,
+      "payables": 596856000000.0,
+      "current_debt": 404000000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 74409000000.0,
-      "total": 726473000000.0
+      "taxes_payable": 88303000000.0,
+      "total": 685563000000.0
     },
-    "net_zakaatable": 1150257000000.0,
-    "net_zakaatable_broad": 1636460000000.0,
-    "net_zakaatable_assets_only": 2362933000000.0,
+    "net_zakaatable": 1334784000000.0,
+    "net_zakaatable_broad": 1994518000000.0,
+    "net_zakaatable_assets_only": 2680081000000.0,
     "error": null,
     "fallback": false
   },
@@ -1014,32 +1014,32 @@
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 10865.0,
-    "bs_date": "2025-03-31",
+    "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 827322000000.0,
-      "receivables": 565069000000.0,
+      "cash_and_sti": 801275000000.0,
+      "receivables": 639268000000.0,
       "inventory": 0.0,
-      "other_current": 77987000000.0,
-      "total": 1470378000000.0
+      "other_current": 114629000000.0,
+      "total": 1555172000000.0
     },
     "assets_broad": {
-      "nc_investments": 163102000000.0,
-      "nc_deferred_tax_asset": 217020000000.0,
+      "nc_investments": 135323000000.0,
+      "nc_deferred_tax_asset": 173174000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 380122000000.0,
-      "total": 1850500000000.0
+      "nc_liquid_total": 308497000000.0,
+      "total": 1863669000000.0
     },
     "liabilities": {
-      "payables": 377543000000.0,
+      "payables": 425541000000.0,
       "current_debt": 0.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 53235000000.0,
-      "total": 430778000000.0
+      "taxes_payable": 66472000000.0,
+      "total": 492013000000.0
     },
-    "net_zakaatable": 1039600000000.0,
-    "net_zakaatable_broad": 1419722000000.0,
-    "net_zakaatable_assets_only": 1850500000000.0,
+    "net_zakaatable": 1063159000000.0,
+    "net_zakaatable_broad": 1371656000000.0,
+    "net_zakaatable_assets_only": 1863669000000.0,
     "error": null,
     "fallback": false
   },
@@ -1050,32 +1050,32 @@
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 7310.0,
-    "bs_date": "2025-09-30",
+    "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 1543973000000.0,
-      "receivables": 559584000000.0,
-      "inventory": 736326000000.0,
-      "other_current": 83213000000.0,
-      "total": 2923096000000.0
+      "cash_and_sti": 1667095000000.0,
+      "receivables": 535383000000.0,
+      "inventory": 790910000000.0,
+      "other_current": 112667000000.0,
+      "total": 3106055000000.0
     },
     "assets_broad": {
-      "nc_investments": 0.0,
-      "nc_deferred_tax_asset": 0.0,
+      "nc_investments": 151829000000.0,
+      "nc_deferred_tax_asset": 99001000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 0.0,
-      "total": 2923096000000.0
+      "nc_liquid_total": 250830000000.0,
+      "total": 3356885000000.0
     },
     "liabilities": {
-      "payables": 172012000000.0,
-      "current_debt": 7642000000.0,
+      "payables": 176399000000.0,
+      "current_debt": 6929000000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 77028000000.0,
-      "total": 256682000000.0
+      "taxes_payable": 89167000000.0,
+      "total": 272495000000.0
     },
-    "net_zakaatable": 2666414000000.0,
-    "net_zakaatable_broad": 2666414000000.0,
-    "net_zakaatable_assets_only": 2923096000000.0,
+    "net_zakaatable": 2833560000000.0,
+    "net_zakaatable_broad": 3084390000000.0,
+    "net_zakaatable_assets_only": 3356885000000.0,
     "error": null,
     "fallback": false
   },
@@ -1226,7 +1226,7 @@
   "ITX.MC": {
     "ticker": "ITX.MC",
     "long_name": "Industria de Dise\u00f1o Textil, S.A.",
-    "market_cap": 173593722880,
+    "market_cap": 173575012352,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 55.74,
@@ -1334,7 +1334,7 @@
   "ABBN.SW": {
     "ticker": "ABBN.SW",
     "long_name": "ABB Ltd",
-    "market_cap": 158090706944,
+    "market_cap": 158082285568,
     "trading_currency": "CHF",
     "financial_currency": "USD",
     "current_price": 87.1,
