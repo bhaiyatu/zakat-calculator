@@ -1334,7 +1334,7 @@
   "ABBN.SW": {
     "ticker": "ABBN.SW",
     "long_name": "ABB Ltd",
-    "market_cap": 153399705600,
+    "market_cap": 153396477952,
     "trading_currency": "CHF",
     "financial_currency": "USD",
     "current_price": 84.52,
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 124811280384,
+    "market_cap": 124746104832,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 222.48,
