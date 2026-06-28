@@ -2533,10 +2533,10 @@
   "ISRG": {
     "ticker": "ISRG",
     "long_name": "Intuitive Surgical, Inc.",
-    "market_cap": 143329705984,
+    "market_cap": 143175991296,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 404.7,
+    "current_price": 404.266,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
