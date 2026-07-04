@@ -2172,11 +2172,11 @@
   },
   "BKNG": {
     "ticker": "BKNG",
-    "long_name": "Booking Holdings Inc.",
-    "market_cap": 143011561472,
+    "long_name": "BKNG",
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 184.56,
+    "current_price": 0,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 127627501568,
+    "market_cap": 127560859648,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 227.5,
