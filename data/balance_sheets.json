@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 17646342897664,
+    "market_cap": 17659875819520,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1304.0,
+    "current_price": 1305.0,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2172,11 +2172,11 @@
   },
   "BKNG": {
     "ticker": "BKNG",
-    "long_name": "BKNG",
-    "market_cap": 0,
+    "long_name": "Booking Holdings Inc.",
+    "market_cap": 143011561472,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 0,
+    "current_price": 184.56,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 127560859648,
+    "market_cap": 127627501568,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 227.5,
