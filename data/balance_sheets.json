@@ -1780,7 +1780,7 @@
     "market_cap": 109820813312,
     "trading_currency": "GBp",
     "financial_currency": "USD",
-    "current_price": 6753.0,
+    "current_price": 0,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
