@@ -578,10 +578,10 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 17697767161856,
+    "market_cap": 17727538331648,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1307.8,
+    "current_price": 1310.0,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -1225,11 +1225,11 @@
   },
   "ITX.MC": {
     "ticker": "ITX.MC",
-    "long_name": "Industria de Dise\u00f1o Textil, S.A.",
-    "market_cap": 171110629376,
-    "trading_currency": "EUR",
-    "financial_currency": "EUR",
-    "current_price": 54.96,
+    "long_name": "ITX.MC",
+    "market_cap": 0,
+    "trading_currency": "USD",
+    "financial_currency": "USD",
+    "current_price": 0,
     "bs_date": "2026-04-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1780,7 +1780,7 @@
     "market_cap": 109820813312,
     "trading_currency": "GBp",
     "financial_currency": "USD",
-    "current_price": 0,
+    "current_price": 6753.0,
     "bs_date": "2025-12-31",
     "bs_type": "quarterly",
     "assets": {
