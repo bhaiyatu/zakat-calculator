@@ -37,8 +37,8 @@
   },
   "CSL.AX": {
     "ticker": "CSL.AX",
-    "long_name": "CSL Limited",
-    "market_cap": 59059425280,
+    "long_name": "CSL FPO [CSL]",
+    "market_cap": 0,
     "trading_currency": "AUD",
     "financial_currency": "USD",
     "current_price": 123.32,
@@ -361,8 +361,8 @@
   },
   "RMS.PA": {
     "ticker": "RMS.PA",
-    "long_name": "Herm\u00e8s International Soci\u00e9t\u00e9 en commandite par actions",
-    "market_cap": 176067624960,
+    "long_name": "HERMES INTL",
+    "market_cap": 0,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 1681.0,
@@ -433,8 +433,8 @@
   },
   "SAF.PA": {
     "ticker": "SAF.PA",
-    "long_name": "Safran SA",
-    "market_cap": 136549474304,
+    "long_name": "SAFRAN",
+    "market_cap": 0,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 329.5,
@@ -577,11 +577,11 @@
   },
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
-    "long_name": "Reliance Industries Limited",
-    "market_cap": 17960297037824,
+    "long_name": "RELIANCE INDUSTRIES LTD",
+    "market_cap": 17981950132224,
     "trading_currency": "INR",
     "financial_currency": "INR",
-    "current_price": 1327.2,
+    "current_price": 1328.8,
     "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
@@ -649,7 +649,7 @@
   },
   "ETN": {
     "ticker": "ETN",
-    "long_name": "Eaton Corporation plc",
+    "long_name": "Eaton Corporation, PLC",
     "market_cap": 155316109312,
     "trading_currency": "USD",
     "financial_currency": "USD",
@@ -721,7 +721,7 @@
   },
   "MDT": {
     "ticker": "MDT",
-    "long_name": "Medtronic plc",
+    "long_name": "Medtronic plc.",
     "market_cap": 106499751936,
     "trading_currency": "USD",
     "financial_currency": "USD",
@@ -1225,7 +1225,7 @@
   },
   "ITX.MC": {
     "ticker": "ITX.MC",
-    "long_name": "Industria de Dise\u00f1o Textil, S.A.",
+    "long_name": "ITX.MC",
     "market_cap": 167312343040,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
@@ -1741,7 +1741,7 @@
   "REL.L": {
     "ticker": "REL.L",
     "long_name": "RELX PLC",
-    "market_cap": 43666010112,
+    "market_cap": 43631775744,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2496.0,
@@ -2316,8 +2316,8 @@
   },
   "KO": {
     "ticker": "KO",
-    "long_name": "The Coca-Cola Company",
-    "market_cap": 350910447616,
+    "long_name": "Coca-Cola Company (The)",
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 81.56,
@@ -2425,7 +2425,7 @@
   "LLY": {
     "ticker": "LLY",
     "long_name": "Eli Lilly and Company",
-    "market_cap": 1051461156864,
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 1179.11,
@@ -2496,7 +2496,7 @@
   },
   "HD": {
     "ticker": "HD",
-    "long_name": "The Home Depot, Inc.",
+    "long_name": "Home Depot, Inc. (The)",
     "market_cap": 337892933632,
     "trading_currency": "USD",
     "financial_currency": "USD",
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 117097529344,
+    "market_cap": 117036384256,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 208.73,
@@ -2676,7 +2676,7 @@
   },
   "MRK": {
     "ticker": "MRK",
-    "long_name": "Merck & Co., Inc.",
+    "long_name": "Merck & Company, Inc.",
     "market_cap": 314902609920,
     "trading_currency": "USD",
     "financial_currency": "USD",
@@ -2749,7 +2749,7 @@
   "MU": {
     "ticker": "MU",
     "long_name": "Micron Technology, Inc.",
-    "market_cap": 958798299136,
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 848.95,
@@ -2964,8 +2964,8 @@
   },
   "PG": {
     "ticker": "PG",
-    "long_name": "The Procter & Gamble Company",
-    "market_cap": 349243277312,
+    "long_name": "Procter & Gamble Company (The)",
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 149.98,
@@ -3073,7 +3073,7 @@
   "CRM": {
     "ticker": "CRM",
     "long_name": "Salesforce, Inc.",
-    "market_cap": 139860639744,
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 170.77,
@@ -3252,8 +3252,8 @@
   },
   "TMO": {
     "ticker": "TMO",
-    "long_name": "Thermo Fisher Scientific Inc.",
-    "market_cap": 197880987648,
+    "long_name": "Thermo Fisher Scientific Inc",
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 532.48,
@@ -3505,7 +3505,7 @@
   "PLD": {
     "ticker": "PLD",
     "long_name": "Prologis, Inc.",
-    "market_cap": 142914027520,
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 149.79,
@@ -3577,7 +3577,7 @@
   "JD": {
     "ticker": "JD",
     "long_name": "JD.com, Inc.",
-    "market_cap": 40001810432,
+    "market_cap": 0,
     "trading_currency": "USD",
     "financial_currency": "CNY",
     "current_price": 29.62,
