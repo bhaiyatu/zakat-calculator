@@ -2569,7 +2569,7 @@
   "JNJ": {
     "ticker": "JNJ",
     "long_name": "Johnson & Johnson",
-    "market_cap": 634060931072,
+    "market_cap": 634767278080,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 263.4,
@@ -2605,7 +2605,7 @@
   "LOW": {
     "ticker": "LOW",
     "long_name": "Lowe's Companies, Inc.",
-    "market_cap": 116486037504,
+    "market_cap": 116425220096,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 207.64,
@@ -3325,7 +3325,7 @@
   "UNP": {
     "ticker": "UNP",
     "long_name": "Union Pacific Corporation",
-    "market_cap": 182459957248,
+    "market_cap": 182571286528,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 307.32,
