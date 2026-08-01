@@ -478,28 +478,28 @@
     "bs_type": "quarterly",
     "assets": {
       "cash_and_sti": 6350000000.0,
-      "receivables": 492000000.0,
-      "inventory": 24123000000.0,
-      "other_current": 0.0,
+      "receivables": 9206000000.0,
+      "inventory": 11127000000.0,
+      "other_current": 4282000000.0,
       "total": 30965000000.0
     },
     "assets_broad": {
-      "nc_investments": 0.0,
-      "nc_deferred_tax_asset": 0.0,
+      "nc_investments": 7104000000.0,
+      "nc_deferred_tax_asset": 8763000000.0,
       "nc_receivables": 569000000.0,
-      "nc_liquid_total": 569000000.0,
-      "total": 31534000000.0
+      "nc_liquid_total": 16436000000.0,
+      "total": 47401000000.0
     },
     "liabilities": {
-      "payables": 23596000000.0,
+      "payables": 7150000000.0,
       "current_debt": 7026000000.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 884000000.0,
-      "total": 31506000000.0
+      "total": 15060000000.0
     },
-    "net_zakaatable": 0,
-    "net_zakaatable_broad": 28000000.0,
-    "net_zakaatable_assets_only": 31534000000.0,
+    "net_zakaatable": 15905000000.0,
+    "net_zakaatable_broad": 32341000000.0,
+    "net_zakaatable_assets_only": 47401000000.0,
     "error": null,
     "fallback": false
   },
@@ -1334,7 +1334,7 @@
   "ABBN.SW": {
     "ticker": "ABBN.SW",
     "long_name": "ABB Ltd",
-    "market_cap": 144281534464,
+    "market_cap": 144233381888,
     "trading_currency": "CHF",
     "financial_currency": "USD",
     "current_price": 79.52,
@@ -1741,7 +1741,7 @@
   "REL.L": {
     "ticker": "REL.L",
     "long_name": "RELX PLC",
-    "market_cap": 45513650176,
+    "market_cap": 45515476992,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2607.0,
@@ -2641,36 +2641,36 @@
   "MA": {
     "ticker": "MA",
     "long_name": "Mastercard Incorporated",
-    "market_cap": 0,
+    "market_cap": 502041247744,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 573.1,
-    "bs_date": "2026-03-31",
+    "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 8219000000.0,
-      "receivables": 4720000000.0,
+      "cash_and_sti": 11609000000.0,
+      "receivables": 5047000000.0,
       "inventory": 0.0,
-      "other_current": 6701000000.0,
-      "total": 19640000000.0
+      "other_current": 7182000000.0,
+      "total": 23838000000.0
     },
     "assets_broad": {
-      "nc_investments": 1677000000.0,
-      "nc_deferred_tax_asset": 1396000000.0,
-      "nc_receivables": 1083000000.0,
-      "nc_liquid_total": 4156000000.0,
-      "total": 23796000000.0
+      "nc_investments": 1667000000.0,
+      "nc_deferred_tax_asset": 1441000000.0,
+      "nc_receivables": 1128000000.0,
+      "nc_liquid_total": 4236000000.0,
+      "total": 28074000000.0
     },
     "liabilities": {
-      "payables": 1030000000.0,
-      "current_debt": 1748000000.0,
-      "accrued_expenses": 11510000000.0,
-      "taxes_payable": 1156000000.0,
-      "total": 15444000000.0
+      "payables": 1130000000.0,
+      "current_debt": 2459000000.0,
+      "accrued_expenses": 11948000000.0,
+      "taxes_payable": 1375000000.0,
+      "total": 16912000000.0
     },
-    "net_zakaatable": 4196000000.0,
-    "net_zakaatable_broad": 8352000000.0,
-    "net_zakaatable_assets_only": 23796000000.0,
+    "net_zakaatable": 6926000000.0,
+    "net_zakaatable_broad": 11162000000.0,
+    "net_zakaatable_assets_only": 28074000000.0,
     "error": null,
     "fallback": false
   },
