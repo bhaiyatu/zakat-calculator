@@ -506,7 +506,7 @@
   "SU.PA": {
     "ticker": "SU.PA",
     "long_name": "Schneider Electric S.E.",
-    "market_cap": 171193958400,
+    "market_cap": 170731749376,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 303.7,
@@ -974,7 +974,7 @@
   "6981.T": {
     "ticker": "6981.T",
     "long_name": "Murata Manufacturing Co., Ltd.",
-    "market_cap": 13220760780800,
+    "market_cap": 13220928552960,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 7263.0,
@@ -1046,7 +1046,7 @@
   "4063.T": {
     "ticker": "4063.T",
     "long_name": "Shin-Etsu Chemical Co., Ltd.",
-    "market_cap": 11373893386240,
+    "market_cap": 11312744628224,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 6116.0,
@@ -2245,7 +2245,7 @@
   "CVX": {
     "ticker": "CVX",
     "long_name": "Chevron Corporation",
-    "market_cap": 366030716928,
+    "market_cap": 365956726784,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 186.56,
@@ -3293,32 +3293,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 75.02,
-    "bs_date": "2026-03-31",
+    "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 6091000000.0,
-      "receivables": 3895000000.0,
+      "cash_and_sti": 5391000000.0,
+      "receivables": 4298000000.0,
       "inventory": 0.0,
-      "other_current": 1663000000.0,
-      "total": 11649000000.0
+      "other_current": 1769000000.0,
+      "total": 11458000000.0
     },
     "assets_broad": {
-      "nc_investments": 8278000000.0,
-      "nc_deferred_tax_asset": 10844000000.0,
+      "nc_investments": 12532000000.0,
+      "nc_deferred_tax_asset": 10162000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 19122000000.0,
-      "total": 30771000000.0
+      "nc_liquid_total": 22694000000.0,
+      "total": 34152000000.0
     },
     "liabilities": {
-      "payables": 1189000000.0,
-      "current_debt": 0.0,
-      "accrued_expenses": 1567000000.0,
-      "taxes_payable": 2861000000.0,
-      "total": 5617000000.0
+      "payables": 1366000000.0,
+      "current_debt": 1997000000.0,
+      "accrued_expenses": 1773000000.0,
+      "taxes_payable": 2883000000.0,
+      "total": 8019000000.0
     },
-    "net_zakaatable": 6032000000.0,
-    "net_zakaatable_broad": 25154000000.0,
-    "net_zakaatable_assets_only": 30771000000.0,
+    "net_zakaatable": 3439000000.0,
+    "net_zakaatable_broad": 26133000000.0,
+    "net_zakaatable_assets_only": 34152000000.0,
     "error": null,
     "fallback": false
   },
@@ -3505,7 +3505,7 @@
   "PLD": {
     "ticker": "PLD",
     "long_name": "Prologis, Inc.",
-    "market_cap": 135932968960,
+    "market_cap": 136248336384,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 140.16,
