@@ -1,83 +1,83 @@
 {
-  "computed_at": "2026-09-04T22:40:50.362063Z",
+  "computed_at": "2026-09-05T22:31:16.379762Z",
   "holdings": [
     {
       "name": "AST SpaceMobile",
       "ticker": "ASTS",
-      "zakaatable_pct": 12.402,
-      "zakaatable_pct_broad": 12.402,
-      "zakaatable_pct_assets_only": 12.9533,
+      "zakaatable_pct": 9.5131,
+      "zakaatable_pct_broad": 9.5131,
+      "zakaatable_pct_assets_only": 10.1889,
       "current_price": 62.31,
-      "price_gbp": 46.0991,
+      "price_gbp": 46.0852,
       "trading_currency": "USD",
       "fallback": false,
       "error": null,
-      "bs_date": "2026-03-31",
+      "bs_date": "2026-06-30",
       "market_cap": 24249026560,
       "financial_currency": "USD",
       "assets": {
-        "cash_and_sti": 3029591000.0,
-        "receivables": 27453000.0,
-        "inventory": 16756000.0,
-        "other_current": 67253000.0,
-        "total": 3141053000.0
+        "cash_and_sti": 2288253000.0,
+        "receivables": 79297000.0,
+        "inventory": 28417000.0,
+        "other_current": 74743000.0,
+        "total": 2470710000.0
       },
       "assets_broad": {
         "nc_investments": 0.0,
         "nc_deferred_tax_asset": 0.0,
         "nc_receivables": 0.0,
         "nc_liquid_total": 0.0,
-        "total": 3141053000.0
+        "total": 2470710000.0
       },
       "liabilities": {
-        "payables": 60850000.0,
-        "current_debt": 8236000.0,
-        "accrued_expenses": 64609000.0,
+        "payables": 60615000.0,
+        "current_debt": 8494000.0,
+        "accrued_expenses": 94778000.0,
         "taxes_payable": 0.0,
-        "total": 133695000.0
+        "total": 163887000.0
       },
-      "net_zakaatable": 3007358000.0,
-      "net_zakaatable_broad": 3007358000.0,
-      "net_zakaatable_assets_only": 3141053000.0
+      "net_zakaatable": 2306823000.0,
+      "net_zakaatable_broad": 2306823000.0,
+      "net_zakaatable_assets_only": 2470710000.0
     },
     {
       "name": "NVIDIA",
       "ticker": "NVDA",
-      "zakaatable_pct": 2.0488,
-      "zakaatable_pct_broad": 3.0389,
-      "zakaatable_pct_assets_only": 3.7046,
+      "zakaatable_pct": 2.2926,
+      "zakaatable_pct_broad": 3.4309,
+      "zakaatable_pct_assets_only": 4.0239,
       "current_price": 230.36,
-      "price_gbp": 170.4282,
+      "price_gbp": 170.377,
       "trading_currency": "USD",
       "fallback": false,
       "error": null,
-      "bs_date": "2026-04-30",
+      "bs_date": "2026-07-31",
       "market_cap": 5562502742016,
       "financial_currency": "USD",
       "assets": {
-        "cash_and_sti": 80572000000.0,
-        "receivables": 40710000000.0,
-        "inventory": 25797000000.0,
-        "other_current": 3916000000.0,
-        "total": 150995000000.0
+        "cash_and_sti": 62469000000.0,
+        "receivables": 63059000000.0,
+        "inventory": 31575000000.0,
+        "other_current": 3409000000.0,
+        "total": 160512000000.0
       },
       "assets_broad": {
-        "nc_investments": 43364000000.0,
-        "nc_deferred_tax_asset": 11707000000.0,
+        "nc_investments": 51157000000.0,
+        "nc_deferred_tax_asset": 12159000000.0,
         "nc_receivables": 0.0,
-        "nc_liquid_total": 55071000000.0,
-        "total": 206066000000.0
+        "nc_liquid_total": 63316000000.0,
+        "total": 223828000000.0
       },
       "liabilities": {
-        "payables": 13097000000.0,
+        "payables": 15059000000.0,
         "current_debt": 1000000000.0,
-        "accrued_expenses": 12293000000.0,
-        "taxes_payable": 10638000000.0,
-        "total": 37028000000.0
+        "accrued_expenses": 11721000000.0,
+        "taxes_payable": 5206000000.0,
+        "total": 32986000000.0
       },
-      "net_zakaatable": 113967000000.0,
-      "net_zakaatable_broad": 169038000000.0,
-      "net_zakaatable_assets_only": 206066000000.0
+      "net_zakaatable": 127526000000.0,
+      "net_zakaatable_broad": 190842000000.0,
+      "net_zakaatable_assets_only": 223828000000.0
     },
     {
       "name": "Alphabet (Class A)",
@@ -86,7 +86,7 @@
       "zakaatable_pct_broad": 9.0204,
       "zakaatable_pct_assets_only": 11.5099,
       "current_price": 338.46,
-      "price_gbp": 250.4042,
+      "price_gbp": 250.3291,
       "trading_currency": "USD",
       "fallback": false,
       "error": null,
@@ -125,7 +125,7 @@
       "zakaatable_pct_broad": 6.4713,
       "zakaatable_pct_assets_only": 9.9051,
       "current_price": 616.77,
-      "price_gbp": 456.3074,
+      "price_gbp": 456.1705,
       "trading_currency": "USD",
       "fallback": false,
       "error": null,
@@ -164,7 +164,7 @@
       "zakaatable_pct_broad": 3.3494,
       "zakaatable_pct_assets_only": 5.0097,
       "current_price": 319.97,
-      "price_gbp": 236.7247,
+      "price_gbp": 236.6537,
       "trading_currency": "USD",
       "fallback": false,
       "error": null,
@@ -203,7 +203,7 @@
       "zakaatable_pct_broad": 5.1122,
       "zakaatable_pct_assets_only": 6.5722,
       "current_price": 499.7,
-      "price_gbp": 369.695,
+      "price_gbp": 369.5841,
       "trading_currency": "USD",
       "fallback": false,
       "error": null,
@@ -242,7 +242,7 @@
       "zakaatable_pct_broad": 2.1262,
       "zakaatable_pct_assets_only": 9.1507,
       "current_price": 258.51,
-      "price_gbp": 191.2545,
+      "price_gbp": 191.1971,
       "trading_currency": "USD",
       "fallback": false,
       "error": null,
@@ -277,41 +277,41 @@
     {
       "name": "Rocket Lab",
       "ticker": "RKLB",
-      "zakaatable_pct": 4.0271,
-      "zakaatable_pct_broad": 4.2567,
-      "zakaatable_pct_assets_only": 4.4919,
+      "zakaatable_pct": 6.5869,
+      "zakaatable_pct_broad": 6.7973,
+      "zakaatable_pct_assets_only": 7.0863,
       "current_price": 64.26,
-      "price_gbp": 47.5417,
+      "price_gbp": 47.5275,
       "trading_currency": "USD",
       "fallback": false,
       "error": null,
-      "bs_date": "2026-03-31",
+      "bs_date": "2026-06-30",
       "market_cap": 41088552960,
       "financial_currency": "USD",
       "assets": {
-        "cash_and_sti": 1383351000.0,
-        "receivables": 175210000.0,
-        "inventory": 183146000.0,
-        "other_current": 9614000.0,
-        "total": 1751321000.0
+        "cash_and_sti": 2302185000.0,
+        "receivables": 235890000.0,
+        "inventory": 266931000.0,
+        "other_current": 20177000.0,
+        "total": 2825183000.0
       },
       "assets_broad": {
-        "nc_investments": 93494000.0,
-        "nc_deferred_tax_asset": 849000.0,
+        "nc_investments": 85405000.0,
+        "nc_deferred_tax_asset": 1057000.0,
         "nc_receivables": 0.0,
-        "nc_liquid_total": 94343000.0,
-        "total": 1845664000.0
+        "nc_liquid_total": 86462000.0,
+        "total": 2911645000.0
       },
       "liabilities": {
-        "payables": 63112000.0,
+        "payables": 74512000.0,
         "current_debt": 0.0,
-        "accrued_expenses": 33546000.0,
+        "accrued_expenses": 44206000.0,
         "taxes_payable": 0.0,
-        "total": 96658000.0
+        "total": 118718000.0
       },
-      "net_zakaatable": 1654663000.0,
-      "net_zakaatable_broad": 1749006000.0,
-      "net_zakaatable_assets_only": 1845664000.0
+      "net_zakaatable": 2706465000.0,
+      "net_zakaatable_broad": 2792927000.0,
+      "net_zakaatable_assets_only": 2911645000.0
     },
     {
       "name": "Atos",
@@ -320,7 +320,7 @@
       "zakaatable_pct_broad": 100,
       "zakaatable_pct_assets_only": 100,
       "current_price": 26.82,
-      "price_gbp": 23.0556,
+      "price_gbp": 23.0357,
       "trading_currency": "EUR",
       "fallback": false,
       "error": null,
