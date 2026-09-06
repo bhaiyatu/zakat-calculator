@@ -38,7 +38,7 @@
   "CSL.AX": {
     "ticker": "CSL.AX",
     "long_name": "CSL Limited",
-    "market_cap": 0,
+    "market_cap": 83570139136,
     "trading_currency": "AUD",
     "financial_currency": "USD",
     "current_price": 174.5,
@@ -118,28 +118,28 @@
     "bs_type": "quarterly",
     "assets": {
       "cash_and_sti": 4458000000.0,
-      "receivables": 0.0,
+      "receivables": 2112000000.0,
       "inventory": 579000000.0,
-      "other_current": 0.0,
-      "total": 5037000000.0
+      "other_current": 47000000.0,
+      "total": 7196000000.0
     },
     "assets_broad": {
-      "nc_investments": 109000000.0,
+      "nc_investments": 381000000.0,
       "nc_deferred_tax_asset": 3288000000.0,
       "nc_receivables": 771000000.0,
-      "nc_liquid_total": 4168000000.0,
-      "total": 9205000000.0
+      "nc_liquid_total": 4440000000.0,
+      "total": 11636000000.0
     },
     "liabilities": {
       "payables": 1779000000.0,
-      "current_debt": 0,
+      "current_debt": 991000000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 0.0,
-      "total": 1779000000.0
+      "taxes_payable": 500000000.0,
+      "total": 3270000000.0
     },
-    "net_zakaatable": 3258000000.0,
-    "net_zakaatable_broad": 7426000000.0,
-    "net_zakaatable_assets_only": 9205000000.0,
+    "net_zakaatable": 3926000000.0,
+    "net_zakaatable_broad": 8366000000.0,
+    "net_zakaatable_assets_only": 11636000000.0,
     "error": null,
     "fallback": false
   },
@@ -254,7 +254,7 @@
   "NOVO-B.CO": {
     "ticker": "NOVO-B.CO",
     "long_name": "Novo Nordisk A/S",
-    "market_cap": 1321445752832,
+    "market_cap": 1321132097536,
     "trading_currency": "DKK",
     "financial_currency": "DKK",
     "current_price": 298.9,
@@ -398,25 +398,25 @@
   "OR.PA": {
     "ticker": "OR.PA",
     "long_name": "L'Or\u00e9al S.A.",
-    "market_cap": 204484263936,
+    "market_cap": 204388057088,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 383.9,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 0.0,
+      "cash_and_sti": 4048800000.0,
       "receivables": 6634400000.0,
       "inventory": 4935100000.0,
-      "other_current": 0.0,
-      "total": 11569500000.0
+      "other_current": 2240700000.0,
+      "total": 17859000000.0
     },
     "assets_broad": {
-      "nc_investments": 0.0,
-      "nc_deferred_tax_asset": 0.0,
+      "nc_investments": 8076600000.0,
+      "nc_deferred_tax_asset": 1013300000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 0.0,
-      "total": 11569500000.0
+      "nc_liquid_total": 9089900000.0,
+      "total": 26948900000.0
     },
     "liabilities": {
       "payables": 7102900000.0,
@@ -425,16 +425,16 @@
       "taxes_payable": 574000000.0,
       "total": 12226600000.0
     },
-    "net_zakaatable": 0,
-    "net_zakaatable_broad": 0,
-    "net_zakaatable_assets_only": 11569500000.0,
+    "net_zakaatable": 5632400000.0,
+    "net_zakaatable_broad": 14722300000.0,
+    "net_zakaatable_assets_only": 26948900000.0,
     "error": null,
     "fallback": false
   },
   "SAF.PA": {
     "ticker": "SAF.PA",
     "long_name": "Safran SA",
-    "market_cap": 138194583552,
+    "market_cap": 138199449600,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 333.5,
@@ -578,7 +578,7 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 0,
+    "market_cap": 17889929199616,
     "trading_currency": "INR",
     "financial_currency": "INR",
     "current_price": 1322.0,
@@ -650,36 +650,36 @@
   "ETN": {
     "ticker": "ETN",
     "long_name": "Eaton Corporation plc",
-    "market_cap": 159574147072,
+    "market_cap": 159533056000,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 410.85,
-    "bs_date": "2026-06-30",
+    "bs_date": "2026-03-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 695000000.0,
-      "receivables": 6673000000.0,
-      "inventory": 5417000000.0,
-      "other_current": 1987000000.0,
-      "total": 14772000000.0
+      "cash_and_sti": 751000000.0,
+      "receivables": 6366000000.0,
+      "inventory": 5146000000.0,
+      "other_current": 1742000000.0,
+      "total": 14005000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
-      "nc_deferred_tax_asset": 592000000.0,
+      "nc_deferred_tax_asset": 585000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 592000000.0,
-      "total": 15364000000.0
+      "nc_liquid_total": 585000000.0,
+      "total": 14590000000.0
     },
     "liabilities": {
-      "payables": 5421000000.0,
-      "current_debt": 2102000000.0,
+      "payables": 4910000000.0,
+      "current_debt": 2594000000.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 0.0,
-      "total": 7523000000.0
+      "total": 7504000000.0
     },
-    "net_zakaatable": 7249000000.0,
-    "net_zakaatable_broad": 7841000000.0,
-    "net_zakaatable_assets_only": 15364000000.0,
+    "net_zakaatable": 6501000000.0,
+    "net_zakaatable_broad": 7086000000.0,
+    "net_zakaatable_assets_only": 14590000000.0,
     "error": null,
     "fallback": false
   },
@@ -1226,7 +1226,7 @@
   "ITX.MC": {
     "ticker": "ITX.MC",
     "long_name": "Industria de Dise\u00f1o Textil, S.A.",
-    "market_cap": 0,
+    "market_cap": 178831785984,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 57.44,
@@ -1633,7 +1633,7 @@
   "AZN.L": {
     "ticker": "AZN.L",
     "long_name": "AstraZeneca PLC",
-    "market_cap": 186200571904,
+    "market_cap": 186199359488,
     "trading_currency": "GBp",
     "financial_currency": "USD",
     "current_price": 12006.0,
@@ -1741,7 +1741,7 @@
   "REL.L": {
     "ticker": "REL.L",
     "long_name": "RELX PLC",
-    "market_cap": 45621628928,
+    "market_cap": 45631664128,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 2620.0,
@@ -1813,7 +1813,7 @@
   "ULVR.L": {
     "ticker": "ULVR.L",
     "long_name": "Unilever PLC",
-    "market_cap": 102559989760,
+    "market_cap": 102559981568,
     "trading_currency": "GBp",
     "financial_currency": "EUR",
     "current_price": 4763.0,
@@ -1849,7 +1849,7 @@
   "ABT": {
     "ticker": "ABT",
     "long_name": "Abbott Laboratories",
-    "market_cap": 187452440576,
+    "market_cap": 188690612224,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 108.33,
@@ -2173,7 +2173,7 @@
   "BKNG": {
     "ticker": "BKNG",
     "long_name": "Booking Holdings Inc.",
-    "market_cap": 145234329600,
+    "market_cap": 149776252928,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 193.29,
@@ -2288,29 +2288,29 @@
     "bs_date": "2026-07-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 0.0,
+      "cash_and_sti": 15918000000.0,
       "receivables": 10862000000.0,
-      "inventory": 0.0,
-      "other_current": 0.0,
-      "total": 10862000000.0
+      "inventory": 5694000000.0,
+      "other_current": 6191000000.0,
+      "total": 38665000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
       "nc_deferred_tax_asset": 7109000000.0,
-      "nc_receivables": 0.0,
-      "nc_liquid_total": 7109000000.0,
-      "total": 17971000000.0
+      "nc_receivables": 547000000.0,
+      "nc_liquid_total": 7656000000.0,
+      "total": 46321000000.0
     },
     "liabilities": {
-      "payables": 0.0,
+      "payables": 3366000000.0,
       "current_debt": 10161000000.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 190000000.0,
-      "total": 10351000000.0
+      "total": 13717000000.0
     },
-    "net_zakaatable": 511000000.0,
-    "net_zakaatable_broad": 7620000000.0,
-    "net_zakaatable_assets_only": 17971000000.0,
+    "net_zakaatable": 24948000000.0,
+    "net_zakaatable_broad": 32604000000.0,
+    "net_zakaatable_assets_only": 46321000000.0,
     "error": null,
     "fallback": false
   },
@@ -2367,11 +2367,11 @@
       "total": 19195000000.0
     },
     "assets_broad": {
-      "nc_investments": 1601000000.0,
+      "nc_investments": 10345000000.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 8744000000.0,
-      "nc_liquid_total": 10345000000.0,
-      "total": 29540000000.0
+      "nc_liquid_total": 19089000000.0,
+      "total": 38284000000.0
     },
     "liabilities": {
       "payables": 6764000000.0,
@@ -2381,8 +2381,8 @@
       "total": 11859000000.0
     },
     "net_zakaatable": 7336000000.0,
-    "net_zakaatable_broad": 17681000000.0,
-    "net_zakaatable_assets_only": 29540000000.0,
+    "net_zakaatable_broad": 26425000000.0,
+    "net_zakaatable_assets_only": 38284000000.0,
     "error": null,
     "fallback": false
   },
@@ -2425,7 +2425,7 @@
   "LLY": {
     "ticker": "LLY",
     "long_name": "Eli Lilly and Company",
-    "market_cap": 1024931856384,
+    "market_cap": 1024490143744,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 1149.36,
@@ -2965,7 +2965,7 @@
   "PG": {
     "ticker": "PG",
     "long_name": "The Procter & Gamble Company",
-    "market_cap": 340132134912,
+    "market_cap": 340389986304,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 146.44,
@@ -3469,7 +3469,7 @@
   "WMT": {
     "ticker": "WMT",
     "long_name": "Walmart Inc.",
-    "market_cap": 852628602880,
+    "market_cap": 850021580800,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 107.14,
@@ -3478,27 +3478,27 @@
     "assets": {
       "cash_and_sti": 11529000000.0,
       "receivables": 11075000000.0,
-      "inventory": 0.0,
-      "other_current": 0.0,
-      "total": 22604000000.0
+      "inventory": 61600000000.0,
+      "other_current": 4499000000.0,
+      "total": 88703000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 0.0,
       "nc_liquid_total": 0.0,
-      "total": 22604000000.0
+      "total": 88703000000.0
     },
     "liabilities": {
-      "payables": 0.0,
-      "current_debt": 0.0,
+      "payables": 64318000000.0,
+      "current_debt": 13949000000.0,
       "accrued_expenses": 30074000000.0,
       "taxes_payable": 746000000.0,
-      "total": 30820000000.0
+      "total": 109087000000.0
     },
     "net_zakaatable": 0,
     "net_zakaatable_broad": 0,
-    "net_zakaatable_assets_only": 22604000000.0,
+    "net_zakaatable_assets_only": 88703000000.0,
     "error": null,
     "fallback": false
   },
@@ -3793,7 +3793,7 @@
   "ATO.PA": {
     "ticker": "ATO.PA",
     "long_name": "Atos Group",
-    "market_cap": 529699616,
+    "market_cap": 520643072,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 26.82,
