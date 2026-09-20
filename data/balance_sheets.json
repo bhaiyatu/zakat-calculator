@@ -398,7 +398,7 @@
   "OR.PA": {
     "ticker": "OR.PA",
     "long_name": "L'Or\u00e9al S.A.",
-    "market_cap": 200208711680,
+    "market_cap": 200302952448,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 376.05,
@@ -578,7 +578,7 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 16596224442368,
+    "market_cap": 0,
     "trading_currency": "INR",
     "financial_currency": "INR",
     "current_price": 1226.4,
@@ -650,36 +650,36 @@
   "ETN": {
     "ticker": "ETN",
     "long_name": "Eaton Corporation plc",
-    "market_cap": 164938186752,
+    "market_cap": 164980670464,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 424.77,
-    "bs_date": "2026-03-31",
+    "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 751000000.0,
-      "receivables": 6366000000.0,
-      "inventory": 5146000000.0,
-      "other_current": 1742000000.0,
-      "total": 14005000000.0
+      "cash_and_sti": 695000000.0,
+      "receivables": 6673000000.0,
+      "inventory": 5417000000.0,
+      "other_current": 1987000000.0,
+      "total": 14772000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
-      "nc_deferred_tax_asset": 585000000.0,
+      "nc_deferred_tax_asset": 592000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 585000000.0,
-      "total": 14590000000.0
+      "nc_liquid_total": 592000000.0,
+      "total": 15364000000.0
     },
     "liabilities": {
-      "payables": 4910000000.0,
-      "current_debt": 2594000000.0,
+      "payables": 5421000000.0,
+      "current_debt": 2102000000.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 0.0,
-      "total": 7504000000.0
+      "total": 7523000000.0
     },
-    "net_zakaatable": 6501000000.0,
-    "net_zakaatable_broad": 7086000000.0,
-    "net_zakaatable_assets_only": 14590000000.0,
+    "net_zakaatable": 7249000000.0,
+    "net_zakaatable_broad": 7841000000.0,
+    "net_zakaatable_assets_only": 15364000000.0,
     "error": null,
     "fallback": false
   },
@@ -1561,10 +1561,10 @@
   "2454.TW": {
     "ticker": "2454.TW",
     "long_name": "MediaTek Inc.",
-    "market_cap": 7522658287616,
+    "market_cap": 7346969903104,
     "trading_currency": "TWD",
     "financial_currency": "TWD",
-    "current_price": 4710.0,
+    "current_price": 4600.0,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1633,7 +1633,7 @@
   "AZN.L": {
     "ticker": "AZN.L",
     "long_name": "AstraZeneca PLC",
-    "market_cap": 193860730880,
+    "market_cap": 193861992448,
     "trading_currency": "GBp",
     "financial_currency": "USD",
     "current_price": 12500.0,
@@ -1813,7 +1813,7 @@
   "ULVR.L": {
     "ticker": "ULVR.L",
     "long_name": "Unilever PLC",
-    "market_cap": 99502342144,
+    "market_cap": 99502358528,
     "trading_currency": "GBp",
     "financial_currency": "EUR",
     "current_price": 4621.0,
@@ -1849,7 +1849,7 @@
   "ABT": {
     "ticker": "ABT",
     "long_name": "Abbott Laboratories",
-    "market_cap": 178727452672,
+    "market_cap": 177554636800,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 102.61,
@@ -2173,7 +2173,7 @@
   "BKNG": {
     "ticker": "BKNG",
     "long_name": "Booking Holdings Inc.",
-    "market_cap": 130102091776,
+    "market_cap": 126156775424,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 167.9,
@@ -2425,7 +2425,7 @@
   "LLY": {
     "ticker": "LLY",
     "long_name": "Eli Lilly and Company",
-    "market_cap": 1027672309760,
+    "market_cap": 1028115464192,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 1152.93,
@@ -2965,7 +2965,7 @@
   "PG": {
     "ticker": "PG",
     "long_name": "The Procter & Gamble Company",
-    "market_cap": 340273758208,
+    "market_cap": 340016005120,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 146.39,
@@ -3469,7 +3469,7 @@
   "WMT": {
     "ticker": "WMT",
     "long_name": "Walmart Inc.",
-    "market_cap": 846768766976,
+    "market_cap": 849365827584,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 106.73,
@@ -3793,7 +3793,7 @@
   "ATO.PA": {
     "ticker": "ATO.PA",
     "long_name": "Atos Group",
-    "market_cap": 463182112,
+    "market_cap": 471239104,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 23.86,
