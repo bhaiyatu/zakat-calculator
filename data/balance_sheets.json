@@ -2,10 +2,10 @@
   "BHP.AX": {
     "ticker": "BHP.AX",
     "long_name": "BHP Group Limited",
-    "market_cap": 311127605248,
+    "market_cap": 314787332096,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 61.21,
+    "current_price": 61.93,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -38,10 +38,10 @@
   "CSL.AX": {
     "ticker": "CSL.AX",
     "long_name": "CSL Limited",
-    "market_cap": 84147716096,
+    "market_cap": 84886732800,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 175.35,
+    "current_price": 176.89,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -74,10 +74,10 @@
   "WES.AX": {
     "ticker": "WES.AX",
     "long_name": "Wesfarmers Limited",
-    "market_cap": 86531244032,
+    "market_cap": 86497189888,
     "trading_currency": "AUD",
     "financial_currency": "AUD",
-    "current_price": 76.22,
+    "current_price": 76.19,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -110,10 +110,10 @@
   "WDS.AX": {
     "ticker": "WDS.AX",
     "long_name": "Woodside Energy Group Ltd",
-    "market_cap": 59390369792,
+    "market_cap": 59504435200,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 31.24,
+    "current_price": 31.3,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1190,7 +1190,7 @@
   "000660.KS": {
     "ticker": "000660.KS",
     "long_name": "SK hynix Inc.",
-    "market_cap": 1306842852491264,
+    "market_cap": 1309090059911168,
     "trading_currency": "KRW",
     "financial_currency": "KRW",
     "current_price": 1841000.0,
@@ -1921,7 +1921,7 @@
   "ADBE": {
     "ticker": "ADBE",
     "long_name": "Adobe Inc.",
-    "market_cap": 94481776640,
+    "market_cap": 92508946432,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 237.69,
@@ -2533,7 +2533,7 @@
   "ISRG": {
     "ticker": "ISRG",
     "long_name": "Intuitive Surgical, Inc.",
-    "market_cap": 140427083776,
+    "market_cap": 138467328000,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 391.95,
