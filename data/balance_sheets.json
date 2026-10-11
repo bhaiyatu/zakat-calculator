@@ -326,7 +326,7 @@
   "EL.PA": {
     "ticker": "EL.PA",
     "long_name": "EssilorLuxottica Soci\u00e9t\u00e9 anonyme",
-    "market_cap": 67134935040,
+    "market_cap": 67082797056,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 146.35,
@@ -1046,7 +1046,7 @@
   "4063.T": {
     "ticker": "4063.T",
     "long_name": "Shin-Etsu Chemical Co., Ltd.",
-    "market_cap": 11044668833792,
+    "market_cap": 11048734162944,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 6085.0,
@@ -2749,7 +2749,7 @@
   "MU": {
     "ticker": "MU",
     "long_name": "Micron Technology, Inc.",
-    "market_cap": 1162145562624,
+    "market_cap": 1164234457088,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 1029.0,
