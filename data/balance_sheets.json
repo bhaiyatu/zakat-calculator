@@ -398,7 +398,7 @@
   "OR.PA": {
     "ticker": "OR.PA",
     "long_name": "L'Or\u00e9al S.A.",
-    "market_cap": 217001541632,
+    "market_cap": 216899436544,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 407.4,
@@ -650,7 +650,7 @@
   "ETN": {
     "ticker": "ETN",
     "long_name": "Eaton Corporation plc",
-    "market_cap": 151961501696,
+    "market_cap": 151922376704,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 391.25,
@@ -1118,7 +1118,7 @@
   "ASML.AS": {
     "ticker": "ASML.AS",
     "long_name": "ASML Holding N.V.",
-    "market_cap": 567392468992,
+    "market_cap": 569339019264,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 1477.2,
@@ -1849,7 +1849,7 @@
   "ABT": {
     "ticker": "ABT",
     "long_name": "Abbott Laboratories",
-    "market_cap": 181499904000,
+    "market_cap": 182698770432,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 104.89,
@@ -2173,7 +2173,7 @@
   "BKNG": {
     "ticker": "BKNG",
     "long_name": "Booking Holdings Inc.",
-    "market_cap": 122813136896,
+    "market_cap": 126653882368,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 163.45,
@@ -2425,7 +2425,7 @@
   "LLY": {
     "ticker": "LLY",
     "long_name": "Eli Lilly and Company",
-    "market_cap": 1120945700864,
+    "market_cap": 1120462569472,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 1257.03,
@@ -2965,7 +2965,7 @@
   "PG": {
     "ticker": "PG",
     "long_name": "The Procter & Gamble Company",
-    "market_cap": 370117869568,
+    "market_cap": 370398429184,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 159.35,
@@ -3469,7 +3469,7 @@
   "WMT": {
     "ticker": "WMT",
     "long_name": "Walmart Inc.",
-    "market_cap": 945499340800,
+    "market_cap": 942608351232,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 118.81,
@@ -3793,7 +3793,7 @@
   "ATO.PA": {
     "ticker": "ATO.PA",
     "long_name": "Atos Group",
-    "market_cap": 443588832,
+    "market_cap": 436004608,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 22.46,
