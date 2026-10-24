@@ -222,32 +222,32 @@
     "trading_currency": "HKD",
     "financial_currency": "CNY",
     "current_price": 71.65,
-    "bs_date": "2025-12-31",
+    "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 166833704000.0,
-      "receivables": 3322730000.0,
-      "inventory": 3012552000.0,
-      "other_current": 1015810000.0,
-      "total": 174184796000.0
+      "cash_and_sti": 168314170000.0,
+      "receivables": 3908524000.0,
+      "inventory": 4155077000.0,
+      "other_current": 1046404000.0,
+      "total": 177424175000.0
     },
     "assets_broad": {
-      "nc_investments": 27638242000.0,
-      "nc_deferred_tax_asset": 4275800000.0,
+      "nc_investments": 62379423000.0,
+      "nc_deferred_tax_asset": 4764241000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 31914042000.0,
-      "total": 206098838000.0
+      "nc_liquid_total": 67143664000.0,
+      "total": 244567839000.0
     },
     "liabilities": {
-      "payables": 34571567000.0,
-      "current_debt": 14379078000.0,
+      "payables": 39013007000.0,
+      "current_debt": 7336717000.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 2074556000.0,
-      "total": 51025201000.0
+      "taxes_payable": 1866000000.0,
+      "total": 48215724000.0
     },
-    "net_zakaatable": 123159595000.0,
-    "net_zakaatable_broad": 155073637000.0,
-    "net_zakaatable_assets_only": 206098838000.0,
+    "net_zakaatable": 129208451000.0,
+    "net_zakaatable_broad": 196352115000.0,
+    "net_zakaatable_assets_only": 244567839000.0,
     "error": null,
     "fallback": false
   },
@@ -434,7 +434,7 @@
   "SAF.PA": {
     "ticker": "SAF.PA",
     "long_name": "Safran SA",
-    "market_cap": 112533610496,
+    "market_cap": 112498876416,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 271.8,
@@ -834,32 +834,32 @@
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 75880.0,
-    "bs_date": "2026-02-28",
+    "bs_date": "2026-05-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 2222150000000.0,
-      "receivables": 90863000000.0,
-      "inventory": 501144000000.0,
-      "other_current": 22323000000.0,
-      "total": 2836480000000.0
+      "cash_and_sti": 2094200000000.0,
+      "receivables": 166254000000.0,
+      "inventory": 497659000000.0,
+      "other_current": 22213000000.0,
+      "total": 2780326000000.0
     },
     "assets_broad": {
-      "nc_investments": 219941000000.0,
-      "nc_deferred_tax_asset": 30058000000.0,
+      "nc_investments": 360794000000.0,
+      "nc_deferred_tax_asset": 26657000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 249999000000.0,
-      "total": 3086479000000.0
+      "nc_liquid_total": 387451000000.0,
+      "total": 3167777000000.0
     },
     "liabilities": {
-      "payables": 419424000000.0,
+      "payables": 449364000000.0,
       "current_debt": 0.0,
       "accrued_expenses": 0.0,
-      "taxes_payable": 85034000000.0,
-      "total": 504458000000.0
+      "taxes_payable": 70523000000.0,
+      "total": 519887000000.0
     },
-    "net_zakaatable": 2332022000000.0,
-    "net_zakaatable_broad": 2582021000000.0,
-    "net_zakaatable_assets_only": 3086479000000.0,
+    "net_zakaatable": 2260439000000.0,
+    "net_zakaatable_broad": 2647890000000.0,
+    "net_zakaatable_assets_only": 3167777000000.0,
     "error": null,
     "fallback": false
   },
@@ -902,7 +902,7 @@
   "7741.T": {
     "ticker": "7741.T",
     "long_name": "HOYA Corporation",
-    "market_cap": 8705963720704,
+    "market_cap": 8679320977408,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 26100.0,
@@ -1082,7 +1082,7 @@
   "8035.T": {
     "ticker": "8035.T",
     "long_name": "Tokyo Electron Limited",
-    "market_cap": 4293624070144,
+    "market_cap": 21483696947200,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 9458.0,
@@ -1741,7 +1741,7 @@
   "REL.L": {
     "ticker": "REL.L",
     "long_name": "RELX PLC",
-    "market_cap": 52752760832,
+    "market_cap": 52754415616,
     "trading_currency": "GBp",
     "financial_currency": "GBP",
     "current_price": 3039.0,
@@ -2825,32 +2825,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 37.3,
-    "bs_date": "2026-05-31",
+    "bs_date": "2026-08-31",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 9027000000.0,
-      "receivables": 5931000000.0,
-      "inventory": 7501000000.0,
-      "other_current": 2144000000.0,
-      "total": 24603000000.0
+      "cash_and_sti": 8368000000.0,
+      "receivables": 5242000000.0,
+      "inventory": 7846000000.0,
+      "other_current": 2217000000.0,
+      "total": 23673000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
       "nc_deferred_tax_asset": 0.0,
       "nc_receivables": 0.0,
       "nc_liquid_total": 0.0,
-      "total": 24603000000.0
+      "total": 23673000000.0
     },
     "liabilities": {
-      "payables": 3600000000.0,
+      "payables": 3420000000.0,
       "current_debt": 2000000000.0,
-      "accrued_expenses": 2316000000.0,
-      "taxes_payable": 377000000.0,
-      "total": 8293000000.0
+      "accrued_expenses": 2120000000.0,
+      "taxes_payable": 178000000.0,
+      "total": 7718000000.0
     },
-    "net_zakaatable": 16310000000.0,
-    "net_zakaatable_broad": 16310000000.0,
-    "net_zakaatable_assets_only": 24603000000.0,
+    "net_zakaatable": 15955000000.0,
+    "net_zakaatable_broad": 15955000000.0,
+    "net_zakaatable_assets_only": 23673000000.0,
     "error": null,
     "fallback": false
   },
@@ -2933,32 +2933,32 @@
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 135.77,
-    "bs_date": "2026-06-30",
+    "bs_date": "2026-09-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 10716000000.0,
-      "receivables": 13496000000.0,
-      "inventory": 6734000000.0,
-      "other_current": 1829000000.0,
-      "total": 32775000000.0
+      "cash_and_sti": 11163000000.0,
+      "receivables": 13623000000.0,
+      "inventory": 6434000000.0,
+      "other_current": 1339000000.0,
+      "total": 32559000000.0
     },
     "assets_broad": {
-      "nc_investments": 2180000000.0,
-      "nc_deferred_tax_asset": 4455000000.0,
+      "nc_investments": 2215000000.0,
+      "nc_deferred_tax_asset": 4328000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 6635000000.0,
-      "total": 39410000000.0
+      "nc_liquid_total": 6543000000.0,
+      "total": 39102000000.0
     },
     "liabilities": {
-      "payables": 24504000000.0,
-      "current_debt": 10602000000.0,
+      "payables": 25306000000.0,
+      "current_debt": 9223000000.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 0.0,
-      "total": 35106000000.0
+      "total": 34529000000.0
     },
     "net_zakaatable": 0,
-    "net_zakaatable_broad": 4304000000.0,
-    "net_zakaatable_assets_only": 39410000000.0,
+    "net_zakaatable_broad": 4573000000.0,
+    "net_zakaatable_assets_only": 39102000000.0,
     "error": null,
     "fallback": false
   },
@@ -3649,7 +3649,7 @@
   "INFY": {
     "ticker": "INFY",
     "long_name": "Infosys Limited",
-    "market_cap": 50021961728,
+    "market_cap": 50022150144,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 12.35,
