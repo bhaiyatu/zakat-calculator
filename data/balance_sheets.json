@@ -578,7 +578,7 @@
   "RELIANCE.NS": {
     "ticker": "RELIANCE.NS",
     "long_name": "Reliance Industries Limited",
-    "market_cap": 15763977011200,
+    "market_cap": 0,
     "trading_currency": "INR",
     "financial_currency": "INR",
     "current_price": 1164.9,
@@ -650,36 +650,36 @@
   "ETN": {
     "ticker": "ETN",
     "long_name": "Eaton Corporation plc",
-    "market_cap": 143659352064,
+    "market_cap": 143696347136,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 369.97,
-    "bs_date": "2026-03-31",
+    "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
-      "cash_and_sti": 751000000.0,
-      "receivables": 6366000000.0,
-      "inventory": 5146000000.0,
-      "other_current": 1742000000.0,
-      "total": 14005000000.0
+      "cash_and_sti": 695000000.0,
+      "receivables": 6673000000.0,
+      "inventory": 5417000000.0,
+      "other_current": 1987000000.0,
+      "total": 14772000000.0
     },
     "assets_broad": {
       "nc_investments": 0.0,
-      "nc_deferred_tax_asset": 585000000.0,
+      "nc_deferred_tax_asset": 592000000.0,
       "nc_receivables": 0.0,
-      "nc_liquid_total": 585000000.0,
-      "total": 14590000000.0
+      "nc_liquid_total": 592000000.0,
+      "total": 15364000000.0
     },
     "liabilities": {
-      "payables": 4910000000.0,
-      "current_debt": 2594000000.0,
+      "payables": 5421000000.0,
+      "current_debt": 2102000000.0,
       "accrued_expenses": 0.0,
       "taxes_payable": 0.0,
-      "total": 7504000000.0
+      "total": 7523000000.0
     },
-    "net_zakaatable": 6501000000.0,
-    "net_zakaatable_broad": 7086000000.0,
-    "net_zakaatable_assets_only": 14590000000.0,
+    "net_zakaatable": 7249000000.0,
+    "net_zakaatable_broad": 7841000000.0,
+    "net_zakaatable_assets_only": 15364000000.0,
     "error": null,
     "fallback": false
   },
@@ -1561,7 +1561,7 @@
   "2454.TW": {
     "ticker": "2454.TW",
     "long_name": "MediaTek Inc.",
-    "market_cap": 6252875743232,
+    "market_cap": 6252763545600,
     "trading_currency": "TWD",
     "financial_currency": "TWD",
     "current_price": 3915.0,
@@ -1849,7 +1849,7 @@
   "ABT": {
     "ticker": "ABT",
     "long_name": "Abbott Laboratories",
-    "market_cap": 184980553728,
+    "market_cap": 183766712320,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 106.2,
@@ -2065,7 +2065,7 @@
   "AMZN": {
     "ticker": "AMZN",
     "long_name": "Amazon.com, Inc.",
-    "market_cap": 2598423756800,
+    "market_cap": 2598937821184,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 240.35,
@@ -2173,7 +2173,7 @@
   "BKNG": {
     "ticker": "BKNG",
     "long_name": "Booking Holdings Inc.",
-    "market_cap": 114782748672,
+    "market_cap": 111301992448,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 148.13,
@@ -2245,7 +2245,7 @@
   "CVX": {
     "ticker": "CVX",
     "long_name": "Chevron Corporation",
-    "market_cap": 461996818432,
+    "market_cap": 459499536384,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 235.52,
@@ -2461,7 +2461,7 @@
   "XOM": {
     "ticker": "XOM",
     "long_name": "ExxonMobil Holdings Corporation",
-    "market_cap": 769955528704,
+    "market_cap": 763792785408,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 187.25,
@@ -3145,7 +3145,7 @@
   "SBUX": {
     "ticker": "SBUX",
     "long_name": "Starbucks Corporation",
-    "market_cap": 118183796736,
+    "market_cap": 118194159616,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 103.67,
@@ -3253,7 +3253,7 @@
   "TMO": {
     "ticker": "TMO",
     "long_name": "Thermo Fisher Scientific Inc.",
-    "market_cap": 257713864704,
+    "market_cap": 258249555968,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 697.0,
@@ -3469,7 +3469,7 @@
   "WMT": {
     "ticker": "WMT",
     "long_name": "Walmart Inc.",
-    "market_cap": 979897024512,
+    "market_cap": 982902374400,
     "trading_currency": "USD",
     "financial_currency": "USD",
     "current_price": 123.51,
@@ -3793,7 +3793,7 @@
   "ATO.PA": {
     "ticker": "ATO.PA",
     "long_name": "Atos Group",
-    "market_cap": 533067072,
+    "market_cap": 542339712,
     "trading_currency": "EUR",
     "financial_currency": "EUR",
     "current_price": 27.46,
