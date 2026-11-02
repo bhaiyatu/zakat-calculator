@@ -2,10 +2,10 @@
   "BHP.AX": {
     "ticker": "BHP.AX",
     "long_name": "BHP Group Limited",
-    "market_cap": 292574822400,
+    "market_cap": 289169244160,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 57.56,
+    "current_price": 56.89,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -38,10 +38,10 @@
   "CSL.AX": {
     "ticker": "CSL.AX",
     "long_name": "CSL Limited",
-    "market_cap": 96327172096,
+    "market_cap": 97080590336,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 200.73,
+    "current_price": 202.3,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -74,10 +74,10 @@
   "WES.AX": {
     "ticker": "WES.AX",
     "long_name": "Wesfarmers Limited",
-    "market_cap": 87064829952,
+    "market_cap": 87825465344,
     "trading_currency": "AUD",
     "financial_currency": "AUD",
-    "current_price": 76.69,
+    "current_price": 77.36,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -110,10 +110,10 @@
   "WDS.AX": {
     "ticker": "WDS.AX",
     "long_name": "Woodside Energy Group Ltd",
-    "market_cap": 63363670016,
+    "market_cap": 63135535104,
     "trading_currency": "AUD",
     "financial_currency": "USD",
-    "current_price": 33.33,
+    "current_price": 33.21,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
@@ -1082,7 +1082,7 @@
   "8035.T": {
     "ticker": "8035.T",
     "long_name": "Tokyo Electron Limited",
-    "market_cap": 21610899701760,
+    "market_cap": 21535402229760,
     "trading_currency": "JPY",
     "financial_currency": "JPY",
     "current_price": 9514.0,
@@ -3145,10 +3145,10 @@
   "SBUX": {
     "ticker": "SBUX",
     "long_name": "Starbucks Corporation",
-    "market_cap": 118194159616,
+    "market_cap": 118171361280,
     "trading_currency": "USD",
     "financial_currency": "USD",
-    "current_price": 103.67,
+    "current_price": 103.65,
     "bs_date": "2026-06-30",
     "bs_type": "quarterly",
     "assets": {
